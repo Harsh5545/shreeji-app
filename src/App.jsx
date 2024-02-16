@@ -2,6 +2,7 @@
 import MainComponent from "./components/custom/mainComponent";
 import SEO from "./SEO/SEO";
 import Home from "./components/Pages/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const pageTitle = "Welcome To ShreejiGraphics";
@@ -11,12 +12,13 @@ function App() {
 
   return (
     <>
-      <SEO
+      {/* <SEO
         title={pageTitle}
         description={pageDescription}
         url={pageURL}
         image={pageImageURL}
-      />
+      /> */}
+      <Navbar/>
       <Home />
     </>
   );
