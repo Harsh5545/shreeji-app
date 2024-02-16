@@ -14,7 +14,7 @@ const CustomCard = () => {
           />
         </CardContent>
         <CardDescription>
-          <p className="my-1 roboto-regular">Boxes Name</p>
+          <h5 className="my-1 roboto-regular">Boxes Name</h5>
         </CardDescription>
         <CardFooter>
           <Button
