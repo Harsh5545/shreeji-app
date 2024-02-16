@@ -3,8 +3,8 @@ import CustomCard from "../../CustomCard/CustomCard";
 import SEO from "../../../SEO/SEO";
 
 function Home() {
-  const pageTitle = "Welcome To ShreejiGraphics";
-  const pageDescription = "Your page description";
+  const pageTitle = "Welcome To Shreeji - Graphics";
+  const pageDescription = "Discover a world of elegance and thoughtful gifting with our curated collection of exquisite gift boxes. Perfect for birthdays, weddings, and special moments. Explore now!";
   const pageURL = window.location.href;
   const pageImageURL = "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg";
   return (
