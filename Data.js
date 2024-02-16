@@ -10,7 +10,52 @@ const staticData = [
     discriptionHeading: "Give Your Clothing Brand A Better Box to Wear",
     discripyion:
       "Elevate your apparel brading with custom boxes that suit your style. From custom box for shirt, t-shirt packaging boxes to trousers, dresses and whatnot, we help you craft all kinds of personalised clothing packaging.",
-    product: [{ img: "", heading: "", button:""}],
+    product: [
+      {
+        Productid: 1,
+        img: "",
+        heading: "Baby Clothes Folding Box",
+        button: "",
+      },
+      {
+        Productid: 2,
+        img: "",
+        heading: "Baby Clothes Hollow Rim Box with Slipcase White Floor",
+        button: "",
+      },
+      {
+        Productid: 3,
+        img: "",
+        heading: "Bed Sheets Slipcase Both Sides Open",
+        button: "",
+      },
+      { Productid: 4, img: "", heading: "Cardboard Socks Sleeve", button: "" },
+      {
+        Productid: 5,
+        img: "",
+        heading: "Custom Clothing Box with Slip Lid White Floor",
+        button: "",
+      },
+      {
+        Productid: 6,
+        img: "",
+        heading: "Custom Clothing Box with Slipcase White Floor",
+        button: "",
+      },
+      {
+        Productid: 7,
+        img: "",
+        heading: "Custom Shirt Box Packaging",
+        button: "",
+      },
+      {
+        Productid: 8,
+        img: "",
+        heading:
+          "Custom Undergarment Folding Carton with Tuck in Flap Bottom/Top Box",
+        button: "",
+      },
+    ],
     Review: "",
   },
   { id: 2, name: "Item 2" },
