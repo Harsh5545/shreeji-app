@@ -1,13 +1,13 @@
-import { useState } from "react";
+
 import MainComponent from "./components/custom/mainComponent";
 import SEO from "./SEO/SEO";
+import Home from "./components/Pages/Home/Home";
 
 function App() {
-  const pageTitle = "Welcome To HDF Online";
+  const pageTitle = "Welcome To ShreejiGraphics";
   const pageDescription = "Your page description";
   const pageURL = "Your page URL";
   const pageImageURL = "URL to your image";
-
 
   return (
     <>
@@ -17,7 +17,7 @@ function App() {
         url={pageURL}
         image={pageImageURL}
       />
-      <MainComponent />
+      <Home />
     </>
   );
 }
