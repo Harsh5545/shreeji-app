@@ -8,7 +8,7 @@ const staticData = [
     heading: "Restyle Your Apparel and Clothing Packaging Boxes",
     mainImage: "src/assets/desktop-clothing-apparels.webp",
     discriptionHeading: "Give Your Clothing Brand A Better Box to Wear",
-    discripyion:
+    discription:
       "Elevate your apparel brading with custom boxes that suit your style. From custom box for shirt, t-shirt packaging boxes to trousers, dresses and whatnot, we help you craft all kinds of personalised clothing packaging.",
     product: [
       {
@@ -16,6 +16,8 @@ const staticData = [
         img: "",
         heading: "Baby Clothes Folding Box",
         button: "",
+        headerimg: "",
+        heading: "",
       },
       {
         Productid: 2,
