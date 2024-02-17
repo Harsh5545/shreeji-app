@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardFooter } from "../ui/card";
 import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 const CustomCard = () => {
   return (
@@ -17,13 +18,15 @@ const CustomCard = () => {
           <h5 className="my-1 roboto-regular">Boxes Name</h5>
         </CardDescription>
         <CardFooter>
+          <Link to="/products/:productId" className="p-2 rounded-md m-1 align-middle mx-auto roboto-medium border-2 border-[] bg-green-400 hover:bg-green-500 transition-all ease-in-out">
           <Button
             variant="outline"
             size="lg"
-            className="p-2 rounded-md m-1 align-middle mx-auto roboto-medium border-2 border-[] bg-green-400 hover:bg-green-500 transition-all ease-in-out"
+            className=""
           >
             Check Now
           </Button>
+          </Link>
         </CardFooter>
       </Card>
     </div>
