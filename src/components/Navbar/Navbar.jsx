@@ -1,129 +1,207 @@
 import React from "react";
-import logo from "../../assets/logo.png";
-import { Card } from "../ui/card";
-import { cn } from "@/lib/utils";
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "../ui/navigation-menu";
-function Navbar() {
-  const components = [
-    {
-      title: "Clothing & Apparels",
-      href: "/docs/primitives/alert-dialog",
-    },
-    {
-      title: "PERSONAL CARE & COSMETICS",
-      href: "/docs/primitives/hover-card",
-    },
-    {
-      title: "BEVERAGES",
-      href: "/docs/primitives/progress",
-    },
-    {
-      title: "FOOD & RESTAURANTS",
-      href: "/docs/primitives/scroll-area",
-    },
-    {
-      title: "COFFEE AND TEA",
-      href: "/docs/primitives/tabs",
-    },
-    {
-      title: "FESTIVE COLLECTION",
-      href: "/docs/primitives/tooltip",
-    },
-    {
-      title: "CONSUMER GOODS",
-      href: "/docs/primitives/tooltip",
-    },
-    {
-      title: "BAKERY AND COOKIES",
-      href: "/docs/primitives/tooltip",
-    },
-    {
-      title: "CHOCOLATES AND CONFECTIONERY",
-      href: "/docs/primitives/tooltip",
-    },
-    {
-      title: "ECOMMERCE",
-      href: "/docs/primitives/tooltip",
-    },
-    {
-      title: "GIFTING",
-      href: "/docs/primitives/tooltip",
-    },
-    {
-      title: "SAMPLE BOX SET",
-      href: "/docs/primitives/tooltip",
-    },
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Button,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+} from "@nextui-org/react";
+import logo from "../../assets/logo.png";
+import { FaChevronDown } from "react-icons/fa";
+import staticData from "../../../Data";
+export default function NavbarComponent() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const menuItems = [
+    "BOXES",
+    "BAGS",
+    "FOOD PACKAGING",
+    "RIGID BOXES",
+    "CUSTOM LABELS",
+    "ABOUT",
   ];
+
   return (
-    <Card className="flex justify-center">
-      <div className="flex justify-between items-center max-w-screen-xl w-full">
-        <img src={logo} alt="" width="200" />
-        <div className="flex items-center gap-8">
-          <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Boxes</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {components.map((component) => (
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.href}
-                    >
-                      {component.description}
-                    </ListItem>
-                  ))}
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
-          <div>BAGS</div>
-          <div>FOOD PACKAGING</div>
-          <div>RIGID BOXES</div>
-          <div>CUSTOM LABELS</div>
-          <div>ABOUT</div>
-        </div>
-        <div>CONTACT</div>
-      </div>
-    </Card>
+    <Navbar onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
+        <NavbarBrand>
+          <img src={logo} alt="shreeji logo" width="120" />
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <Dropdown>
+          <NavbarItem>
+            <DropdownTrigger>
+              <Button
+                disableRipple
+                className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                endContent={<FaChevronDown />}
+                radius="sm"
+                variant="light"
+              >
+                BOXES
+              </Button>
+            </DropdownTrigger>
+          </NavbarItem>
+          <DropdownMenu
+            aria-label="ACME features"
+            className="w-[1000px]"
+            itemClasses={{
+              base: "gap-4",
+            }}
+          >
+            {staticData.map((item) => {
+              return (
+                <DropdownItem
+                  key={item.id}
+                  // startContent={icons.scale}    for icons
+                >
+                  {item.subCategory}
+                </DropdownItem>
+              );
+            })}
+          </DropdownMenu>
+        </Dropdown>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            BAGS
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link href="#" aria-current="page">
+            FOOD PACKAGING
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            RIGID BOXES
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            CUSTOM LABELS
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            ABOUT
+          </Link>
+        </NavbarItem>
+      </NavbarContent>
+      <NavbarContent justify="end">
+        <NavbarItem className="flex">
+          <Link href="#">CONTACT</Link>
+        </NavbarItem>
+      </NavbarContent>
+      <NavbarMenu>
+        {/* {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              className="w-full"
+              href="#"
+              size="lg"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))} */}
+        <Dropdown>
+          <NavbarItem>
+            <DropdownTrigger>
+              <Button
+                disableRipple
+                className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                endContent={<FaChevronDown />}
+                radius="sm"
+                variant="light"
+              >
+                BOXES
+              </Button>
+            </DropdownTrigger>
+          </NavbarItem>
+          <DropdownMenu
+            aria-label="ACME features"
+            className="w-full"
+            itemClasses={{
+              base: "gap-4 grid grid-cols-2",
+            }}
+          >
+            <DropdownItem
+              key="autoscaling"
+              description="ACME scales apps to meet user demand, automagically, based on load."
+              // startContent={icons.scale}
+            >
+              Autoscaling
+            </DropdownItem>
+            {/* <DropdownItem
+              key="usage_metrics"
+              description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+              // startContent={icons.activity}
+            >
+              Usage Metrics
+            </DropdownItem>
+            <DropdownItem
+              key="production_ready"
+              description="ACME runs on ACME, join us and others serving requests at web scale."
+              // startContent={icons.flash}
+            >
+              Production Ready
+            </DropdownItem>
+            <DropdownItem
+              key="99_uptime"
+              description="Applications stay on the grid with high availability and high uptime guarantees."
+              // startContent={icons.server}
+            >
+              +99% Uptime
+            </DropdownItem>
+            <DropdownItem
+              key="supreme_support"
+              description="Overcome any challenge with a supporting team ready to respond."
+              // startContent={icons.user}
+            >
+              +Supreme Support
+            </DropdownItem>  */}
+          </DropdownMenu>
+        </Dropdown>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            BAGS
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link href="#" aria-current="page">
+            FOOD PACKAGING
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            RIGID BOXES
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            CUSTOM LABELS
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            ABOUT
+          </Link>
+        </NavbarItem>
+      </NavbarMenu>
+    </Navbar>
   );
 }
-
-export default Navbar;
-
-// ListItem.jsx
-
-const ListItem = React.forwardRef(
-  ({ className, title, children, ...props }, ref) => {
-    return (
-      <li>
-        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <a
-            ref={ref}
-            className={cn(
-              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-              className
-            )}
-            {...props}
-          >
-            <div className="text-sm font-medium leading-none">{title}</div>
-            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-              {children}
-            </p>
-          </a>
-        </NavigationMenuLink>
-      </li>
-    );
-  }
-);
-ListItem.displayName = "ListItem";
