@@ -7,7 +7,7 @@ const AppRouter = () => {
   return (
     <Routes>
       <Route path="/" Component={Home} />
-      <Route path="/products/:productId" Component={Product} />
+      <Route path="/products/:categoryId/:productId" Component={Product} />
       <Route path="/category/:categoryId" Component={Category} />
 
     </Routes>

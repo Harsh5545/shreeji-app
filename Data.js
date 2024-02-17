@@ -13,7 +13,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Baby Clothes Folding Box",
         button: "",
         headerimg: "",
@@ -21,7 +21,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Baby Clothes Hollow Rim Box with Slipcase White Floor",
         button: "",
         headerimg: "",
@@ -29,7 +29,7 @@ const staticData = [
       },
       {
         Productid: 3,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Bed Sheets Slipcase Both Sides Open",
         button: "",
         headerimg: "",
@@ -37,7 +37,7 @@ const staticData = [
       },
       {
         Productid: 4,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Cardboard Socks Sleeve",
         button: "",
         headerimg: "",
@@ -45,7 +45,7 @@ const staticData = [
       },
       {
         Productid: 5,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Custom Clothing Box with Slip Lid White Floor",
         button: "",
         headerimg: "",
@@ -53,7 +53,7 @@ const staticData = [
       },
       {
         Productid: 6,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Custom Clothing Box with Slipcase White Floor",
         button: "",
         headerimg: "",
@@ -61,7 +61,7 @@ const staticData = [
       },
       {
         Productid: 7,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Custom Shirt Box Packaging",
         button: "",
         headerimg: "",
@@ -69,7 +69,7 @@ const staticData = [
       },
       {
         Productid: 8,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading:
           "Custom Undergarment Folding Carton with Tuck in Flap Bottom/Top Box",
         button: "",
@@ -78,7 +78,7 @@ const staticData = [
       },
       {
         Productid: 9,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Lingerie Packaging",
         button: "",
         headerimg: "",
@@ -86,7 +86,7 @@ const staticData = [
       },
       {
         Productid: 10,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Luxury Clothing Box",
         button: "",
         headerimg: "",
@@ -94,7 +94,7 @@ const staticData = [
       },
       {
         Productid: 11,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Paper Box Undergarment Packaging",
         button: "",
         headerimg: "",
@@ -102,7 +102,7 @@ const staticData = [
       },
       {
         Productid: 12,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Personalised Clothing Packaging",
         button: "",
         headerimg: "",
@@ -110,7 +110,7 @@ const staticData = [
       },
       {
         Productid: 13,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Sarees Box Packaging",
         button: "",
         headerimg: "",
@@ -118,7 +118,7 @@ const staticData = [
       },
       {
         Productid: 14,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Tie or Scarf Pillow Box",
         button: "",
         headerimg: "",
@@ -127,7 +127,7 @@ const staticData = [
       },
       {
         Productid: 15,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Undergarment Packaging Box",
         button: "",
         headerimg: "",
@@ -150,7 +150,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Board Game Box Packaging",
         button: "",
         headerimg: "",
@@ -158,7 +158,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Box Packaging",
         button: "",
         headerimg: "",
@@ -166,7 +166,7 @@ const staticData = [
       },
       {
         Productid: 3,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Bulb Box",
         button: "",
         headerimg: "",
@@ -174,7 +174,7 @@ const staticData = [
       },
       {
         Productid: 4,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Butter Box Packaging",
         button: "",
         headerimg: "",
@@ -182,7 +182,7 @@ const staticData = [
       },
       {
         Productid: 5,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Candle Drawer Box",
         button: "",
         headerimg: "",
@@ -190,7 +190,7 @@ const staticData = [
       },
       {
         Productid: 6,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Cards Game Packaging",
         button: "",
         headerimg: "",
@@ -198,7 +198,7 @@ const staticData = [
       },
       {
         Productid: 7,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Cookware Box",
         button: "",
         headerimg: "",
@@ -206,7 +206,7 @@ const staticData = [
       },
       {
         Productid: 8,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Incense Box",
         button: "",
         headerimg: "",
@@ -214,7 +214,7 @@ const staticData = [
       },
       {
         Productid: 9,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Jewellery Pillow Packaging",
         button: "",
         headerimg: "",
@@ -222,7 +222,7 @@ const staticData = [
       },
       {
         Productid: 10,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Long Box",
         button: "",
         headerimg: "",
@@ -230,7 +230,7 @@ const staticData = [
       },
       {
         Productid: 9,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Sleeve Packaging",
         button: "",
         headerimg: "",
@@ -251,7 +251,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Cosmetic Box Packaging",
         button: "",
         headerimg: "",
@@ -259,7 +259,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Cosmetic Gift Packaging Box",
         button: "",
         headerimg: "",
@@ -267,7 +267,7 @@ const staticData = [
       },
       {
         Productid: 3,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Foundation Packaging Box",
         button: "",
         headerimg: "",
@@ -275,7 +275,7 @@ const staticData = [
       },
       {
         Productid: 4,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Lipstick Packaging Box",
         button: "",
         headerimg: "",
@@ -283,7 +283,7 @@ const staticData = [
       },
       {
         Productid: 5,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Skincare Kit Packaging",
         button: "",
         headerimg: "",
@@ -291,7 +291,7 @@ const staticData = [
       },
       {
         Productid: 6,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Sanitary Pads Packaging Box",
         button: "",
         headerimg: "",
@@ -299,7 +299,7 @@ const staticData = [
       },
       {
         Productid: 7,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Personal Care Kit Gift Packaging",
         button: "",
         headerimg: "",
@@ -307,7 +307,7 @@ const staticData = [
       },
       {
         Productid: 8,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Makeup Box with Sleeve",
         button: "",
         headerimg: "",
@@ -315,7 +315,7 @@ const staticData = [
       },
       {
         Productid: 9,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Slide / Drawer Cosmetic Packaging Boxes",
         button: "",
         headerimg: "",
@@ -323,7 +323,7 @@ const staticData = [
       },
       {
         Productid: 10,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Soap Pillow Box Packaging",
         button: "",
         headerimg: "",
@@ -331,7 +331,7 @@ const staticData = [
       },
       {
         Productid: 11,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Soap Sleeve Packaging",
         button: "",
         headerimg: "",
@@ -353,7 +353,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Biscuit Boxes Packaging",
         button: "",
         headerimg: "",
@@ -361,7 +361,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Cookie Packaging Box",
         button: "",
         headerimg: "",
@@ -369,7 +369,7 @@ const staticData = [
       },
       {
         Productid: 3,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Custom Cookies Boxes",
         button: "",
         headerimg: "",
@@ -377,7 +377,7 @@ const staticData = [
       },
       {
         Productid: 4,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Custom Cup Cake Box",
         button: "",
         headerimg: "",
@@ -385,7 +385,7 @@ const staticData = [
       },
       {
         Productid: 5,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Custom Oats Packaging",
         button: "",
         headerimg: "",
@@ -393,7 +393,7 @@ const staticData = [
       },
       {
         Productid: 6,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Custom Printed Boxes",
         button: "",
         headerimg: "",
@@ -401,7 +401,7 @@ const staticData = [
       },
       {
         Productid: 7,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Custom Printed Donut Boxes",
         button: "",
         headerimg: "",
@@ -409,7 +409,7 @@ const staticData = [
       },
       {
         Productid: 8,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Food Tray Packaging",
         button: "",
         headerimg: "",
@@ -417,7 +417,7 @@ const staticData = [
       },
       {
         Productid: 9,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Hexagonal Food Tray",
         button: "",
         headerimg: "",
@@ -425,7 +425,7 @@ const staticData = [
       },
       {
         Productid: 10,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Macaron drawer Boxes",
         button: "",
         headerimg: "",
@@ -433,7 +433,7 @@ const staticData = [
       },
       {
         Productid: 11,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Pre Mix Cake Box",
         button: "",
         headerimg: "",
@@ -441,7 +441,7 @@ const staticData = [
       },
       {
         Productid: 12,
-        img: "",
+        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
         heading: "Rusk Packaging Box",
         button: "",
         headerimg: "",

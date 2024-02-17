@@ -29,14 +29,14 @@ function Home() {
         <CustomCard />
       </div>
 
-      <div>
+      <div className="flex w-[90%] mx-auto items-center gap-3 justify-center">
       {staticData.map((item) => (
-        <React.Fragment key={item.id}>
-          <Link to={`/category/${item.subCategory}`}>
+        <div key={item.id} >
+          <Link to={`/category/${item.subCategory}`} className="bg-green-400 p-1 m-1 rounded-sm roboto-medium">
             {item.subCategory}
           </Link>
           <br />
-        </React.Fragment>
+        </div>
       ))}
     </div>
     </>

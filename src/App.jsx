@@ -1,17 +1,14 @@
 import AppRouter from "./Routes/AppRouter";
+import SEO from "./SEO/SEO";
 import Navbar from "./components/Navbar/Navbar";
-
+import { DayPicker } from "react-day-picker";
 function App() {
   return (
     <>
-      <SEO
-        title={pageTitle}
-        description={pageDescription}
-        url={pageURL}
-        image={pageImageURL}
-      />
-      <Navbar/>
-      <AppRouter />
+      
+        <Navbar />
+        <AppRouter />
+      
     </>
   );
 }
