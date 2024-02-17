@@ -4,7 +4,13 @@ import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <>
-      <Navbar />
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        url={pageURL}
+        image={pageImageURL}
+      />
+      <Navbar/>
       <AppRouter />
     </>
   );
