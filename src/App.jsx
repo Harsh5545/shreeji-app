@@ -1,15 +1,11 @@
-
-import Home from "./components/Pages/Home/Home";
+import AppRouter from "./Routes/AppRouter";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-  
-
   return (
     <>
-     
-      <Navbar/>
-      <Home />
+      <Navbar />
+      <AppRouter />
     </>
   );
 }
