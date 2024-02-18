@@ -1305,6 +1305,144 @@ const staticData = [
       },
     ],
   },
+  {
+    id: 13,
+    name: "Item 13",
+    category: "bags",
+    subCategory: "SHOPPING BAGS",
+    heading:
+      "Explore our range of Shopping Bags & get a voucher worth Rs 500 for your next purchase.",
+    mainImage: "src/assets/desktop-shopping-bags.webp",
+    discriptionHeading: "Shopping Bags Collection for Every Occasion",
+    discription:
+      "Discover a variety of shopping bags tailored to your needs. Turtle Bags presents a unique Shopping Bags Collection, designed to meet the demands of different occasions. Our bags are not only stylish but also durable, ensuring a perfect blend of fashion and functionality.",
+    product: [
+      {
+        Productid: 1,
+        img: "",
+        heading: "Loop Handle Bag",
+        button: "",
+        headerimg: "",
+        subimg: "",
+      },
+      {
+        Productid: 2,
+        img: "",
+        heading: "Luxury Garment Bag",
+        button: "",
+        headerimg: "",
+        subimg: "",
+      },
+      {
+        Productid: 3,
+        img: "",
+        heading: "Non Woven Bag",
+        button: "",
+        headerimg: "",
+        subimg: "",
+      },
+      {
+        Productid: 4,
+        img: "",
+        heading: "Non Woven Box Bag",
+        button: "",
+        headerimg: "",
+        subimg: "",
+      },
+      {
+        Productid: 5,
+        img: "",
+        heading: "Non Woven Cary Bag",
+        button: "",
+        headerimg: "",
+        subimg: "",
+      },
+      {
+        Productid: 6,
+        img: "",
+        heading: "Non Woven Colored Bags",
+        button: "",
+        headerimg: "",
+        subimg: "",
+      },
+      // Add more products as needed
+    ],
+  },
+  {
+    id: 14,
+    name: "Item 14",
+    category: "bags",
+    subCategory: "Lehenga Cover",
+    heading:
+      "Explore our range of Lehenga Covers & enjoy free shipping on orders over Rs 1000.",
+    mainImage: "src/assets/desktop-lehenga-covers.webp",
+    discriptionHeading: "Elegant Lehenga Covers for Your Special Attire",
+    discription:
+      "Discover a variety of Lehenga Covers designed to protect and preserve your valuable lehengas. Turtle Covers presents a unique collection, crafted with care to ensure that your special attire remains in perfect condition for years to come.",
+    product: [
+      // Add more Lehenga Cover products as needed
+    ],
+  },
+  {
+    id: 15,
+    name: "Item 15",
+    category: "bags",
+    subCategory: "Sherwani Cover",
+    heading:
+      "Explore our range of Sherwani Covers & enjoy free shipping on orders over Rs 1000.",
+    mainImage: "src/assets/desktop-sherwani-covers.webp",
+    discriptionHeading: "Stylish Sherwani Covers for Your Special Outfits",
+    discription:
+      "Discover a variety of Sherwani Covers designed to protect and preserve your valuable sherwanis. Turtle Covers presents a unique collection, crafted with care to ensure that your special attire remains in perfect condition for years to come.",
+    product: [
+      // Add more Sherwani Cover products as needed
+    ],
+  },
+  {
+    id: 16,
+    name: "Item 16",
+    category: "bags",
+    subCategory: "Curtains Bag",
+    heading:
+      "Discover our stylish Curtains Bags & enjoy free shipping on orders over Rs 1000.",
+    mainImage: "src/assets/desktop-curtains-bags.webp",
+    discriptionHeading: "Chic Curtains Bags for Easy Storage",
+    discription:
+      "Explore our curated collection of Curtains Bags, specially designed for convenient storage and protection of your curtains. Turtle Bags presents a unique range crafted with care to ensure that your curtains remain in perfect condition for years to come.",
+    product: [
+      // Add more Curtains Bag products as needed
+    ],
+  },
+  {
+    id: 17,
+    name: "Item 17",
+    category: "bags",
+    subCategory: "Saree Cover",
+    heading:
+      "Explore our elegant Saree Covers & enjoy free shipping on orders over Rs 1000.",
+    mainImage: "src/assets/desktop-saree-covers.webp",
+    discriptionHeading: "Stylish Saree Covers for Safekeeping",
+    discription:
+      "Discover our curated collection of Saree Covers, meticulously crafted for the convenient storage and protection of your sarees. Turtle Bags presents a unique range designed with care to ensure that your sarees remain in perfect condition for years to come.",
+    product: [
+      // Add more Saree Cover products as needed
+    ],
+  },
+  {
+    id: 18,
+    name: "Item 18",
+    category: "bags",
+    subCategory: "Tiffin Box",
+    heading:
+      "Discover our practical Tiffin Boxes & enjoy free shipping on orders over Rs 1000.",
+    mainImage: "src/assets/desktop-tiffin-boxes.webp",
+    discriptionHeading: "Functional Tiffin Boxes for On-the-Go Meals",
+    discription:
+      "Explore our curated collection of Tiffin Boxes, designed for convenient and hygienic storage of your meals on the go. Turtle Bags presents a unique range crafted with care to ensure that your food remains fresh and tasty throughout the day.",
+    product: [
+      // Add more Tiffin Box products as needed
+    ],
+  },
 ];
 
 export default staticData;
