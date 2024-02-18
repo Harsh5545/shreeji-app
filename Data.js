@@ -21,11 +21,11 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
+        img: "/Product/baby_clothes_folding_box.webp",
         heading: "Baby Clothes Hollow Rim Box with Slipcase White Floor",
         button: "",
-        headerimg: "",
-        subimg: "",
+        headerimg: "/Product/baby.jpg",
+        subimg: "baby_main.jpg",
       },
       {
         Productid: 3,
@@ -1439,9 +1439,7 @@ const staticData = [
     discriptionHeading: "Functional Tiffin Boxes for On-the-Go Meals",
     discription:
       "Explore our curated collection of Tiffin Boxes, designed for convenient and hygienic storage of your meals on the go. Turtle Bags presents a unique range crafted with care to ensure that your food remains fresh and tasty throughout the day.",
-    product: [
-      
-    ],
+    product: [],
   },
 ];
 
