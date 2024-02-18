@@ -17,6 +17,7 @@ import {
 import logo from "../../assets/logo.png";
 import { FaChevronDown } from "react-icons/fa";
 import staticData from "../../../Data";
+
 export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -42,8 +43,8 @@ export default function NavbarComponent() {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <Dropdown>
-          <NavbarItem>
+        <Dropdown className="">
+          <NavbarItem >
             <DropdownTrigger>
               <Button
                 disableRipple
@@ -58,7 +59,7 @@ export default function NavbarComponent() {
           </NavbarItem>
           <DropdownMenu
             aria-label="ACME features"
-            className="w-[1000px]"
+            className=""
             itemClasses={{
               base: "gap-4",
             }}
@@ -80,7 +81,7 @@ export default function NavbarComponent() {
             BAGS
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
+        <NavbarItem >
           <Link href="#" aria-current="page">
             FOOD PACKAGING
           </Link>
@@ -107,17 +108,6 @@ export default function NavbarComponent() {
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
-        {/* {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full"
-              href="#"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))} */}
         <Dropdown>
           <NavbarItem>
             <DropdownTrigger>
@@ -136,7 +126,7 @@ export default function NavbarComponent() {
             aria-label="ACME features"
             className="w-full"
             itemClasses={{
-              base: "gap-4 grid grid-cols-2",
+              base: "gap-4",
             }}
           >
             <DropdownItem
@@ -146,34 +136,6 @@ export default function NavbarComponent() {
             >
               Autoscaling
             </DropdownItem>
-            {/* <DropdownItem
-              key="usage_metrics"
-              description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
-              // startContent={icons.activity}
-            >
-              Usage Metrics
-            </DropdownItem>
-            <DropdownItem
-              key="production_ready"
-              description="ACME runs on ACME, join us and others serving requests at web scale."
-              // startContent={icons.flash}
-            >
-              Production Ready
-            </DropdownItem>
-            <DropdownItem
-              key="99_uptime"
-              description="Applications stay on the grid with high availability and high uptime guarantees."
-              // startContent={icons.server}
-            >
-              +99% Uptime
-            </DropdownItem>
-            <DropdownItem
-              key="supreme_support"
-              description="Overcome any challenge with a supporting team ready to respond."
-              // startContent={icons.user}
-            >
-              +Supreme Support
-            </DropdownItem>  */}
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>

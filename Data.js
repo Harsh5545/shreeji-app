@@ -6,7 +6,7 @@ const staticData = [
     category: "boxes",
     subCategory: "CLOTHIGS & APPARELS",
     heading: "Restyle Your Apparel and Clothing Packaging Boxes",
-    mainImage: "src/assets/desktop-clothing-apparels.webp",
+    mainImage: "/desktop-clothing-apparels.webp",
     discriptionHeading: "Give Your Clothing Brand A Better Box to Wear",
     discription:
       "Elevate your apparel brading with custom boxes that suit your style. From custom box for shirt, t-shirt packaging boxes to trousers, dresses and whatnot, we help you craft all kinds of personalised clothing packaging.",
@@ -143,7 +143,7 @@ const staticData = [
     category: "boxes",
     subCategory: "CONSUMER GOODS",
     heading: "Refine Your Consumer Goods with a Better Box",
-    mainImage: "src/assets/desktop-clothing-apparels.webp",
+    mainImage: "/desktop-clothing-apparels.webp",
     discriptionHeading: "From Goods to Goodies with Online Custom Packaging",
     discription:
       "Unbox your creativity and design boxes for packaging online with our innovative layouts. Build custom gift boxes with online tools by industries leading carton box manufacturers.",
@@ -244,7 +244,7 @@ const staticData = [
     category: "boxes",
     subCategory: "PERSONAL CARE & COSMETIC",
     heading: "Beautify Your Brand with Custom Cosmetic Box Designs",
-    mainImage: "src/assets/desktop-clothing-apparels.webp",
+    mainImage: "/desktop-clothing-apparels.webp",
     discriptionHeading: "Dress your Cosmetics in a Desirable Custom Box",
     discription:
       "Redefine you cosmetic box design with the aid of our online packaging tools and layouts. Craft custom boxes for cosmetics in your desired materials and your brand colours. We even help you create gift boxes for cosmetics at lowest MOQ.",
@@ -345,7 +345,7 @@ const staticData = [
     category: "boxes",
     subCategory: "BAKERY AND COOKIES",
     heading: "Custom Design Cake Boxes For a Flavourful Experience",
-    mainImage: "src/assets/desktop-clothing-apparels.webp",
+    mainImage: "/desktop-clothing-apparels.webp",
     discriptionHeading:
       "Explore Custom Bakery, Cookies and Biscuit Boxes Packaging",
     discription:
@@ -455,7 +455,7 @@ const staticData = [
     category: "boxes",
     subCategory: "BEVERAGES",
     heading: "Box in the Goodness",
-    mainImage: "src/assets/desktop-clothing-apparels.webp",
+    mainImage: "/desktop-clothing-apparels.webp",
     discriptionHeading: "Suave Packagings for Savoury Delights",
     discription:
       "Discover trending layouts and build a custom food and beverage packaging for those savoury delights. Craft your own custom box for packaging to boost your branding.",
@@ -540,7 +540,7 @@ const staticData = [
     category: "boxes",
     subCategory: "CHOCOLATES AND CONFECTIONERY",
     heading: "Unbox Your Packaging’s Potential",
-    mainImage: "src/assets/desktop-clothing-apparels.webp",
+    mainImage: "/desktop-clothing-apparels.webp",
     discriptionHeading:
       "Reimagine your Custom Chocolate Packaging Boxes with our Creative Templates",
     discription:
@@ -666,7 +666,7 @@ const staticData = [
     category: "boxes",
     subCategory: "FOOD & RESTAURANTS",
     heading: "Give Your Food Boxes Packaging an Appetizing Appeal",
-    mainImage: "src/assets/desktop-clothing-apparels.webp",
+    mainImage: "/desktop-clothing-apparels.webp",
     discriptionHeading:
       "Add a custom appeal to your appetizing meals with our online packaging tools.",
     discription:
