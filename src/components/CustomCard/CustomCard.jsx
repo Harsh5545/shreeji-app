@@ -15,9 +15,6 @@ const CustomCard = (props) => {
             alt="img"
           />
         </CardContent>
-        <CardDescription>
-          <h5 className="my-1 roboto-regular">{name}</h5>
-        </CardDescription>
         <CardFooter>
           <Link to={`/category/${subCategory}`} className="p-2 rounded-md m-1 align-middle mx-auto roboto-medium border-2 border-[] bg-green-400 hover:bg-green-500 transition-all ease-in-out">
           <Button

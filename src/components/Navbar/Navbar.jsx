@@ -4,7 +4,6 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
   Button,
   NavbarMenuToggle,
   NavbarMenu,
@@ -14,6 +13,7 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "@nextui-org/react";
+import {Link} from "react-router-dom"
 import logo from "../../assets/logo.png";
 import { FaChevronDown } from "react-icons/fa";
 import staticData from "../../../Data";
@@ -38,7 +38,9 @@ export default function NavbarComponent() {
           className="sm:hidden"
         />
         <NavbarBrand>
+          <Link to="/">
           <img src={logo} alt="shreeji logo" width="120" />
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
@@ -70,7 +72,9 @@ export default function NavbarComponent() {
                   key={item.id}
                   // startContent={icons.scale}    for icons
                 >
+                  <Link to={`/category/${item.subCategory}`}>
                   {item.subCategory}
+                  </Link>
                 </DropdownItem>
               );
             })}
@@ -124,18 +128,21 @@ export default function NavbarComponent() {
           </NavbarItem>
           <DropdownMenu
             aria-label="ACME features"
-            className="w-full"
+            className=""
             itemClasses={{
               base: "gap-4",
             }}
           >
-            <DropdownItem
-              key="autoscaling"
-              description="ACME scales apps to meet user demand, automagically, based on load."
-              // startContent={icons.scale}
-            >
-              Autoscaling
-            </DropdownItem>
+            {staticData.map((item) => {
+              return (
+                <DropdownItem
+                  key={item.id}
+                  // startContent={icons.scale}    for icons
+                >
+                  {item.subCategory}
+                </DropdownItem>
+              );
+            })}
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
