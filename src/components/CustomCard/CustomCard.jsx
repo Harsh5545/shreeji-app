@@ -6,19 +6,19 @@ const CustomCard = (props) => {
   const { name, title, mainImage, category, subCategory, productId } =
     props.item;
   return (
-    <div className="">
-      <CardContent className="">
+    <div className="flex flex-col justify-between">
+      <CardContent className="flex flex-col justify-start">
         <img
           className="p-1 rounded-md hover:zoom-in-50"
           src={mainImage}
           alt="img"
         />
+        <p className="text-center md:text-nowrap text-[#EF7F1B]">{subCategory}</p>
       </CardContent>
-      <CardFooter className="flex flex-col gap-3 items-center">
-        <p className="text-center text-nowrap text-green-400">{subCategory}</p>
+      <CardFooter>
         <Link
           to={`/category/${subCategory}`}
-          className="mx-auto w-28 h-8 flex justify-center items-center roboto-medium transition-all ease-in-out text-[#fff] bg-[#333] py-[10px] px-[17px] rounded-[50px] text-sm  hover:bg-gradient-to-r from-[#74B846] to-[#3F6338]"
+          className="mx-auto w-28 h-8 flex justify-center items-center roboto-medium transition-all ease-in-out text-[#fff] bg-[#333] py-[10px] px-[17px] rounded-[50px] text-sm  hover:bg-gradient-to-r from-[#f0a868] to-[#cf7d35]"
         >
           Order Now
         </Link>
