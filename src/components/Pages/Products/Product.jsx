@@ -17,11 +17,18 @@ const Product = () => {
 
   console.log(foundProduct);
   return (
-    <div className="w-[90%] mx-auto text-center my-10">
-      <h2 className="text-2xl underline text-green-600 roboto-black">Product Page</h2>
-      <p className="text-base roboto-black my-3">Category : {categoryId}</p>
-      <p className="text-base roboto-black my-3">{productId}</p>
-      <p className="text-base roboto-black my-3">{foundProduct.heading}</p>
+    <div className="w-[75%] mx-auto  my-10">
+      <h1 className="p-1 my-5 font-bold text-5xl">Heading</h1>
+      <div className="grid grid-cols-2">
+        <div className="">
+          <img
+            src="/baby_clothes_folding_box.webp"
+            alt="shreeji Graphics Product"
+            height={800}
+          />
+        </div>
+        <div></div>
+      </div>
     </div>
   );
 };

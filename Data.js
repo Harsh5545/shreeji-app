@@ -1440,7 +1440,7 @@ const staticData = [
     discription:
       "Explore our curated collection of Tiffin Boxes, designed for convenient and hygienic storage of your meals on the go. Turtle Bags presents a unique range crafted with care to ensure that your food remains fresh and tasty throughout the day.",
     product: [
-      // Add more Tiffin Box products as needed
+      
     ],
   },
 ];
