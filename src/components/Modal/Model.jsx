@@ -9,20 +9,36 @@ import {
   Checkbox,
   Input,
   Link,
+  Textarea,
 } from "@nextui-org/react";
 import { MailIcon } from "./MailIcon.jsx";
-import { LockIcon } from "./LockIcon.jsx";
+import { PhoneIcon } from "./PhoneIcon.jsx";
+import { NameIcon } from "./NameIcon.jsx";
 export default function CustomModel({ isOpen, onOpen, onOpenChange }) {
-  
-
   return (
     <>
-      <Modal backdrop={"blur"} isOpen={isOpen} onOpenChange={onOpenChange} placement="top-center">
+      <Modal
+        backdrop={"blur"}
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        placement="top-center"
+      >
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Contact Us</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">
+                Contact Us
+              </ModalHeader>
               <ModalBody>
+                <Input
+                  autoFocus
+                  endContent={
+                    <NameIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+                  }
+                  label="Name"
+                  placeholder="Enter your Name"
+                  variant="bordered"
+                />
                 <Input
                   autoFocus
                   endContent={
@@ -34,20 +50,27 @@ export default function CustomModel({ isOpen, onOpen, onOpenChange }) {
                 />
                 <Input
                   endContent={
-                    <LockIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+                    <PhoneIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
                   }
-                  label="Password"
-                  placeholder="Enter your password"
-                  type="password"
+                  label="Phone No"
+                  placeholder="Enter your Phone No"
                   variant="bordered"
                 />
-                <div className="flex py-2 px-1 justify-between">
-                
-                </div>
+                <Textarea
+                  label="Description"
+                  variant="bordered"
+                  placeholder="Enter your description"
+                  disableAnimation
+                  disableAutosize
+                  classNames={{
+                    input: "resize-y min-h-[40px]",
+                  }}
+                />
+                <div className="flex py-2 px-1 justify-between"></div>
               </ModalBody>
-              <ModalFooter>
-                <Button color="primary" onPress={onClose}>
-                  Sign in
+              <ModalFooter className="mx-auto roboto-bold">
+                <Button color="success" onPress={onClose}>
+                  Send Message
                 </Button>
               </ModalFooter>
             </>
