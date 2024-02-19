@@ -38,16 +38,16 @@ function Home() {
           packaging for their products.
         </p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-auto max-w-screen-xl my-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-auto  my-5 w-[90%]">
         {staticData.slice(0, 12).map((item) => {
-          return <CustomCard item={item} key={item.id} />;
+          return <CustomCard item={item} key={item.id} title="CHECK NOW" />;
         })}
       </div>
       <HomeService />
       <HomeCustomBox />
       <HomeProcess />
-      <HomeBenefit/>
-      <HomeAbout/>
+      <HomeBenefit />
+      <HomeAbout />
     </>
   );
 }

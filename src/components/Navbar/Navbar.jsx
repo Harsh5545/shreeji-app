@@ -13,13 +13,16 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "@nextui-org/react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { FaChevronDown } from "react-icons/fa";
 import staticData from "../../../Data";
-
+import { MdCall } from "react-icons/md";
+import CustomModel from "../Modal/Model";
+import { useDisclosure } from "@nextui-org/react";
 export default function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   const menuItems = [
     "BOXES",
@@ -31,146 +34,154 @@ export default function NavbarComponent() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
-        <NavbarBrand>
-          <Link to="/">
-          <img src={logo} alt="shreeji logo" width="120" />
-          </Link>
-        </NavbarBrand>
-      </NavbarContent>
+    <>
+      <CustomModel
+        isOpen={isOpen}
+        onOpen={onOpen}
+        onOpenChange={onOpenChange}
+      />
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <Dropdown className="">
-          <NavbarItem >
-            <DropdownTrigger>
-              <Button
-                disableRipple
-                className="p-0 bg-transparent data-[hover=true]:bg-transparent"
-                endContent={<FaChevronDown />}
-                radius="sm"
-                variant="light"
-              >
-                BOXES
-              </Button>
-            </DropdownTrigger>
-          </NavbarItem>
-          <DropdownMenu
-            aria-label="ACME features"
-            className=""
-            itemClasses={{
-              base: "gap-4",
-            }}
-          >
-            {staticData.map((item) => {
-              return (
-                <DropdownItem
-                  key={item.id}
-                  // startContent={icons.scale}    for icons
+      <Navbar onMenuOpenChange={setIsMenuOpen}>
+        <NavbarContent>
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            className="sm:hidden"
+          />
+          <NavbarBrand>
+            <Link to="/">
+              <img src={logo} alt="shreeji logo" width="120" />
+            </Link>
+          </NavbarBrand>
+        </NavbarContent>
+
+        <NavbarContent className="hidden sm:flex gap-6" justify="center">
+          <Dropdown className="">
+            <NavbarItem>
+              <DropdownTrigger>
+                <Button
+                  disableRipple
+                  className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  endContent={<FaChevronDown />}
+                  radius="sm"
+                  variant="light"
                 >
-                  <Link to={`/category/${item.subCategory}`}>
-                  {item.subCategory}
-                  </Link>
-                </DropdownItem>
-              );
-            })}
-          </DropdownMenu>
-        </Dropdown>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            BAGS
-          </Link>
-        </NavbarItem>
-        <NavbarItem >
-          <Link href="#" aria-current="page">
-            FOOD PACKAGING
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            RIGID BOXES
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            CUSTOM LABELS
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            ABOUT
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="flex">
-          <Link href="#">CONTACT</Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarMenu>
-        <Dropdown>
+                  BOXES
+                </Button>
+              </DropdownTrigger>
+            </NavbarItem>
+            <DropdownMenu
+              aria-label="ACME features"
+              className=""
+              itemClasses={{
+                base: "gap-4",
+              }}
+            >
+              {staticData.map((item) => {
+                return (
+                  <DropdownItem
+                    key={item.id}
+                    // startContent={icons.scale}    for icons
+                  >
+                    <Link to={`/category/${item.subCategory}`}>
+                      {item.subCategory}
+                    </Link>
+                  </DropdownItem>
+                );
+              })}
+            </DropdownMenu>
+          </Dropdown>
           <NavbarItem>
-            <DropdownTrigger>
-              <Button
-                disableRipple
-                className="p-0 bg-transparent data-[hover=true]:bg-transparent"
-                endContent={<FaChevronDown />}
-                radius="sm"
-                variant="light"
-              >
-                BOXES
-              </Button>
-            </DropdownTrigger>
+            <Link color="foreground" href="#">
+              BAGS
+            </Link>
           </NavbarItem>
-          <DropdownMenu
-            aria-label="ACME features"
-            className=""
-            itemClasses={{
-              base: "gap-4",
-            }}
-          >
-            {staticData.map((item) => {
-              return (
-                <DropdownItem
-                  key={item.id}
-                  // startContent={icons.scale}    for icons
+          <NavbarItem>
+            <Link href="#" aria-current="page">
+              FOOD PACKAGING
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              RIGID BOXES
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              CUSTOM LABELS
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              ABOUT
+            </Link>
+          </NavbarItem>
+        </NavbarContent>
+        <NavbarContent justify="end">
+          <NavbarItem className="flex">
+            <Button onPress={onOpen}>CONTACT</Button>
+          </NavbarItem>
+        </NavbarContent>
+        <NavbarMenu>
+          <Dropdown>
+            <NavbarItem>
+              <DropdownTrigger>
+                <Button
+                  disableRipple
+                  className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  endContent={<FaChevronDown />}
+                  radius="sm"
+                  variant="light"
                 >
-                  {item.subCategory}
-                </DropdownItem>
-              );
-            })}
-          </DropdownMenu>
-        </Dropdown>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            BAGS
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            FOOD PACKAGING
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            RIGID BOXES
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            CUSTOM LABELS
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            ABOUT
-          </Link>
-        </NavbarItem>
-      </NavbarMenu>
-    </Navbar>
+                  BOXES
+                </Button>
+              </DropdownTrigger>
+            </NavbarItem>
+            <DropdownMenu
+              aria-label="ACME features"
+              className=""
+              itemClasses={{
+                base: "gap-4",
+              }}
+            >
+              {staticData.map((item) => {
+                return (
+                  <DropdownItem
+                    key={item.id}
+                    // startContent={icons.scale}    for icons
+                  >
+                    {item.subCategory}
+                  </DropdownItem>
+                );
+              })}
+            </DropdownMenu>
+          </Dropdown>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              BAGS
+            </Link>
+          </NavbarItem>
+          <NavbarItem isActive>
+            <Link href="#" aria-current="page">
+              FOOD PACKAGING
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              RIGID BOXES
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              CUSTOM LABELS
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              ABOUT
+            </Link>
+          </NavbarItem>
+        </NavbarMenu>
+      </Navbar>
+    </>
   );
 }
