@@ -150,7 +150,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/board_game_box_packaging.jpg",
         heading: "Board Game Box Packaging",
         button: "",
         headerimg: "",
@@ -158,7 +158,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/box_packaging.jpg",
         heading: "Box Packaging",
         button: "",
         headerimg: "",
@@ -166,7 +166,7 @@ const staticData = [
       },
       {
         Productid: 3,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/bulb_box.jpg",
         heading: "Bulb Box",
         button: "",
         headerimg: "",
@@ -174,7 +174,7 @@ const staticData = [
       },
       {
         Productid: 4,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/butter_box_packaging.jpg",
         heading: "Butter Box Packaging",
         button: "",
         headerimg: "",
@@ -182,7 +182,7 @@ const staticData = [
       },
       {
         Productid: 5,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/candle_drawer_box.jpg",
         heading: "Candle Drawer Box",
         button: "",
         headerimg: "",
@@ -190,7 +190,7 @@ const staticData = [
       },
       {
         Productid: 6,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/cards_game_packaging.jpg",
         heading: "Cards Game Packaging",
         button: "",
         headerimg: "",
@@ -198,7 +198,7 @@ const staticData = [
       },
       {
         Productid: 7,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/cookware_box.jpg",
         heading: "Cookware Box",
         button: "",
         headerimg: "",
