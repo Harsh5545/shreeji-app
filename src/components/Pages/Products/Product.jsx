@@ -13,10 +13,6 @@ const Product = () => {
     (product) => product.Productid === parseInt(productId)
   );
 
-  console.log(categoryId, productId);
-  console.log(foundProduct);
-
-  console.log(foundProduct);
   return (
     <div className="md:w-[75%] mx-auto  my-10">
       <h1 className="p-1 my-5 font-bold text-5xl">Heading</h1>
@@ -57,7 +53,7 @@ const Product = () => {
           </div>
           <div className="flex justify-between">
             <p className=" font-normal md:text-lg text-md">Box Types</p>
-            <select className=" p-1  border md:text-lg text-md outline-none hover:border-orange-500 border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+            <select className=" p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
               <option>Standard Packaging</option>
               <option>Plain Box/Non Printed</option>
               <option>Food Safe Packaging</option>
@@ -66,14 +62,14 @@ const Product = () => {
           </div>
           <div className="flex justify-between">
             <p className=" font-normal md:text-lg text-md">Material</p>
-            <select className=" p-1  border md:text-lg text-md outline-none hover:border-orange-500 border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+            <select className=" p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
               <option>SBM/FBB 300 GSM</option>
               <option>SBM/FBB 350 GSM</option>
             </select>
           </div>
           <div className="flex justify-between">
             <p className=" font-normal md:text-lg text-md">Refinement</p>
-            <select className=" p-1  border md:text-lg text-md outline-none hover:border-orange-500 border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+            <select className=" p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
               <option>None</option>
               <option>Spot UV</option>
               <option>Foil Stamping</option>
@@ -81,7 +77,7 @@ const Product = () => {
           </div>
           <div className="flex justify-between">
             <p className=" font-normal md:text-lg text-md">Finishes</p>
-            <select className=" p-1  border md:text-lg text-md outline-none hover:border-orange-500 border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+            <select className=" p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
               <option>None</option>
               <option>Gloss Lamination</option>
               <option>Matt Lamination</option>
@@ -91,7 +87,7 @@ const Product = () => {
           </div>
           <div className="flex justify-between">
             <p className=" font-normal md:text-lg text-md">Production</p>
-            <select className=" /p-1  border md:text-lg text-md outline-none hover:border-orange-500 border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+            <select className=" /p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
               <option>Standard (8/10 Days)</option>
               <option>standard (3/4 Days)</option>
             </select>
