@@ -1,5 +1,4 @@
 const staticData = [
-  
   {
     id: 1,
     name: "Item 1",
@@ -251,7 +250,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/cosmetic_box_packaging.jpg",
         heading: "Cosmetic Box Packaging",
         button: "",
         headerimg: "",
@@ -259,7 +258,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/cosmetic_gift_packaging_box.jpg",
         heading: "Cosmetic Gift Packaging Box",
         button: "",
         headerimg: "",
@@ -267,7 +266,7 @@ const staticData = [
       },
       {
         Productid: 3,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/foundation_packaging_box.jpg",
         heading: "Foundation Packaging Box",
         button: "",
         headerimg: "",
@@ -275,7 +274,7 @@ const staticData = [
       },
       {
         Productid: 4,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/lipstick_packaging_box.jpg",
         heading: "Lipstick Packaging Box",
         button: "",
         headerimg: "",
@@ -283,7 +282,7 @@ const staticData = [
       },
       {
         Productid: 5,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/makeup_box_with_sleeve.jpg",
         heading: "Skincare Kit Packaging",
         button: "",
         headerimg: "",
@@ -291,7 +290,7 @@ const staticData = [
       },
       {
         Productid: 6,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/sanitary_pads_packaging_box.jpg",
         heading: "Sanitary Pads Packaging Box",
         button: "",
         headerimg: "",
@@ -299,7 +298,7 @@ const staticData = [
       },
       {
         Productid: 7,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/personal_care_kit_gift_packaging.jpg",
         heading: "Personal Care Kit Gift Packaging",
         button: "",
         headerimg: "",
@@ -307,7 +306,7 @@ const staticData = [
       },
       {
         Productid: 8,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/skincare_kit_packaging.jpg",
         heading: "Makeup Box with Sleeve",
         button: "",
         headerimg: "",
@@ -315,7 +314,7 @@ const staticData = [
       },
       {
         Productid: 9,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/slide_-_drawer_cosmetic_packaging_boxes.jpg",
         heading: "Slide / Drawer Cosmetic Packaging Boxes",
         button: "",
         headerimg: "",
@@ -323,7 +322,7 @@ const staticData = [
       },
       {
         Productid: 10,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/soap_pillow_box_packaging.jpg",
         heading: "Soap Pillow Box Packaging",
         button: "",
         headerimg: "",
@@ -331,7 +330,7 @@ const staticData = [
       },
       {
         Productid: 11,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/soap_sleeve_packaging_1.jpg",
         heading: "Soap Sleeve Packaging",
         button: "",
         headerimg: "",
