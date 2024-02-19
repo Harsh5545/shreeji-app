@@ -352,7 +352,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/biscuit_boxes_packaging.jpg",
         heading: "Biscuit Boxes Packaging",
         button: "",
         headerimg: "",
@@ -360,7 +360,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/cookie_packaging_box.jpg",
         heading: "Cookie Packaging Box",
         button: "",
         headerimg: "",
@@ -368,7 +368,7 @@ const staticData = [
       },
       {
         Productid: 3,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/custom_cookies_boxes.jpg",
         heading: "Custom Cookies Boxes",
         button: "",
         headerimg: "",
@@ -376,7 +376,7 @@ const staticData = [
       },
       {
         Productid: 4,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/custom_cup_cake_box.jpg",
         heading: "Custom Cup Cake Box",
         button: "",
         headerimg: "",
@@ -384,7 +384,7 @@ const staticData = [
       },
       {
         Productid: 5,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/custom_oats_packaging_.jpg",
         heading: "Custom Oats Packaging",
         button: "",
         headerimg: "",
@@ -392,7 +392,7 @@ const staticData = [
       },
       {
         Productid: 6,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/custom_printed_boxes.jpg",
         heading: "Custom Printed Boxes",
         button: "",
         headerimg: "",
