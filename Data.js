@@ -13,7 +13,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
-        img: "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg",
+        img: "/Product/baby_clothes_folding_box.webp",
         heading: "Baby Clothes Folding Box",
         button: "",
         headerimg: "",
@@ -21,7 +21,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "/Product/baby_clothes_folding_box.webp",
+        img: "/Product/baby_clothes_hollow_rim_box_with_slipcase_white_floor.jpg",
         heading: "Baby Clothes Hollow Rim Box with Slipcase White Floor",
         button: "",
         headerimg: "/Product/baby.jpg",
