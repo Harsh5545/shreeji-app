@@ -206,7 +206,7 @@ const staticData = [
       },
       {
         Productid: 8,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/incense_box.jpg",
         heading: "Incense Box",
         button: "",
         headerimg: "",
@@ -214,7 +214,7 @@ const staticData = [
       },
       {
         Productid: 9,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/jewellery_pillow_packaging.jpg",
         heading: "Jewellery Pillow Packaging",
         button: "",
         headerimg: "",
@@ -222,7 +222,7 @@ const staticData = [
       },
       {
         Productid: 10,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/long_box.jpg",
         heading: "Long Box",
         button: "",
         headerimg: "",
@@ -230,7 +230,7 @@ const staticData = [
       },
       {
         Productid: 9,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/sleeve_packaging.jpg",
         heading: "Sleeve Packaging",
         button: "",
         headerimg: "",
