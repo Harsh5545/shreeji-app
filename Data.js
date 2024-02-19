@@ -400,7 +400,7 @@ const staticData = [
       },
       {
         Productid: 7,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/custom_printed_donut_boxes.jpg",
         heading: "Custom Printed Donut Boxes",
         button: "",
         headerimg: "",
@@ -408,7 +408,7 @@ const staticData = [
       },
       {
         Productid: 8,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/food_tray_packaging.jpg",
         heading: "Food Tray Packaging",
         button: "",
         headerimg: "",
@@ -416,7 +416,7 @@ const staticData = [
       },
       {
         Productid: 9,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/hexagonal-tray-donuts1.jpg",
         heading: "Hexagonal Food Tray",
         button: "",
         headerimg: "",
@@ -424,7 +424,7 @@ const staticData = [
       },
       {
         Productid: 10,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/macaron_drawer_boxes.jpg",
         heading: "Macaron drawer Boxes",
         button: "",
         headerimg: "",
@@ -432,7 +432,7 @@ const staticData = [
       },
       {
         Productid: 11,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/pre_mix_cake_box.jpg",
         heading: "Pre Mix Cake Box",
         button: "",
         headerimg: "",
@@ -440,7 +440,7 @@ const staticData = [
       },
       {
         Productid: 12,
-        img: "/Product/luxury_clothing_box.jpg",
+        img: "/Product/rusk_packaging_box.jpg",
         heading: "Rusk Packaging Box",
         button: "",
         headerimg: "",
