@@ -1,29 +1,38 @@
 import React from "react";
-import { Card, CardContent, CardDescription, CardFooter } from "../ui/card";
+import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
 const CustomCard = (props) => {
   const { name, title, mainImage, category, subCategory, productId } =
     props.item;
+
   return (
-    <div className="flex flex-col justify-between">
-      <CardContent className="flex flex-col justify-start">
-        <img
-          className="p-1 rounded-md hover:zoom-in-50"
+    <Card shadow="lg" isPressable className="bg-yellow-50 w-full">
+      <CardBody className="overflow-visible p-1">
+        <Image
+          isBlurred
+          isZoomed
+          disableSkeleton
+          width="100%"
+          height={350}
+          shadow="lg"
+          radius="sm"
+          alt=""
+          className="w-full object-cover"
           src={mainImage}
-          alt="img"
         />
-        <p className="text-center md:text-nowrap text-[#EF7F1B]">{subCategory}</p>
-      </CardContent>
-      <CardFooter>
+      </CardBody>
+      <CardFooter className="text-[11px] justify-between text-[#EF7F1B] w-full items-start my-2">
+        <p>{subCategory}</p>
+
         <Link
           to={`/category/${subCategory}`}
-          className="mx-auto w-28 h-8 flex justify-center items-center roboto-medium transition-all ease-in-out text-[#fff] bg-[#333] py-[10px] px-[17px] rounded-[50px] text-sm  hover:bg-gradient-to-r from-[#f0a868] to-[#cf7d35]"
+          className="text-default-500 underline rounded-sm  hover:text-gradient-to-r from-[#f0a868] to-[#cf7d35]"
         >
-          Order Now
+          {props.title}
         </Link>
       </CardFooter>
-    </div>
+    </Card>
   );
 };
 

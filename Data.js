@@ -1,5 +1,5 @@
-// src/data/staticData.js
 const staticData = [
+  
   {
     id: 1,
     name: "Item 1",
