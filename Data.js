@@ -1458,7 +1458,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/image_2.jpg",
         heading: "Roll Box",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1466,7 +1466,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/image_3.jpg",
         heading: "Burger Box",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1474,7 +1474,7 @@ const staticData = [
       },
       {
         Productid: 3,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/image_4.jpg",
         heading: "Sweet Box",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1482,7 +1482,7 @@ const staticData = [
       },
       {
         Productid: 4,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/image_5.jpg",
         heading: "Veg Meal Box",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
