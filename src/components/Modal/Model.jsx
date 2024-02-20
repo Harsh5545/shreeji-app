@@ -17,9 +17,12 @@ import { NameIcon } from "./NameIcon.jsx";
 import { apiCall } from "../../Api/Api.js";
 import toast, { Toaster } from "react-hot-toast";
 export default function CustomModel({ isOpen, onOpen, onOpenChange }) {
-  // const notify = () => toast.success("We Will get Back You Soon.");
+
 
   const postData = async () => {
+    const toastId = toast.loading("Sending Message...",{
+      position:"top-right"
+    });
     const apiUrl = "https://api.hdfonline.in/api/v1/sendMail";
 
     const postData = {
@@ -44,37 +47,20 @@ export default function CustomModel({ isOpen, onOpen, onOpenChange }) {
         data: postData,
         headers: headers,
       });
+      if (responseData.status) {
+        toast.success("We Will Get Back To You Soon..", {
+          id: toastId,
+          position:"top-right"
+        });
+      }
     } catch (error) {
       console.error("Error in posting data:", error);
+      toast.error("Oop's Something Went Wrong..", {
+        id: toastId,
+        position:"top-right"
+      });
     }
-
   };
-
-  // const myPromise = postData;
-
-  //   toast.promise(myPromise, {
-  //     loading: "Sending Message...",
-  //     success: "We Will get Back You Soon.",
-  //     error: "Oop's Something Went Wrong..",
-  //   });
-
-    // toast.promise(
-    //   postData,
-    //   {
-    //     loading: "Sending Message...",
-    //     success: "We Will get Back You Soon.",
-    //     error: "Oop's Something Went Wrong..",
-    //   },
-    //   {
-    //     style: {
-    //       minWidth: '250px',
-    //     },
-    //     success: {
-    //       duration: 5000,
-    //       icon: '🔥',
-    //     },
-    //   }
-    // );
 
   return (
     <>
