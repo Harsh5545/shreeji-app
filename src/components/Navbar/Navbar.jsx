@@ -96,7 +96,7 @@ export default function NavbarComponent() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#" aria-current="page">
+            <Link to="/foodpackaging" aria-current="page">
               FOOD PACKAGING
             </Link>
           </NavbarItem>
