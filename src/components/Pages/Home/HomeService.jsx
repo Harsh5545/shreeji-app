@@ -1,7 +1,7 @@
 import React from "react";
-import toast, { Toaster } from "react-hot-toast";
+
 function HomeService() {
-  const notify = () => toast.success("Here is your toast.");
+  
   return (
     <div className="bg-[#F2F0F1]">
       <div className="mx-auto max-w-screen-xl py-5 px-5 grid md:grid-cols-2">
@@ -50,12 +50,7 @@ function HomeService() {
         </div>
 
         <div>
-          <button onClick={notify}>Make me a toast</button>
-          <Toaster
-            containerStyle={{
-              right: 20,
-            }}
-          />
+          
         </div>
       </div>
     </div>

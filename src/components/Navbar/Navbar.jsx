@@ -118,7 +118,7 @@ export default function NavbarComponent() {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="flex">
-            <Button onPress={onOpen}>CONTACT</Button>
+            <Button onClick={onOpen}>CONTACT</Button>
           </NavbarItem>
         </NavbarContent>
         <NavbarMenu>
