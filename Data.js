@@ -1443,6 +1443,53 @@ const staticData = [
       "Explore our curated collection of Tiffin Boxes, designed for convenient and hygienic storage of your meals on the go. Turtle Bags presents a unique range crafted with care to ensure that your food remains fresh and tasty throughout the day.",
     product: [],
   },
+  {
+    id: 19,
+    name: "Item 14",
+    category: "Food Packaging",
+    subCategory: "Food Packaging",
+    heading:
+      "Grow your cloud kitchen and restaurant food business with packaging and box solutions from Turtle Boxes",
+    mainImage: "src/assets/desktop-shopping-bags.webp",
+    discriptionHeading:
+      "Unwrap the Culinary Delight! Explore Foodie Theme Printed & Unprinted Boxes.",
+    discription:
+      "Indulge in the exquisite world of gastronomy with our premium rigid cardboard boxes crafted to preserve and showcase your delectable treats. Whether transporting savoury dishes or delightful desserts, these boxes are tailored to meet your culinary requirements. Their durability, convenient storage, and stackable design make them perfect for any dining occasion.",
+    product: [
+      {
+        Productid: 1,
+        img: "/Product/Coffee&Tea/image_1.jpg",
+        heading: "Roll Box",
+        button: "",
+        headerimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Coffee&Tea/image_1.jpg",
+      },
+      {
+        Productid: 2,
+        img: "/Product/Coffee&Tea/image_1.jpg",
+        heading: "Burger Box",
+        button: "",
+        headerimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Coffee&Tea/image_1.jpg",
+      },
+      {
+        Productid: 3,
+        img: "/Product/Coffee&Tea/image_1.jpg",
+        heading: "Sweet Box",
+        button: "",
+        headerimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Coffee&Tea/image_1.jpg",
+      },
+      {
+        Productid: 4,
+        img: "/Product/Coffee&Tea/image_1.jpg",
+        heading: "Veg Meal Box",
+        button: "",
+        headerimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Coffee&Tea/image_1.jpg",
+      },
+    ],
+  },
 ];
 
 export default staticData;
