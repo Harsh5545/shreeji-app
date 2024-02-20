@@ -1493,3 +1493,36 @@ const staticData = [
 ];
 
 export default staticData;
+
+
+export const boxesData = [
+  "Bakery & Cakes",
+  "Beverages",
+  "Clothing & Apparels",
+  "Consumer Goods",
+  "Coffee & Tea",
+  "E-commerce",
+  "Chocolates & Confectionery",
+  "Food & Restaurants",
+  "Gifting",
+  "Personal Care & Cosmetics",
+  "Design Custom Box",
+  "Rigid Boxes",
+  "Sample Box Set",
+];
+export const companyData = [
+  "About Us",
+  "Services and Benefits",
+  "Artworks Instructions",
+  "Blogs",
+  "Bulk Enquiry",
+];
+export const helpData = [
+  "Contact Us",
+  "FAQ",
+  "Billing Terms & Conditions",
+  "Privacy Policy",
+  "Return & Refund Policy",
+  "International Return and Refund Policy",
+  "Cookie Policy",
+];
