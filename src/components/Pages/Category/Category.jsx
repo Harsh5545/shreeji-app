@@ -5,7 +5,8 @@ import NewCard from "../../NewCard/NewCard";
 import NewCardLoading from "../../NewCard/NewCardLoading";
 import { Spinner } from "@nextui-org/react";
 import { Image } from "@nextui-org/react";
-
+import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 const Category = () => {
   const [loading, setLoading] = useState(true);
   const [category, setCategory] = useState(null);
@@ -24,6 +25,7 @@ const Category = () => {
         (category) => category.subCategory === categoryId
       );
       setCategory(foundCategory);
+      console.log(category);
       setIsLoaded(false);
       setLoading(false);
     };
@@ -61,13 +63,57 @@ const Category = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  // const backgroundImageUrl = "url('/Main-Images/image_1.jpg')";
+  const backgroundImageUrl = `url(${category?.mainImage})`;
+  const capitalizeFirstLetter = (str) => {
+    return str
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(" ");
+  };
 
   return (
     <>
+      <div className="my-2 ml-2">
+        <Breadcrumbs>
+          <BreadcrumbItem>
+            <Link to={"/"} replace>
+              Home
+            </Link>
+          </BreadcrumbItem>
+          <BreadcrumbItem>
+            <Link to={`/category/${category?.subCategory}`}>
+              {capitalizeFirstLetter(category?.subCategory ? category?.subCategory : "Category" )}
+            </Link>
+          </BreadcrumbItem>
+        </Breadcrumbs>
+      </div>
+
       <div>
-        <h1 className="text-2xl text-center underline">
-          {category?.subCategory}
-        </h1>
+        <div
+          style={{
+            background: backgroundImageUrl,
+            backgroundSize: "contain",
+            minHeight: "60vh",
+            backgroundImage: "no-repeat",
+          }}
+        >
+          <div className="flex justify-start items-center h-[60vh] w-[45%] mx-auto text-center">
+            <h2 className="p-5 font-medium md:text-4xl text-5xl">
+              {category?.heading}
+            </h2>
+          </div>
+        </div>
+        <div className="w-full">
+          <div className="flex justify-center items-center flex-col md:m-20 m-10">
+            <h3 className="p-1 md:w-[75%] w-[90%] text-center font-medium md:text-4xl text-xl  md:mb-10 mb-5">
+              {category?.discriptionHeading}
+            </h3>
+            <p className=" md:w-[60%] w-[80%] text-center p-1 font-normal  md:text-md text-sm">
+              {category?.discription}
+            </p>
+          </div>
+        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-auto max-w-screen-xl my-20">
         {loading ? (
