@@ -44,9 +44,9 @@ function HomeService() {
               <p className="font-bold text-sm">Custom Styles & Materials</p>
             </div>
           </div>
-          <button className="bg-gradient-to-r from-[#f0a868] to-[#cf7d35] text-white p-2 rounded-[50px] w-24">
+          <a className="bg-gradient-to-r from-[#f0a868] to-[#cf7d35] text-white p-2 rounded-[50px] w-24 text-center" href="https://wa.me/+918828091532?text=Hi%20Shreeji%20Graphics,%0A%0AI%20am%20interested%20in%20your%20packaging%20services.%20Can%20we%20discuss%20further?" target="_blank">
             Get Now
-          </button>
+          </a>
         </div>
 
         <div>

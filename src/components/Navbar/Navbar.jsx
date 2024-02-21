@@ -91,27 +91,27 @@ export default function NavbarComponent() {
             </DropdownMenu>
           </Dropdown>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link to={`/category/bags`} color="foreground" >
               BAGS
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link to="/foodpackaging" aria-current="page">
+            <Link to={`/category/Food Packaging`} aria-current="page">
               FOOD PACKAGING
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link to={`/category/Rigid Boxes`} color="foreground" >
               RIGID BOXES
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link to={`/category/Custom Labels`} color="foreground" >
               CUSTOM LABELS
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" >
               ABOUT
             </Link>
           </NavbarItem>

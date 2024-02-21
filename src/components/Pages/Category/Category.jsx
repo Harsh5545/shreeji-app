@@ -15,6 +15,7 @@ const Category = () => {
   const [loadingMore, setLoadingMore] = useState(false);
 
   const { categoryId } = useParams();
+  console.log(categoryId)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,7 +23,7 @@ const Category = () => {
       setIsLoaded(true);
       await new Promise((resolve) => setTimeout(resolve, 1000));
       const foundCategory = staticData.find(
-        (category) => category.subCategory === categoryId
+        (category) => category.subCategory === categoryId || category.category === categoryId
       );
       setCategory(foundCategory);
       console.log(category);

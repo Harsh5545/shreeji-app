@@ -17,11 +17,9 @@ import { NameIcon } from "./NameIcon.jsx";
 import { apiCall } from "../../Api/Api.js";
 import toast, { Toaster } from "react-hot-toast";
 export default function CustomModel({ isOpen, onOpen, onOpenChange }) {
-
-
   const postData = async () => {
-    const toastId = toast.loading("Sending Message...",{
-      position:"top-right"
+    const toastId = toast.loading("Sending Message...", {
+      position: "top-right",
     });
     const apiUrl = "https://api.hdfonline.in/api/v1/sendMail";
 
@@ -50,14 +48,14 @@ export default function CustomModel({ isOpen, onOpen, onOpenChange }) {
       if (responseData.status) {
         toast.success("We Will Get Back To You Soon..", {
           id: toastId,
-          position:"top-right"
+          position: "top-right",
         });
       }
     } catch (error) {
       console.error("Error in posting data:", error);
       toast.error("Oop's Something Went Wrong..", {
         id: toastId,
-        position:"top-right"
+        position: "top-right",
       });
     }
   };
@@ -79,7 +77,6 @@ export default function CustomModel({ isOpen, onOpen, onOpenChange }) {
               </ModalHeader>
               <ModalBody>
                 <Input
-                  autoFocus
                   endContent={
                     <NameIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
                   }
@@ -88,7 +85,6 @@ export default function CustomModel({ isOpen, onOpen, onOpenChange }) {
                   variant="bordered"
                 />
                 <Input
-                  autoFocus
                   endContent={
                     <MailIcon className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
                   }
@@ -111,10 +107,9 @@ export default function CustomModel({ isOpen, onOpen, onOpenChange }) {
                   disableAnimation
                   disableAutosize
                   classNames={{
-                    input: "resize-y min-h-[40px]",
+                    input: "resize-y min-h-[60px]",
                   }}
                 />
-                <div className="flex py-2 px-1 justify-between"></div>
               </ModalBody>
               <ModalFooter className="mx-auto roboto-bold">
                 <Button color="success" onPress={onClose} onClick={postData}>
