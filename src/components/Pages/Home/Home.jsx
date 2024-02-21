@@ -10,12 +10,14 @@ import HomeBenefit from "./HomeBenefit";
 import HomeAbout from "./HomeAbout";
 
 function Home() {
+
+
   const pageTitle = "Welcome To Shreeji - Graphics";
-  const pageDescription =
-    "Discover a world of elegance and thoughtful gifting with our curated collection of exquisite gift boxes. Perfect for birthdays, weddings, and special moments. Explore now!";
+  const pageDescription ="Discover a world of elegance and thoughtful gifting with our curated collection of exquisite gift boxes. Perfect for birthdays, weddings, and special moments. Explore now!";
   const pageURL = window.location.href;
-  const pageImageURL =
-    "https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg";
+  const pageImageURL ="https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg";
+
+  console.log("************PAGE URL*******************",pageURL);
   return (
     <>
       <SEO
