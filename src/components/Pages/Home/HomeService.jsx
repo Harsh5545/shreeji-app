@@ -4,7 +4,7 @@ function HomeService() {
   
   return (
     <div className="bg-[#F2F0F1]">
-      <div className="mx-auto max-w-screen-xl py-5 px-5 grid md:grid-cols-2">
+      <div className="mx-auto max-w-screen-xl py-7 px-5 grid md:grid-cols-2">
         <div className="flex flex-col gap-8 py-12">
           <div>
             <h2 className="text-2xl md:text-3xl text-[#EF7F1B]">
@@ -50,7 +50,7 @@ function HomeService() {
         </div>
 
         <div>
-          
+          <img src="/Main-Images/service-bag.webp" className="" alt=""/>
         </div>
       </div>
     </div>

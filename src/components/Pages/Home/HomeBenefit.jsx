@@ -1,8 +1,14 @@
 import React from "react";
+import { TbDiscountCheckFilled } from "react-icons/tb";
+import { SiStarship } from "react-icons/si";
+import { RiTodoFill } from "react-icons/ri";
+import { IoIosColorFilter } from "react-icons/io";
+import { FaRegEyeSlash } from "react-icons/fa";
+import { PiContactlessPaymentBold } from "react-icons/pi"
 
 function HomeBenefit() {
   return (
-    <div className="mx-auto max-w-screen-lg py-5 px-5">
+    <div className="mx-auto max-w-screen-xl py-5 px-5">
       <div className="text-center flex gap-2 flex-col">
         <h1 className="font-[400] text-3xl">Your Benefits with Turtle Boxes</h1>
         <p className="text-lg">
@@ -11,9 +17,10 @@ function HomeBenefit() {
         </p>
       </div>
       <div className="grid grid-cols-3">
-        <div>
-          <div className="flex items-center justify-between">
-            <img alt="Satisfaction and Quality" />
+        <div className="mt-8 space-y-10">
+          <div className="flex items-start gap-1">
+            <div className="mr-[1px] left-10"><TbDiscountCheckFilled className="text-6xl "/>
+              </div>
             <div>
               <h1 className="text-lg font-bold">
                 100% Satisfaction and Quality
@@ -25,10 +32,13 @@ function HomeBenefit() {
             </div>
           </div>
 
-          <div className="flex items-center justify-between">
-            <img alt="Printing Brilliance" />
+          <div className="flex items-start gap-3  justify-between">
             <div>
-              <h1 className="text-lg font-bold">Printing Brilliance</h1>
+
+          <SiStarship className="text-5xl"/>
+            </div>
+            <div>
+              <h1 className="text-lg font-bold ">Printing Brilliance</h1>
               <p className="text-sm">
                 DIY packaging solutions with endless keyline variations so you
                 get the packaging you desire.
@@ -36,11 +46,13 @@ function HomeBenefit() {
             </div>
           </div>
 
-          <div className="flex items-center justify-between">
-            <img alt="Hidden Costs" />
+          <div className="flex items-start gap-3 justify-between">
+          <div className="bg-black rounded-full">
+            <FaRegEyeSlash className=" rounded-full text-white text-5xl p-2"/>
+            </div>
             <div>
               {" "}
-              <h1 className="text-lg font-bold">No Hidden Costs</h1>
+              <h1 className="text-lg font-bold ">No Hidden Costs</h1>
               <p className="text-sm">
                 An all-inclusive price quotation for the product cost, GST &
                 shipping for crystal clear transactions.
@@ -49,11 +61,11 @@ function HomeBenefit() {
           </div>
         </div>
         <div>
-          <img alt="Benefits" />
+          <img alt="Benefits" src="/Main-Images/benefit.webp" />
         </div>
 
-        <div >
-          <div className="flex items-center justify-between">
+        <div className="mt-8 space-y-10" >
+          <div className="flex items-start justify-between">
             <div><h1 className="text-lg font-bold">
               Standard Artwork Check Included
             </h1>
@@ -61,26 +73,32 @@ function HomeBenefit() {
               Standard artwork check for incorrect data, color format & more to
               deliver error-free printing.
             </p></div>
-            <img alt="Standard Artwork" />
+            <div className="bg-black rounded-full">
+            <RiTodoFill className=" rounded-full text-white text-5xl p-2"/>
+            </div>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex items-start justify-between">
             <div>
                 <h1 className="text-lg font-bold">Payment on Account</h1>
             <p className="text-sm">
               Get access to hassle-free payment methods via Debit / Credit Card
               and Internet Banking.
             </p></div>
-            <img alt="Payment on Account" />
+            <div className="bg-black rounded-full">
+            <PiContactlessPaymentBold className=" rounded-full text-white text-5xl p-2"/>
+            </div>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex items-start justify-between">
             <div><h1 className="text-lg font-bold">Color Management</h1>
             <p className="text-sm">
               Ensuring strict color consistency across all packaging materials
               and logo designs for smooth offset printing.
             </p></div>
-            <img alt="Color Management" />
+            <div className="bg-black rounded-full">
+            <IoIosColorFilter className=" rounded-full text-white text-5xl p-2"/>
+            </div>
           </div>
         </div>
       </div>
