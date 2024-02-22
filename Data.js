@@ -6,6 +6,7 @@ const staticData = [
     subCategory: "CLOTHIGS & APPARELS",
     heading: "Restyle Your Apparel and Clothing Packaging Boxes",
     mainImage: "/Product/Home/image_6.jpg",
+    HeaderImage: "",
     discriptionHeading: "Give Your Clothing Brand A Better Box to Wear",
     discription:
       "Elevate your apparel brading with custom boxes that suit your style. From custom box for shirt, t-shirt packaging boxes to trousers, dresses and whatnot, we help you craft all kinds of personalised clothing packaging.",
@@ -1038,6 +1039,7 @@ const staticData = [
     heading:
       "Festive Magic in Every Box! Explore Exclusive Ready-to-Use Festive Theme Printed Boxes",
     mainImage: "/Product/Home/image_16.jpg",
+    HeaderImage: "",
     discriptionHeading:
       "Unbox the Festivals Spirit! Discover Festive Theme Printed Boxes",
     discription:

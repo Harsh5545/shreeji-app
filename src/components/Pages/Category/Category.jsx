@@ -64,7 +64,6 @@ const Category = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // const backgroundImageUrl = "url('/Main-Images/image_1.jpg')";
   const backgroundImageUrl = `url(${category?.mainImage})`;
   const capitalizeFirstLetter = (str) => {
     return str
@@ -107,7 +106,7 @@ const Category = () => {
         </div>
         <div className="w-full">
           <div className="flex justify-center items-center flex-col md:m-20 m-10">
-            <h3 className="p-1 md:w-[75%] w-[90%] text-center font-medium md:text-4xl text-xl  md:mb-10 mb-5">
+            <h3 className="p-1 text-[#EF7F1B] md:w-[75%] w-[90%] text-center font-medium md:text-4xl text-xl  md:mb-10 mb-5">
               {category?.discriptionHeading}
             </h3>
             <p className=" md:w-[60%] w-[80%] text-center p-1 font-normal  md:text-md text-sm">
