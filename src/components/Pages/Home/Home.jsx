@@ -17,7 +17,6 @@ function Home() {
   const pageURL = window.location.href;
   const pageImageURL ="https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg";
 
-  console.log("************PAGE URL*******************",pageURL);
   return (
     <>
       <SEO

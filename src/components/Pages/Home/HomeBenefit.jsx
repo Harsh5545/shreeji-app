@@ -16,11 +16,12 @@ function HomeBenefit() {
           solutions
         </p>
       </div>
-      <div className="grid grid-cols-3">
+      <div className="grid md:grid-cols-3">
         <div className="mt-8 space-y-10">
           <div className="flex items-start gap-1">
-            <div className="mr-[1px] left-10"><TbDiscountCheckFilled className="text-6xl "/>
-              </div>
+            <div className="mr-[1px] left-10">
+              <TbDiscountCheckFilled className="text-6xl"/>
+            </div>
             <div>
               <h1 className="text-lg font-bold">
                 100% Satisfaction and Quality

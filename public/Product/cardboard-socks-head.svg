@@ -1,0 +1,58 @@
+<svg id="dieCutSvg" style="background-color: ;" helpersInCanvas="7" canvasBackgroundColor="" width='1150.8679' height='665.00889'
+packingWidth='1150.8679' packingHeight='665.00889' bleedColor=''
+trimboxUlx='28.3465' trimboxUly='34.866195' trimboxLrx='1122.5214' trimboxLry='630.142695'
+version='1.1' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape'
+xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+	<defs>
+	    <pattern id="diagonalStripes" x="-10" y="0" width="40" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+	       <rect x="0" y="0" width="0.5" height="8" style="stroke:rgb(140, 228, 140); fill:rgb(140, 228, 140);"/>
+	    </pattern>
+	    
+	</defs>
+	
+	
+	
+<g class='page' id='page-1' transform='translate(75.40169,34.866195)'>
+	
+	<g style='fill:none; stroke:rgb(213,255,123);stroke-width:14.17325px;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer' id='bleeds_stroke'
+inkscape:label='bleed'>
+		<defs><clipPath id='bleedmask-page-1-bleed-1'><path id='bleed-bounding-page-1-bleed-1' transform='translate(0,0)' style='fill:rgba(0,0,0,0)' ignoreSnap='1' selectable='0' evented='0' isPackaging='1' setHelper='1' excludeFromExport='1' displayBoxBorder='0' d='M-14.17325,-14.17325 L1061.29296,-14.17325 L1061.29296,609.44975 L-14.17325,609.44975 z M14.17325,0 L0,0 L0,595.2765 L425.1975,595.2765 L524.41025,595.2765 L949.60775,595.2765 L1047.11971,595.2765 L1047.11971,0 L949.60775,0 L524.41025,0 L425.1975,0 L0,0  z' /></clipPath></defs><path id='bleed-page-1-bleed-1'  style='clip-path: url(#bleedmask-page-1-bleed-1);' ignoreSnap='1' selectable='0' isPackaging='1' evented='0' setHelper='1' excludeFromExport='1' displayBoxBorder='0'  d='M14.17325,0 L0,0 L0,595.2765 L425.1975,595.2765 L524.41025,595.2765 L949.60775,595.2765 L1047.11971,595.2765 L1047.11971,0 L949.60775,0 L524.41025,0 L425.1975,0 L0,0  z' />
+</g >
+	
+	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
+class="page-1"
+id='cuts'  inkscape:label='cut'>
+		<path id='cut-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M0,0 L425.1975,0 L524.41025,0 L949.60775,0 L1047.11971,0 L1047.11971,595.2765 L949.60775,595.2765 L524.41025,595.2765 L425.1975,595.2765 L0,595.2765 L-47.05519,582.668090186 L-47.05519,12.608409814 L0,0 ' />
+</g >
+	<g style='fill:none; stroke:rgb(233,32,38);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer' id='folds'  inkscape:label='fold'>
+		<path id='fold-1' ignoreSnap='0' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='1' displayBoxBorder='0'  d='M0,0 L0,595.2765 ' /><path id='fold-2' ignoreSnap='0' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='1' displayBoxBorder='0'  d='M425.1975,0 L425.1975,595.2765 ' /><path id='fold-3' ignoreSnap='0' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='1' displayBoxBorder='0'  d='M524.41025,0 L524.41025,595.2765 ' /><path id='fold-4' ignoreSnap='0' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='1' displayBoxBorder='0'  d='M949.60775,0 L949.60775,595.2765 ' />
+</g >
+	<g fill='url(#diagonalStripes)' fill-designer="rgb(85, 173, 34)" 
+style='stroke:rgb(140, 228, 140);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0;'
+inkscape:groupmode='layer' id='no_print_area'
+ inkscape:label='no_print_area'>
+		<path id='no_print_area-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M-8.50395,-6.519695 L-38.55124,1.531448009 L-38.55124,10.3297764115 L-38.55124,584.9467235885 L-38.55124,593.745051991 L-8.50395,601.796195 L-8.50395,592.9978665975 L-8.50395,2.2786334025 L-8.50395,-6.519695 ' />
+</g >
+	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
+class="page-1"
+id='perforation'  inkscape:label='perforation'>
+		
+</g >
+	<g style="fill:none; stroke:rgb(0,154,193);stroke-width:1.2;stroke-miterlimit:5.6693;stroke-dasharray:5.6693" inkscape:groupmode="layer"
+class="page-1"
+id="safe_areas" inkscape:label="safe_area">
+		
+</g>
+	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
+class="page-1"
+id='cuts'  inkscape:label='cut'>
+    
+</g >
+	
+	
+	
+</g >
+	
+	
+	
+</svg>
