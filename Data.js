@@ -1490,10 +1490,93 @@ const staticData = [
       },
     ],
   },
+  {
+    id: 20,
+    name: "Item 20",
+    category: "Rigid Boxes",
+    subCategory: "Rigid Boxes",
+    heading: "The Finest Materials, Including Rigid Cardboard & Extra-strong.",
+    mainImage: "src/assets/desktop-shopping-bags.webp",
+    discriptionHeading:
+      "Get the Premium Look of our Rigid Cardboard Boxes with a Luxurious Touch.",
+    discription:
+      "Our high quality rigid cardboard boxes help you store, organize and protect your items. Whether you are looking for way to transport clothing or collectibles, these boxes are designed to work with your needs. They are reliable, easy to store and stackable making them excellent for any occasion.",
+    product: [
+      {
+        Productid: 1,
+        img: "/Product/telescopic_rigid_boxes_03.jpg",
+        heading: "Top-Bottom (Telescopic) Rigid Boxes",
+        button: "",
+        headerimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Coffee&Tea/image_1.jpg",
+      },
+      {
+        Productid: 2,
+        img: "/Product/magnetic_closure_02.jpg",
+        heading: "Magnetic Closure Gift Box",
+        button: "",
+        headerimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Coffee&Tea/image_1.jpg",
+      },
+      {
+        Productid: 3,
+        img: "/Product/drawer_box_02.jpg",
+        heading: "Drawer Style Rigid Boxes",
+        button: "",
+        headerimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Coffee&Tea/image_1.jpg",
+      },
+    ],
+  },
+  {
+    id: 20,
+    name: "Item 20",
+    category: "Custom Labels",
+    subCategory: "Custom Labels",
+    heading: "Printed Labels & Stickers offered at an unbeatable price.",
+    mainImage: "src/assets/desktop-shopping-bags.webp",
+    discriptionHeading:
+      "Premium Quality Printed Labels & Stickers to Stand Out Your Brand",
+    discription:
+      "We offer sticker printing, label printing, and custom sticker and label printing with no minimum order quantity. We have wide Range of stickers and Label Finishes to suit your Stickers and Label Requirements. Now Order your Brand, Logo and Product Stickers to Stand out Your Product in Retail and E-commerce World.",
+    product: [
+      {
+        Productid: 1,
+        img: "/Product/CustomLabel/image_2.jpg",
+        heading: "Square Label & Sticker",
+        button: "",
+        headerimg: "/Product/CustomLabel/image_3.jpg",
+        subimg: "/Product/CustomLabel/image_1.jpg",
+      },
+      {
+        Productid: 2,
+        img: "/Product/CustomLabel/image_4.jpg",
+        heading: "Circle Label & Sticker",
+        button: "",
+        headerimg: "/Product/CustomLabel/image_7.jpg",
+        subimg: "/Product/CustomLabel/image_1.jpg",
+      },
+      {
+        Productid: 3,
+        img: "/Product/CustomLabel/image_6.jpg",
+        heading: "Rectangle Label & Sticker",
+        button: "",
+        headerimg: "/Product/CustomLabel/image_5.jpg",
+        subimg: "/Product/CustomLabel/image_1.jpg",
+      },
+      {
+        Productid: 4,
+        img: "/Product/CustomLabel/image_8.jpg",
+        heading: "Oval Label & Sticker",
+        button: "",
+        headerimg: "/Product/CustomLabel/image_9.jpg",
+        subimg: "/Product/CustomLabel/image_1.jpg",
+      },
+    ],
+  },
 ];
 
 export default staticData;
-
 
 export const boxesData = [
   "Bakery & Cakes",
