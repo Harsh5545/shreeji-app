@@ -32,7 +32,7 @@ const staticData = [
         img: "/Product/bed_sheets_slipcase_both_sides_open.jpg",
         heading: "Bed Sheets Slipcase Both Sides Open",
         button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
+        headerimg: "/Product/image_1.jpg",
         subimg: "/Product/hollow_rim_box_with_slipcase_white_floor_1.jpg",
       },
       {
