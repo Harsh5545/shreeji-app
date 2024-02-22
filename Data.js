@@ -16,8 +16,8 @@ const staticData = [
         img: "/Product/baby_clothes_folding_box.webp",
         heading: "Baby Clothes Folding Box",
         button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        headerimg: "/Product/baby_download.svg",
+        subimg: "/Product/baby_download.svg",
       },
       {
         Productid: 2,
@@ -25,7 +25,7 @@ const staticData = [
         heading: "Baby Clothes Hollow Rim Box with Slipcase White Floor",
         button: "",
         headerimg: "/Product/baby.jpg",
-        subimg: "baby_main.jpg",
+        subimg: "/Product/hollow_rim_box_with_slipcase_white_floor_1.jpg",
       },
       {
         Productid: 3,
@@ -33,7 +33,7 @@ const staticData = [
         heading: "Bed Sheets Slipcase Both Sides Open",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/hollow_rim_box_with_slipcase_white_floor_1.jpg",
       },
       {
         Productid: 4,
