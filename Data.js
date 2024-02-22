@@ -25,7 +25,7 @@ const staticData = [
         heading: "Baby Clothes Hollow Rim Box with Slipcase White Floor",
         button: "",
         headerimg: "/Product/baby.jpg",
-        subimg: "/Product/hollow_rim_box_with_slipcase_white_floor_1.jpg",
+        subimg: "/Product/baby_Clothing.svg",
       },
       {
         Productid: 3,
