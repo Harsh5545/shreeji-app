@@ -24,7 +24,7 @@ const staticData = [
         img: "/Product/baby_clothes_hollow_rim_box_with_slipcase_white_floor.jpg",
         heading: "Baby Clothes Hollow Rim Box with Slipcase White Floor",
         button: "",
-        headerimg: "/Product/baby.jpg",
+        headerimg: "",
         subimg: "/Product/baby_Clothing.svg",
       },
       {
