@@ -6,7 +6,7 @@ const staticData = [
     subCategory: "CLOTHIGS & APPARELS",
     heading: "Restyle Your Apparel and Clothing Packaging Boxes",
     mainImage: "/Product/Home/image_6.jpg",
-    HeaderImage: "",
+    HeaderImage: "/Main-Images/desktop-clothing-apparels.jpg",
     discriptionHeading: "Give Your Clothing Brand A Better Box to Wear",
     discription:
       "Elevate your apparel brading with custom boxes that suit your style. From custom box for shirt, t-shirt packaging boxes to trousers, dresses and whatnot, we help you craft all kinds of personalised clothing packaging.",
@@ -142,6 +142,7 @@ const staticData = [
     name: "Item 2",
     category: "boxes",
     subCategory: "CONSUMER GOODS",
+    HeaderImage: "/Main-Images/desktop-consumer-goods.jpg",
     heading: "Refine Your Consumer Goods with a Better Box",
     mainImage: "/Product/Home/image_7.jpg",
     discriptionHeading: "From Goods to Goodies with Online Custom Packaging",
@@ -229,7 +230,7 @@ const staticData = [
         subimg: "/Product/Coffee&Tea/image_1.jpg",
       },
       {
-        Productid: 9,
+        Productid: 11,
         img: "/Product/sleeve_packaging.jpg",
         heading: "Sleeve Packaging",
         button: "",
@@ -245,6 +246,7 @@ const staticData = [
     subCategory: "PERSONAL CARE & COSMETIC",
     heading: "Beautify Your Brand with Custom Cosmetic Box Designs",
     mainImage: "/Product/Home/image_8.jpg",
+    HeaderImage: "/Main-Images/desktop_personal_care.jpg",
     discriptionHeading: "Dress your Cosmetics in a Desirable Custom Box",
     discription:
       "Redefine you cosmetic box design with the aid of our online packaging tools and layouts. Craft custom boxes for cosmetics in your desired materials and your brand colours. We even help you create gift boxes for cosmetics at lowest MOQ.",
@@ -344,6 +346,7 @@ const staticData = [
     name: "Item 4",
     category: "boxes",
     subCategory: "BAKERY AND COOKIES",
+    HeaderImage: "/Main-Images/desktop-bakery-cookie.jpg",
     heading: "Custom Design Cake Boxes For a Flavourful Experience",
     mainImage: "/Product/Home/image_9.jpg",
     discriptionHeading:
@@ -455,6 +458,7 @@ const staticData = [
     category: "boxes",
     subCategory: "BEVERAGES",
     heading: "Box in the Goodness",
+    HeaderImage: "/Main-Images/desktop-beverages (1).jpg",
     mainImage: "/Product/Home/image_10.jpg",
     discriptionHeading: "Suave Packagings for Savoury Delights",
     discription:
@@ -544,6 +548,7 @@ const staticData = [
     subCategory: "CHOCOLATES AND CONFECTIONERY",
     heading: "Unbox Your Packaging’s Potential",
     mainImage: "/Product/Home/image_11.jpg",
+    HeaderImage: "/Main-Images/desktop-chocolates-confectionery.jpg",
     discriptionHeading:
       "Reimagine your Custom Chocolate Packaging Boxes with our Creative Templates",
     discription:
@@ -670,6 +675,7 @@ const staticData = [
     subCategory: "FOOD & RESTAURANTS",
     heading: "Give Your Food Boxes Packaging an Appetizing Appeal",
     mainImage: "/Product/Home/image_12.jpg",
+    HeaderImage: "/Main-Images/desktop_food.jpg",
     discriptionHeading:
       "Add a custom appeal to your appetizing meals with our online packaging tools.",
     discription:
@@ -786,6 +792,7 @@ const staticData = [
     name: "Item 8",
     category: "boxes",
     subCategory: "ECOMMERCE",
+    HeaderImage: "/Main-Images/desktop_food.jpg",
     heading: "Elevate with Custom E-Commerce Packaging & Boxes",
     mainImage: "/Product/Home/image_13.jpg",
     discriptionHeading:
@@ -857,6 +864,7 @@ const staticData = [
     category: "boxes",
     subCategory: "COFFEE AND TEA",
     heading: "Brew a Custom Touch for Your Coffee & Tea Packaging",
+    HeaderImage: "/Main-Images/desktop-coffee-tea.jpg",
     mainImage: "/Product/Home/image_14.jpg",
     discriptionHeading:
       "Treat your brand to a custom tea box packaging with our online packaging tools.",
@@ -960,6 +968,7 @@ const staticData = [
     subCategory: "GIFTING",
     heading: "Add More Joy to Gifting with Custom Gift Boxes",
     mainImage: "/Product/Home/image_15.jpg",
+    HeaderImage: "/Main-Images/desktop-gifting.jpg",
     discriptionHeading:
       "Grace your gifts with the personal touch of custom gift boxes.",
     discription:
@@ -1036,10 +1045,11 @@ const staticData = [
     name: "Item 11",
     category: "boxes",
     subCategory: "FESTIVE COLLECTION",
+
     heading:
       "Festive Magic in Every Box! Explore Exclusive Ready-to-Use Festive Theme Printed Boxes",
     mainImage: "/Product/Home/image_16.jpg",
-    HeaderImage: "",
+    HeaderImage: "/Main-Images/latest2023_1_.jpg",
     discriptionHeading:
       "Unbox the Festivals Spirit! Discover Festive Theme Printed Boxes",
     discription:
@@ -1244,6 +1254,7 @@ const staticData = [
     name: "Item 12",
     category: "boxes",
     subCategory: "SAMPLE BOX SET",
+    HeaderImage: "/Main-Images/desktop-sample-box.jpg",
     heading:
       "Order a sample set & grab a voucher worth Rs 500 for your next buy.",
     mainImage: "/Product/Home/image_17.jpg",
@@ -1314,6 +1325,7 @@ const staticData = [
     name: "Item 13",
     category: "bags",
     subCategory: "SHOPPING BAGS",
+    HeaderImage: "/Main-Images/latest2023_1_.jpg",
     heading:
       "Explore our range of Shopping Bags & get a voucher worth Rs 500 for your next purchase.",
     mainImage: "src/assets/desktop-shopping-bags.webp",
@@ -1496,6 +1508,7 @@ const staticData = [
     id: 20,
     name: "Item 20",
     category: "Rigid Boxes",
+    HeaderImage: "/Main-Images/rigid_boxes_cat.jpg",
     subCategory: "Rigid Boxes",
     heading: "The Finest Materials, Including Rigid Cardboard & Extra-strong.",
     mainImage: "src/assets/desktop-shopping-bags.webp",
@@ -1535,6 +1548,7 @@ const staticData = [
     name: "Item 20",
     category: "Custom Labels",
     subCategory: "Custom Labels",
+    HeaderImage: "/Main-Images/sticker-category-desk.jpg",
     heading: "Printed Labels & Stickers offered at an unbeatable price.",
     mainImage: "src/assets/desktop-shopping-bags.webp",
     discriptionHeading:
