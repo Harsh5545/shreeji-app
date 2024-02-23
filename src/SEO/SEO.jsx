@@ -8,7 +8,7 @@ const SEO = ({ title, description, image }) => {
       <title>{title}</title>
       <meta property="og:title" content={title} />
       <meta property="og:type" content="article" />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={`https://www.testing.harshadkajale.online/${image}`} />
       <meta property="og:url" content={`https://www.testing.harshadkajale.online${window.location.pathname+window.location.search}`} />
       <meta name="twitter:card" content="summary_large_image" />
 
