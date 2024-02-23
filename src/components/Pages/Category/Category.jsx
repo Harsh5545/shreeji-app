@@ -7,6 +7,7 @@ import { Spinner } from "@nextui-org/react";
 import { Image } from "@nextui-org/react";
 import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 import { Link } from "react-router-dom";
+import SEO from "../../../SEO/SEO";
 const Category = () => {
   const [loading, setLoading] = useState(true);
   const [category, setCategory] = useState(null);
@@ -15,7 +16,7 @@ const Category = () => {
   const [loadingMore, setLoadingMore] = useState(false);
 
   const { categoryId } = useParams();
-  console.log(categoryId)
+  console.log(categoryId);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,7 +24,7 @@ const Category = () => {
       setIsLoaded(true);
       await new Promise((resolve) => setTimeout(resolve, 1000));
       const foundCategory = staticData.find(
-        (category) => category.subCategory === categoryId || category.category === categoryId
+        (category) => category.subCategory === categoryId
       );
       setCategory(foundCategory);
       console.log(category);
@@ -64,7 +65,10 @@ const Category = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const backgroundImageUrl = `url(${category?.mainImage})`;
+  const backgroundImageUrl = `url(${category?.HeaderImage})`
+    ? `url(${category?.HeaderImage})`
+    : "";
+  console.log(backgroundImageUrl);
   const capitalizeFirstLetter = (str) => {
     return str
       .split(" ")
@@ -72,8 +76,17 @@ const Category = () => {
       .join(" ");
   };
 
+  const pageTitle = "Welcome To Shreeji - Categories";
+  const pageDescription ="Discover a world of elegance and thoughtful gifting with our curated collection of exquisite gift boxes. Perfect for birthdays, weddings, and special moments. Explore now!";
+  const pageImageURL ="https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg";
+
   return (
     <>
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        image={pageImageURL}
+      />
       <div className="my-2 ml-2">
         <Breadcrumbs>
           <BreadcrumbItem>
@@ -83,7 +96,9 @@ const Category = () => {
           </BreadcrumbItem>
           <BreadcrumbItem>
             <Link to={`/category/${category?.subCategory}`}>
-              {capitalizeFirstLetter(category?.subCategory ? category?.subCategory : "Category" )}
+              {capitalizeFirstLetter(
+                category?.subCategory ? category?.subCategory : "Category"
+              )}
             </Link>
           </BreadcrumbItem>
         </Breadcrumbs>
@@ -92,8 +107,8 @@ const Category = () => {
       <div>
         <div
           style={{
-            background: backgroundImageUrl,
-            backgroundSize: "contain",
+            background: `${backgroundImageUrl}`,
+            backgroundSize: "cover",
             minHeight: "60vh",
             backgroundImage: "no-repeat",
           }}
