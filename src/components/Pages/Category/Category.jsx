@@ -78,14 +78,14 @@ const Category = () => {
 
   const pageTitle = "Welcome To Shreeji - Categories";
   const pageDescription ="Discover a world of elegance and thoughtful gifting with our curated collection of exquisite gift boxes. Perfect for birthdays, weddings, and special moments. Explore now!";
-  const pageImageURL ="https://turtleboxes.com/media/catalog/category/Chocolates_Confectionery.jpg";
+
 
   return (
     <>
       <SEO
         title={pageTitle}
         description={pageDescription}
-        image={pageImageURL}
+        image={category?.HeaderImage}
       />
       <div className="my-2 ml-2">
         <Breadcrumbs>
