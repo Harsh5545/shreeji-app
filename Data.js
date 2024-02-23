@@ -687,7 +687,7 @@ const staticData = [
         heading: "Biryani Slipcase Packing Both Sides",
         button: "",
         headerimg: "/Product/Food/image_3.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/biryani.svg",
       },
       {
         Productid: 2,
@@ -695,7 +695,7 @@ const staticData = [
         heading: "Cereal Packaging Box",
         button: "",
         headerimg: "/Product/Food/image_5.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Cereal_packing.svg",
       },
       {
         Productid: 3,
@@ -703,7 +703,7 @@ const staticData = [
         heading: "Dry Fruits Paper Bags Packaging",
         button: "",
         headerimg: "/Product/Food/image_7.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/fruits_packet.svg",
       },
       {
         Productid: 4,
@@ -711,7 +711,7 @@ const staticData = [
         heading: "Food Boxes Packaging",
         button: "",
         headerimg: "/Product/Food/image_9.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Food_Boxing.svg",
       },
       {
         Productid: 5,
@@ -719,7 +719,7 @@ const staticData = [
         heading: "Food Container Sleeves Packaging",
         button: "",
         headerimg: "/Product/Food/image_11.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/abhi.svg",
       },
       {
         Productid: 6,
@@ -727,7 +727,7 @@ const staticData = [
         heading: "Food Paper Tray Packaging",
         button: "",
         headerimg: "/Product/Food/image_13.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Food_Paper.svg",
       },
       {
         Productid: 7,
@@ -735,7 +735,7 @@ const staticData = [
         heading: "Food Subscription Box Packaging",
         button: "",
         headerimg: "/Product/Food/image_15.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Food_subscription.svg",
       },
       {
         Productid: 8,
@@ -743,7 +743,7 @@ const staticData = [
         heading: "Hexagon Paper Tray Packaging",
         button: "",
         headerimg: "/Product/Food/image_17.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/hexnol_food.svg",
       },
       {
         Productid: 9,
@@ -751,7 +751,7 @@ const staticData = [
         heading: "Ice Cream Packaging Boxes",
         button: "",
         headerimg: "/Product/Food/image_19.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Ice_Cream.svg",
       },
       {
         Productid: 10,
@@ -759,7 +759,7 @@ const staticData = [
         heading: "Kathi Roll Packaging",
         button: "",
         headerimg: "/Product/Food/image_21.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/kathi_food.svg",
       },
       {
         Productid: 11,
@@ -767,7 +767,7 @@ const staticData = [
         heading: "Masala Packaging Box",
         button: "",
         headerimg: "/Product/Food/image_23.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/oil_food_packaging.svg",
       },
       {
         Productid: 12,
@@ -775,7 +775,7 @@ const staticData = [
         heading: "Oil Paper Carton Packaging",
         button: "",
         headerimg: "/Product/Food/image_25.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/oil_food_packaging.svg",
       },
       {
         Productid: 13,
@@ -783,7 +783,7 @@ const staticData = [
         heading: "Sweets Packaging Boxes",
         button: "",
         headerimg: "/Product/Food/image_27.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Sweet_Packaging.svg",
       },
     ],
   },
@@ -806,7 +806,7 @@ const staticData = [
         heading: "Custom Ecommerce Pillow Pouch",
         button: "",
         headerimg: "/Product/Ecommerce/image_3.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Pillow_punch.svg",
       },
       {
         Productid: 2,
@@ -814,7 +814,7 @@ const staticData = [
         heading: "Custom Folding Carton",
         button: "",
         headerimg: "/Product/Ecommerce/image_5.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Custom_Folding.svg",
       },
       {
         Productid: 3,
@@ -822,7 +822,7 @@ const staticData = [
         heading: "Custom Slipcase with Hollow Rim Box",
         button: "",
         headerimg: "/Product/Ecommerce/image_7.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Slipcase_hollow.svg",
       },
       {
         Productid: 4,
@@ -830,7 +830,7 @@ const staticData = [
         heading: "Ecommerce Hollow Rim Box with Slip Lid",
         button: "",
         headerimg: "/Product/Ecommerce/image_9.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/hollow_rim.svg",
       },
       {
         Productid: 5,
@@ -838,7 +838,7 @@ const staticData = [
         heading: "Ecommerce Slipcase Packaging Box",
         button: "",
         headerimg: "/Product/Ecommerce/image_11.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/hollow2.svg",
       },
       {
         Productid: 6,
@@ -846,7 +846,7 @@ const staticData = [
         heading: "Mailer Boxes",
         button: "",
         headerimg: "/Product/Ecommerce/image_13.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Mailer_boxes.svg",
       },
       {
         Productid: 7,
@@ -854,7 +854,7 @@ const staticData = [
         heading: "Shipping Boxes",
         button: "",
         headerimg: "/Product/Ecommerce/image_15.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/shreejigraphics.svg",
       },
     ],
   },
@@ -877,7 +877,7 @@ const staticData = [
         heading: "Coffee Gift Box",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_3.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/COFFE_PACKET.svg",
       },
       {
         Productid: 2,
@@ -885,7 +885,7 @@ const staticData = [
         heading: "Coffee Gift Hollow Rim Box with Slip Lid White Floor",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_5.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/coffee_Gift_hallow.svg",
       },
       {
         Productid: 3,
@@ -893,7 +893,7 @@ const staticData = [
         heading: "Green Tea Packaging Box",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_7.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Green_Tea_sashe.svg",
       },
       {
         Productid: 4,
@@ -901,7 +901,7 @@ const staticData = [
         heading: "Luxurious Hexagon Box Packaging",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_9.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Hexagon_Box_Packing.svg",
       },
       {
         Productid: 5,
@@ -909,7 +909,7 @@ const staticData = [
         heading: "Organic Coffee Packaging",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_11.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Orgainc_coffe.svg",
       },
       {
         Productid: 6,
@@ -917,7 +917,7 @@ const staticData = [
         heading: "Premium Assorted Coffee Packaging Box",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_13.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/kkkkkkkk.svg",
       },
       {
         Productid: 7,
@@ -925,7 +925,7 @@ const staticData = [
         heading: "Premium Coffee Gift Bag Packaging ",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_15.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/kkkkkkkk.svg",
       },
       {
         Productid: 8,
@@ -933,7 +933,7 @@ const staticData = [
         heading: "Personalised Coffee Packaging",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_17.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Coffeeee.svg",
       },
       {
         Productid: 9,
@@ -941,7 +941,7 @@ const staticData = [
         heading: "Tea Paper Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_19.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Tea_Paper.svg",
       },
       {
         Productid: 10,
@@ -949,7 +949,7 @@ const staticData = [
         heading: "Tea Coffee Subscription Box",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_21.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/Coffe_sub.svg",
       },
       {
         Productid: 11,
@@ -957,7 +957,7 @@ const staticData = [
         heading: "Premium Tea Packaging",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_23.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
+        subimg: "/Product/shreejiGraphics_tea.svg",
       },
     ],
   },
@@ -980,7 +980,7 @@ const staticData = [
         heading: "Custom Gift Box Bag",
         button: "",
         headerimg: "/Product/Gift/image_3.jpg",
-        subimg: "/Product/Gift/image_1.jpg",
+        subimg: "/Product/gift_Box.svg",
       },
       {
         Productid: 2,
@@ -988,7 +988,7 @@ const staticData = [
         heading: "Custom Gift Boxes",
         button: "",
         headerimg: "/Product/Gift/image_5.jpg",
-        subimg: "/Product/Gift/image_1.jpg",
+        subimg: "/Product/Custom_Gift.svg",
       },
       {
         Productid: 3,
@@ -996,7 +996,7 @@ const staticData = [
         heading: "Custom Printed Petals Box",
         button: "",
         headerimg: "/Product/Gift/image_7.jpg",
-        subimg: "/Product/Gift/image_1.jpg",
+        subimg: "/Product/gifting.svg",
       },
       {
         Productid: 4,
@@ -1004,7 +1004,7 @@ const staticData = [
         heading: "Gift Box for Packing",
         button: "",
         headerimg: "/Product/Gift/image_9.jpg",
-        subimg: "/Product/Gift/image_1.jpg",
+        subimg: "/Product/gift_shreejiGraphics.svg",
       },
       {
         Productid: 5,
@@ -1012,7 +1012,7 @@ const staticData = [
         heading: "Gift Package Box",
         button: "",
         headerimg: "/Product/Gift/image_11.jpg",
-        subimg: "/Product/Gift/image_1.jpg",
+        subimg: "/Product/shreejigraphic_gift.svg",
       },
       {
         Productid: 6,
@@ -1020,7 +1020,7 @@ const staticData = [
         heading: "Gift Pillow Box Packaging",
         button: "",
         headerimg: "/Product/Gift/image_13.jpg",
-        subimg: "/Product/Gift/image_1.jpg",
+        subimg: "/Product/gola.svg",
       },
       {
         Productid: 7,
@@ -1028,7 +1028,7 @@ const staticData = [
         heading: "Perfume Packaging Box",
         button: "",
         headerimg: "/Product/Gift/image_15.jpg",
-        subimg: "/Product/Gift/image_1.jpg",
+        subimg: "/Product/boxing_gift_shreeji_Graphics.svg",
       },
       {
         Productid: 8,
@@ -1036,7 +1036,7 @@ const staticData = [
         heading: "Promotional Paper Gift Boxes",
         button: "",
         headerimg: "/Product/Gift/image_17.jpg",
-        subimg: "/Product/Gift/image_1.jpg",
+        subimg: "/Product/Shreeji_Graphics_gift_Paper_box.svg",
       },
     ],
   },
