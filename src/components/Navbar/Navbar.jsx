@@ -78,14 +78,14 @@ export default function NavbarComponent() {
             >
               {staticData.map((item) => {
                 return (
-                //  <DropdownItem
-                 //   key={item.id}
+                <DropdownItem
+                   key={item.id}
                     // startContent={icons.scale}    for icons
-               //   >
+                 >
                     <Link to={`/category/${item.subCategory}`}>
                       {item.subCategory}
                     </Link>
-                //  </DropdownItem>
+                 </DropdownItem>
                 );
               })}
             </DropdownMenu>
