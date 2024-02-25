@@ -213,17 +213,17 @@ export default function NavbarComponent() {
             </DropdownMenu>
           </Dropdown>
           <NavbarItem isActive>
-            <Link href="#" aria-current="page">
+            <Link to={`/category/Food Packaging`} aria-current="page">
               FOOD PACKAGING
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" to={`/category/Rigid Boxes`}>
               RIGID BOXES
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" to={`/category/Custom Labels`}>
               CUSTOM LABELS
             </Link>
           </NavbarItem>
