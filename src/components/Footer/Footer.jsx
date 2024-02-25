@@ -108,7 +108,7 @@ export default function FooterComponent() {
           </div>
           {/* <!-- Useful links section --> */}
           <div className="">
-            <h6 class="mb-4 underline-offset-8 underline decoration-[#EF7F1B] text-2xl font-semibold uppercase md:justify-start">
+            <h6 className="mb-4 underline-offset-8 underline decoration-[#EF7F1B] text-2xl font-semibold uppercase md:justify-start">
               HELP
             </h6>
             {helpData.map((item) => (

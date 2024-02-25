@@ -36,8 +36,8 @@ const MainComponent = () => {
           <ItemComponent key={item.id} data={item} />
         ))}
         {loading && (
-          <div class="h-screen bg-white">
-            <div class="flex justify-center items-center h-full">
+          <div className="h-screen bg-white">
+            <div className="flex justify-center items-center h-full">
              
             </div>
           </div>
