@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import staticData from "../../../../Data";
 import { Button } from "../../ui/button";
 import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 const Product = () => {
-  const { categoryId, productId } = useParams();
 
+  const { categoryId, productId } = useParams();
+  
   const foundCategory = staticData.find(
     (category) => category.subCategory === categoryId
   );
@@ -15,10 +16,7 @@ const Product = () => {
   );
 
   const capitalizeFirstLetter = (str) => {
-    return str
-      .split(" ")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(" ");
+    return str.split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(" ");
   };
 
   return (
@@ -44,11 +42,11 @@ const Product = () => {
       </div>
 
       <div className="md:w-[75%] mx-auto  my-10">
-        <h1 className="p-1 my-5 font-bold text-5xl">Heading</h1>
+        <h1 className="p-1 my-5 font-bold text-3xl">{foundProduct.heading}</h1>
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div className="">
             <img
-              src="/Main-Images/baby_clothes_folding_box.webp"
+              src={foundProduct.img}
               alt="shreeji Graphics Product"
               width={500}
             />
@@ -129,8 +127,8 @@ const Product = () => {
           </div>
         </div>
         <div className="grid md:my-20 my-10 md:grid-cols-2 grid-cols-1">
-          <div>
-            <img src="" alt="shreeji Graphic images surat" />
+          <div className="w-14 h-14 shadow-sm">
+            <img src={foundProduct.subimg} alt="shreeji Graphic images surat" />
           </div>
           <div className="p-5 bg-gray-200">
             <h1 className="md:text-3xl  text-md text-orange-400 mb-5 font-semibold">
