@@ -4,9 +4,8 @@ import staticData from "../../../../Data";
 import { Button } from "../../ui/button";
 import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 const Product = () => {
-
   const { categoryId, productId } = useParams();
-  
+
   const foundCategory = staticData.find(
     (category) => category.subCategory === categoryId
   );
@@ -16,7 +15,10 @@ const Product = () => {
   );
 
   const capitalizeFirstLetter = (str) => {
-    return str.split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(" ");
+    return str
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(" ");
   };
 
   return (
@@ -127,8 +129,12 @@ const Product = () => {
           </div>
         </div>
         <div className="grid md:my-20 my-10 md:grid-cols-2 grid-cols-1">
-          <div className="w-14 h-14 shadow-sm">
-            <img src={foundProduct.subimg} alt="shreeji Graphic images surat" />
+          <div className="shadow-sm">
+            <img
+              src={foundProduct.headerimg}
+              alt="shreeji Graphic images surat"
+              width={400}
+            />
           </div>
           <div className="p-5 bg-gray-200">
             <h1 className="md:text-3xl  text-md text-orange-400 mb-5 font-semibold">
