@@ -17,7 +17,10 @@ const staticData = [
         heading: "Baby Clothes Folding Box",
         button: "",
         headerimg: "/Product/baby_download.svg",
-        subimg: "/Product/baby_download.svg",
+        subimg: [
+          "/Product/baby_clothes_folding_box.webp",
+          "/Product/baby_download.svg",
+        ],
       },
       {
         Productid: 2,
@@ -25,7 +28,10 @@ const staticData = [
         heading: "Baby Clothes Hollow Rim Box with Slipcase White Floor",
         button: "",
         headerimg: "/Product/baby.jpg",
-        subimg: "/Product/baby_Clothing_.svg",
+        subimg: [
+          "/Product/baby_clothes_hollow_rim_box_with_slipcase_white_floor.jpg",
+          "/Product/baby_Clothing_.svg",
+        ],
       },
       {
         Productid: 3,
@@ -289,7 +295,7 @@ const staticData = [
         heading: "Skincare Kit Packaging",
         button: "",
         headerimg: "/Product/skincare-kit-packaging-head.svg",
-        subimg: "/Product/skincare-kit-packaging-sub.jpg"
+        subimg: "/Product/skincare-kit-packaging-sub.jpg",
       },
       {
         Productid: 6,
@@ -493,8 +499,8 @@ const staticData = [
         img: "/Product/custom_beverages_box_packaging_1.jpg",
         heading: "Custom Beverages Box Packaging",
         button: "",
-        headerimg:"/Product/custom-beverages-box-packaging-head.svg",
-        subimg:"/Product/custom-beverages-box-packaging-sub.jpg",
+        headerimg: "/Product/custom-beverages-box-packaging-head.svg",
+        subimg: "/Product/custom-beverages-box-packaging-sub.jpg",
       },
       {
         Productid: 5,
@@ -509,8 +515,7 @@ const staticData = [
         img: "/Product/juice_mono_carton_packaging.jpg",
         heading: "Juice Mono Carton Packaging",
         button: "",
-        headerimg:
-          "/Product/juice-mono-carton-packaging-head.svg",
+        headerimg: "/Product/juice-mono-carton-packaging-head.svg",
         subimg: "/Product/juice-mono-carton-packaging-sub.jpg",
       },
       {
