@@ -39,7 +39,10 @@ const staticData = [
         heading: "Bed Sheets Slipcase Both Sides Open",
         button: "",
         headerimg: "/Product/bed-sheet-head.svg",
-        subimg: "/Product/bed-sheet-sub.jpg",
+        subimg: [
+          "/Product/bed_sheets_slipcase_both_sides_open.jpg",
+          "/Product/bed-sheet-sub.jpg",
+        ],
       },
       {
         Productid: 4,
