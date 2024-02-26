@@ -1064,7 +1064,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
-        img: "/Product/Coffee&Tea/image_2.jpg",
+        img: "/Product/Festival/image_2.jpg",
         heading: "Ancient Artistry Brown Magnetic Closure Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1072,7 +1072,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "/Product/Coffee&Tea/image_3.jpg",
+        img: "/Product/Festival/image_3.jpg",
         heading: "Blooming Joy Magnetic Closure Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1080,7 +1080,7 @@ const staticData = [
       },
       {
         Productid: 3,
-        img: "/Product/Coffee&Tea/image_4.jpg",
+        img: "/Product/Festival/image_4.jpg",
         heading: "Festive Bouquet Magnetic Closure Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1088,7 +1088,7 @@ const staticData = [
       },
       {
         Productid: 4,
-        img: "/Product/Coffee&Tea/image_5.jpg",
+        img: "/Product/Festival/image_5.jpg",
         heading: "Festive Flair Orange Magnetic Closure Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1096,7 +1096,7 @@ const staticData = [
       },
       {
         Productid: 5,
-        img: "/Product/Coffee&Tea/image_6.jpg",
+        img: "/Product/Festival/image_6.jpg",
         heading: "Garden Grove Magnetic Closure Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1104,7 +1104,7 @@ const staticData = [
       },
       {
         Productid: 6,
-        img: "/Product/Coffee&Tea/image_7.jpg",
+        img: "/Product/Festival/image_7.jpg",
         heading: "Holiday Joy Magnetic Closure Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1112,7 +1112,7 @@ const staticData = [
       },
       {
         Productid: 7,
-        img: "/Product/Coffee&Tea/image_8.jpg",
+        img: "/Product/Festival/image_8.jpg",
         heading: "Spring Style Celebration Magnetic Closure Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1120,7 +1120,7 @@ const staticData = [
       },
       {
         Productid: 8,
-        img: "/Product/Coffee&Tea/image_9.jpg",
+        img: "/Product/Festival/image_9.jpg",
         heading: "Yellow Bahar Magnetic Closure Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1128,7 +1128,7 @@ const staticData = [
       },
       {
         Productid: 9,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/Festival/image_10.jpg",
         heading: "Ethnic Era Magnetic Closure Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1136,7 +1136,7 @@ const staticData = [
       },
       {
         Productid: 10,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/Festival/image_11.jpg",
         heading: "Purple Shine Drawer Style Rigid Box",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1144,7 +1144,7 @@ const staticData = [
       },
       {
         Productid: 11,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/Festival/image_1.jpg",
         heading: "Ancient Artistry Green Top-Bottom (Telescopic) Rigid Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1152,7 +1152,7 @@ const staticData = [
       },
       {
         Productid: 12,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/Festival/image_1.jpg",
         heading: "Blooming Joy Top-Bottom (Telescopic) Rigid Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1160,7 +1160,7 @@ const staticData = [
       },
       {
         Productid: 13,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/Festival/image_1.jpg",
         heading: "Holiday Joy Top-Bottom (Telescopic) Rigid Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1168,7 +1168,7 @@ const staticData = [
       },
       {
         Productid: 14,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/Festival/image_1.jpg",
         heading: "Holiday Joy Mailer Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
@@ -1176,84 +1176,13 @@ const staticData = [
       },
       {
         Productid: 15,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/Festival/image_1.jpg",
         heading: "Turquoise Celebration Mailer Boxes",
         button: "",
         headerimg: "/Product/Coffee&Tea/image_1.jpg",
         subimg: "/Product/Coffee&Tea/image_1.jpg",
       },
-      {
-        Productid: 16,
-        img: "/Product/Coffee&Tea/image_1.jpg",
-        heading: "Ethnic Era Mailer Boxes",
-        button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
-      },
-      {
-        Productid: 17,
-        img: "/Product/Coffee&Tea/image_1.jpg",
-        heading: "Festive Flair Orange Mailer Boxes",
-        button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
-      },
-      {
-        Productid: 18,
-        img: "/Product/Coffee&Tea/image_1.jpg",
-        heading: "Ancient Artistry Green Self Locking Tray Hexagonal",
-        button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
-      },
-      {
-        Productid: 19,
-        img: "/Product/Coffee&Tea/image_1.jpg",
-        heading: "Holiday Joy Self Locking Tray Hexagonal",
-        button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
-      },
-      {
-        Productid: 20,
-        img: "/Product/Coffee&Tea/image_1.jpg",
-        heading: "Mauve Floral Pillow Box",
-        button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
-      },
-      {
-        Productid: 21,
-        img: "/Product/Coffee&Tea/image_1.jpg",
-        heading: "Festive Treasure Pillow Box",
-        button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
-      },
-      {
-        Productid: 22,
-        img: "/Product/Coffee&Tea/image_1.jpg",
-        heading: "Blooming Joy Pillow Box",
-        button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
-      },
-      {
-        Productid: 23,
-        img: "/Product/Coffee&Tea/image_1.jpg",
-        heading: "Yellow Bahar Pillow Box",
-        button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
-      },
-      {
-        Productid: 24,
-        img: "/Product/Coffee&Tea/image_1.jpg",
-        heading: "Blossom Breeze Pillow Box",
-        button: "",
-        headerimg: "/Product/Coffee&Tea/image_1.jpg",
-        subimg: "/Product/Coffee&Tea/image_1.jpg",
-      },
+   
     ],
   },
   {
