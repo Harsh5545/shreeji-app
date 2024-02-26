@@ -172,7 +172,7 @@ const staticData = [
         heading: "Box Packaging",
         button: "",
         headerimg: "/Product/box-packaging-head.svg",
-        subimg: "/Product/box-packaging-head.jpg",
+        subimg: "/Product/box-packaging-sub.jpg",
       },
       {
         Productid: 3,
@@ -180,7 +180,7 @@ const staticData = [
         heading: "Bulb Box",
         button: "",
         headerimg: "/Product/box-packaging-head.svg",
-        subimg: "/Product/box-packaging-head.jpg",
+        subimg: "/Product/box-packaging-sub.jpg",
       },
       {
         Productid: 4,
@@ -188,7 +188,7 @@ const staticData = [
         heading: "Butter Box Packaging",
         button: "",
         headerimg: "/Product/box-packaging-head.svg",
-        subimg: "/Product/box-packaging-head.jpg",
+        subimg: "/Product/box-packaging-sub.jpg",
       },
       {
         Productid: 5,
@@ -196,14 +196,14 @@ const staticData = [
         heading: "Candle Drawer Box",
         button: "",
         headerimg: "/Product/candle-drawer-box-head.svg",
-        subimg: "/Product/candle-drawer-box-head.jpg",
+        subimg: "/Product/candle-drawer-box-sub.jpg",
       },
       {
         Productid: 6,
         img: "/Product/cards_game_packaging.jpg",
         heading: "Cards Game Packaging",
         button: "",
-        headerimg: "/Product/card-games-sub.svg",
+        headerimg: "/Product/card-games-head.svg",
         subimg: "/Product/card-games-sub.jpg",
       },
       {

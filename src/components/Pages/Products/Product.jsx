@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import staticData from "../../../../Data";
 import { Button } from "../../ui/button";
 import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 const Product = () => {
   const { categoryId, productId } = useParams();
+  const [foundProduct,setFoundProduct]=useState([])
+  const [img,setImg]=useState({})
+useEffect(()=>{
 
   const foundCategory = staticData.find(
     (category) => category.subCategory === categoryId
@@ -13,6 +16,10 @@ const Product = () => {
   const foundProduct = foundCategory?.product.find(
     (product) => product.Productid === parseInt(productId)
   );
+  setFoundProduct(foundProduct);
+  setImg({actualImg:foundProduct.img,subImg:foundProduct.subimg})
+
+},[])
 
   const capitalizeFirstLetter = (str) => {
     return str
@@ -46,71 +53,83 @@ const Product = () => {
       <div className="md:w-[75%] mx-auto  my-10">
         <h1 className="p-1 my-5 font-bold text-3xl">{foundProduct.heading}</h1>
         <div className="grid md:grid-cols-2 grid-cols-1">
-          <div className="">
+          <div className=" flex justify-center flex-col  gap-3">
             <img
               src={foundProduct.img}
               alt="shreeji Graphics Product"
               width={500}
+              className="object-cover transition-3000"
             />
+         {foundProduct.subimg != undefined ? <img
+              src={foundProduct.subimg}
+              alt="shreeji Graphic images surat"
+              onMouseEnter={()=>setFoundProduct(prevState => ({
+                ...prevState, img: prevState.subimg , subimg: foundProduct.img
+              }))}
+              onMouseLeave={()=>setFoundProduct(prevState => ({
+                ...prevState, img: img.actualImg ,subimg:img.subImg
+              }))}
+              width={100}
+            />:<></>}
           </div>
-          <div className="flex my-2 flex-col gap-5  w-[90%] mx-auto">
+          <div className="flex my-2 flex-col gap-5 w-[90%] mx-auto">
             <div className="flex justify-between items-center">
-              <p className=" font-normal md:md:text-lg text-md text-md">
+              <p className=" font-normal flex-1 md:md:text-lg text-md text-md">
                 Length (60-400mm)
               </p>
               <input
-                className="p-1 border md:md:text-lg text-md text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none"
+                className="p-1 border flex-1 md:md:text-lg text-md text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none"
                 type="text"
                 placeholder="Enter length"
               />
             </div>
             <div className="flex justify-between">
-              <p className=" font-normal md:text-lg text-md">
+              <p className=" font-normal flex-1 md:text-lg text-md">
                 Width (15-200mm)
               </p>
               <input
-                className="p-1 border md:text-lg text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none"
+                className="p-1 border flex-1 md:text-lg text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none"
                 type="text"
                 placeholder="Enter Width"
               />
             </div>
             <div className="flex justify-between">
-              <p className=" font-normal md:text-lg text-md">
+              <p className=" font-normal flex-1 md:text-lg text-md">
                 Height (60-710mm)
               </p>
               <input
-                className="p-1 border md:text-lg text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none"
+                className="p-1 border flex-1 md:text-lg text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none"
                 type="text"
                 placeholder="Enter Height"
               />
             </div>
             <div className="flex justify-between">
-              <p className=" font-normal md:text-lg text-md">Box Types</p>
-              <select className=" p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+              <p className=" font-normal flex-1 md:text-lg text-md">Box Types</p>
+              <select className="p-1 flex-1 border md:md:text-lg text-md text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none">
                 <option>Standard Packaging</option>
                 <option>Plain Box/Non Printed</option>
                 <option>Food Safe Packaging</option>
                 <option>Single Color Printing</option>
               </select>
             </div>
-            <div className="flex justify-between">
-              <p className=" font-normal md:text-lg text-md">Material</p>
-              <select className=" p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+            <div className="flex justify-between w-full">
+              <p className="flex-1 font-normal md:text-lg text-md">Material</p>
+              <select className="p-1 flex-1 border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
                 <option>SBM/FBB 300 GSM</option>
                 <option>SBM/FBB 350 GSM</option>
               </select>
             </div>
             <div className="flex justify-between">
-              <p className=" font-normal md:text-lg text-md">Refinement</p>
-              <select className=" p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+              <p className=" font-normal flex-1 md:text-lg text-md">Refinement</p>
+              <select className="p-1 flex-1 border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
                 <option>None</option>
                 <option>Spot UV</option>
                 <option>Foil Stamping</option>
               </select>
             </div>
             <div className="flex justify-between">
-              <p className=" font-normal md:text-lg text-md">Finishes</p>
-              <select className=" p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+              <p className="flex-1 font-normal md:text-lg text-md">Finishes</p>
+              <select className=" p-1 flex-1 border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
                 <option>None</option>
                 <option>Gloss Lamination</option>
                 <option>Matt Lamination</option>
@@ -119,8 +138,8 @@ const Product = () => {
               </select>
             </div>
             <div className="flex justify-between">
-              <p className=" font-normal md:text-lg text-md">Production</p>
-              <select className=" /p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+              <p className="flex-1 font-normal md:text-lg text-md">Production</p>
+              <select className="flex-1 p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
                 <option>Standard (8/10 Days)</option>
                 <option>standard (3/4 Days)</option>
               </select>
@@ -129,12 +148,13 @@ const Product = () => {
           </div>
         </div>
         <div className="grid md:my-20 my-10 md:grid-cols-2 grid-cols-1">
-          <div className="shadow-sm">
+          <div className="flex  justify-between gap-3">
             <img
               src={foundProduct.headerimg}
               alt="shreeji Graphic images surat"
               width={400}
             />
+              
           </div>
           <div className="p-5 bg-gray-200">
             <h1 className="md:text-3xl  text-md text-orange-400 mb-5 font-semibold">
