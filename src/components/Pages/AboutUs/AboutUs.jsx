@@ -17,7 +17,7 @@ function AboutUs() {
       </div>
 
       <div className=" my-6 md:my-12 flex justify-center items-center flex-col gap-8 text-center ">
-        <h2 className="font-semibold md:text-4xl text-xl md:w-[80%] w-[90%]">
+        <h2 className="font-semibold text-[#EF7F1B] md:text-4xl text-xl md:w-[80%] w-[90%]">
           Our Company
         </h2>
         <p className="p-1 font-medium md:text-xl text-medium md:w-[80%] w-[90%]">
