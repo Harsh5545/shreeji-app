@@ -226,7 +226,7 @@ export default function NavbarComponent() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link to={`/aboutus`} color="foreground" href="#">
+            <Link to="/aboutus" color="foreground" href="#">
               ABOUT
             </Link>
           </NavbarItem>
