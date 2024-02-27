@@ -1,0 +1,28 @@
+:root{
+     --orange-gradient: linear-gradient(270deg, #DE4D38 0%, #F7EC38 100%);
+}
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: var(--orange-gradient);
+        border-radius: 6px;
+      }
+      body, html {
+        margin: 0;
+        padding: 0;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+       
+      }      

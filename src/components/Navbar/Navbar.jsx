@@ -7,7 +7,7 @@ import {
   Button,
   NavbarMenuToggle,
   NavbarMenu,
-  NavbarMenuItem,
+  // NavbarMenuItem,
   Dropdown,
   DropdownTrigger,
   DropdownMenu,
@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { FaChevronDown } from "react-icons/fa";
 import staticData from "../../../Data";
-import { MdCall } from "react-icons/md";
+// import { MdCall } from "react-icons/md";
 import CustomModel from "../Modal/Model";
 import { useDisclosure } from "@nextui-org/react";
 export default function NavbarComponent() {
@@ -76,42 +76,66 @@ export default function NavbarComponent() {
                 base: "gap-4",
               }}
             >
-              {staticData.map((item) => {
+              {staticData.slice(0, 12).map((item) => {
                 return (
-                <DropdownItem
-                   key={item.id}
-                    // startContent={icons.scale}    for icons
-                 >
+                  <DropdownItem key={item.id}>
                     <Link to={`/category/${item.subCategory}`}>
                       {item.subCategory}
                     </Link>
-                 </DropdownItem>
+                  </DropdownItem>
                 );
               })}
             </DropdownMenu>
           </Dropdown>
-          <NavbarItem>
-            <Link to={`/category/bags`} color="foreground" >
-              BAGS
-            </Link>
-          </NavbarItem>
+          <Dropdown className="">
+            <NavbarItem>
+              <DropdownTrigger>
+                <Button
+                  disableRipple
+                  className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  endContent={<FaChevronDown />}
+                  radius="sm"
+                  variant="light"
+                >
+                  BAGS
+                </Button>
+              </DropdownTrigger>
+            </NavbarItem>
+            <DropdownMenu
+              aria-label="ACME features"
+              className=""
+              itemClasses={{
+                base: "gap-4",
+              }}
+            >
+              {staticData.slice(12).map((item) => {
+                return (
+                  <DropdownItem key={item.id}>
+                    <Link to={`/category/${item.subCategory}`}>
+                      {item.subCategory}
+                    </Link>
+                  </DropdownItem>
+                );
+              })}
+            </DropdownMenu>
+          </Dropdown>
           <NavbarItem>
             <Link to={`/category/Food Packaging`} aria-current="page">
               FOOD PACKAGING
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link to={`/category/Rigid Boxes`} color="foreground" >
+            <Link to={`/category/Rigid Boxes`} color="foreground">
               RIGID BOXES
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link to={`/category/Custom Labels`} color="foreground" >
+            <Link to={`/category/Custom Labels`} color="foreground">
               CUSTOM LABELS
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" >
+            <Link to={`/aboutus`} color="foreground">
               ABOUT
             </Link>
           </NavbarItem>
@@ -143,40 +167,66 @@ export default function NavbarComponent() {
                 base: "gap-4",
               }}
             >
-              {staticData.map((item) => {
+              {staticData.slice(0, 12).map((item) => {
                 return (
-                  <DropdownItem
-                    key={item.id}
-                    // startContent={icons.scale}    for icons
-                  >
-                    {item.subCategory}
+                  <DropdownItem key={item.id}>
+                    <Link to={`/category/${item.subCategory}`}>
+                      {item.subCategory}
+                    </Link>
                   </DropdownItem>
                 );
               })}
             </DropdownMenu>
           </Dropdown>
-          <NavbarItem>
-            <Link color="foreground" href="#">
-              BAGS
-            </Link>
-          </NavbarItem>
+          <Dropdown className="">
+            <NavbarItem>
+              <DropdownTrigger>
+                <Button
+                  disableRipple
+                  className="p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  endContent={<FaChevronDown />}
+                  radius="sm"
+                  variant="light"
+                >
+                  BAGS
+                </Button>
+              </DropdownTrigger>
+            </NavbarItem>
+            <DropdownMenu
+              aria-label="ACME features"
+              className=""
+              itemClasses={{
+                base: "gap-4",
+              }}
+            >
+              {staticData.slice(12).map((item) => {
+                return (
+                  <DropdownItem key={item.id}>
+                    <Link to={`/category/${item.subCategory}`}>
+                      {item.subCategory}{" "}
+                    </Link>
+                  </DropdownItem>
+                );
+              })}
+            </DropdownMenu>
+          </Dropdown>
           <NavbarItem isActive>
-            <Link href="#" aria-current="page">
+            <Link to={`/category/Food Packaging`} aria-current="page">
               FOOD PACKAGING
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" to={`/category/Rigid Boxes`}>
               RIGID BOXES
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" to={`/category/Custom Labels`}>
               CUSTOM LABELS
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link to="/aboutus" color="foreground" href="#">
               ABOUT
             </Link>
           </NavbarItem>

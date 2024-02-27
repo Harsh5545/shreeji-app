@@ -16,7 +16,6 @@ const Category = () => {
   const [loadingMore, setLoadingMore] = useState(false);
 
   const { categoryId } = useParams();
-  console.log(categoryId);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,7 +26,6 @@ const Category = () => {
         (category) => category.subCategory === categoryId
       );
       setCategory(foundCategory);
-      console.log(category);
       setIsLoaded(false);
       setLoading(false);
     };
@@ -65,10 +63,9 @@ const Category = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const backgroundImageUrl = `url(${category?.HeaderImage})`
-    ? `url(${category?.HeaderImage})`
+  const backgroundImageUrl = category?.HeaderImage
+    ? category?.HeaderImage
     : "";
-  console.log(backgroundImageUrl);
   const capitalizeFirstLetter = (str) => {
     return str
       .split(" ")
@@ -103,18 +100,17 @@ const Category = () => {
           </BreadcrumbItem>
         </Breadcrumbs>
       </div>
-
       <div>
         <div
           style={{
-            background: `${backgroundImageUrl}`,
+            backgroundImage: `url(${backgroundImageUrl})`,
             backgroundSize: "cover",
             minHeight: "60vh",
-            backgroundImage: "no-repeat",
+            // backgroundImage: "no-repeat",
           }}
         >
-          <div className="flex justify-start items-center h-[60vh] w-[45%] mx-auto text-center">
-            <h2 className="p-5 font-medium md:text-4xl text-5xl">
+          <div className="flex items-center justify-start h-[60vh] md:w-[45%] text-center">
+            <h2 className="font-medium md:text-4xl text-5xl p-5">
               {category?.heading}
             </h2>
           </div>
