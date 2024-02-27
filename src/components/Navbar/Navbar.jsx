@@ -142,7 +142,9 @@ export default function NavbarComponent() {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="flex">
-            <Button onClick={onOpen}>CONTACT</Button>
+            <Button className="bg-[#EF7F1B] text-[#fff] " onClick={onOpen}>
+              CONTACT
+            </Button>
           </NavbarItem>
         </NavbarContent>
         <NavbarMenu>
