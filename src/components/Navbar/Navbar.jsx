@@ -7,7 +7,7 @@ import {
   Button,
   NavbarMenuToggle,
   NavbarMenu,
-  NavbarMenuItem,
+  // NavbarMenuItem,
   Dropdown,
   DropdownTrigger,
   DropdownMenu,
@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { FaChevronDown } from "react-icons/fa";
 import staticData from "../../../Data";
-import { MdCall } from "react-icons/md";
+// import { MdCall } from "react-icons/md";
 import CustomModel from "../Modal/Model";
 import { useDisclosure } from "@nextui-org/react";
 export default function NavbarComponent() {
@@ -78,9 +78,7 @@ export default function NavbarComponent() {
             >
               {staticData.slice(0, 12).map((item) => {
                 return (
-                  <DropdownItem
-                    key={item.id}
-                  >
+                  <DropdownItem key={item.id}>
                     <Link to={`/category/${item.subCategory}`}>
                       {item.subCategory}
                     </Link>
@@ -112,9 +110,7 @@ export default function NavbarComponent() {
             >
               {staticData.slice(12).map((item) => {
                 return (
-                  <DropdownItem
-                    key={item.id}
-                  >
+                  <DropdownItem key={item.id}>
                     <Link to={`/category/${item.subCategory}`}>
                       {item.subCategory}
                     </Link>
@@ -139,7 +135,9 @@ export default function NavbarComponent() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground">ABOUT</Link>
+            <Link to={`/aboutus`} color="foreground">
+              ABOUT
+            </Link>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
@@ -228,7 +226,7 @@ export default function NavbarComponent() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link to={`/aboutus`} color="foreground" href="#">
               ABOUT
             </Link>
           </NavbarItem>
