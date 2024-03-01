@@ -4,10 +4,10 @@ function HomeService() {
   
   return (
     <div className="bg-[#F2F0F1]">
-      <div className="mx-auto max-w-screen-xl py-7 px-5 grid md:grid-cols-2">
-        <div className="flex flex-col gap-8 py-12">
-          <div>
-            <h2 className="text-2xl md:text-3xl text-[#EF7F1B]">
+      <div className="mx-auto max-w-screen-xl gap-1 py-7 px-5 grid md:grid-cols-2">
+        <div className="flex flex-col gap-10 py-12">
+          <div className="flex flex-col  gap-8">
+            <h2 className="text-2xl md:text-3xl text-[#FF6C22]">
               SHREEJI GRAPHICS SERVICES
             </h2>
             <p className="text-lg md:text-2xl">
@@ -44,13 +44,13 @@ function HomeService() {
               <p className="font-bold text-sm">Custom Styles & Materials</p>
             </div>
           </div>
-          <a className="bg-gradient-to-r from-[#f0a868] to-[#cf7d35] text-white p-2 rounded-[50px] w-24 text-center" href="https://wa.me/+918828091532?text=Hi%20Shreeji%20Graphics,%0A%0AI%20am%20interested%20in%20your%20packaging%20services.%20Can%20we%20discuss%20further?" target="_blank">
+          <a className="bg-gradient-to-r from-[#FF6C22] to-[#FF6C22] text-white p-2 rounded-[30px] w-28 text-center" href="https://wa.me/+918828091532?text=Hi%20Shreeji%20Graphics,%0A%0AI%20am%20interested%20in%20your%20packaging%20services.%20Can%20we%20discuss%20further?" target="_blank">
             Get Now
           </a>
         </div>
 
         <div>
-          <img src="/Main-Images/service-bag.webp" className="" alt=""/>
+          <img src="/Main-Images/service-bag.webp" width="2000" className="" alt=""/>
         </div>
       </div>
     </div>
