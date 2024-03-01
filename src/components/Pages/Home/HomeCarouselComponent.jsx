@@ -5,7 +5,7 @@ import { Button } from "../../ui/button";
 export default function CarouselCrossfade() {
   return (
     <>
-      <TECarousel interval={2000} showIndicators crossfade ride="carousel">
+      <TECarousel interval={4000} showIndicators crossfade ride="carousel">
         <div className="relative w-full md:h-[75vh]  overflow-hidden after:clear-both after:block after:content-['']">
           <TECarouselItem
             itemID={1}
