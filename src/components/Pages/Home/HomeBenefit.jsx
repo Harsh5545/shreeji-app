@@ -8,16 +8,16 @@ import { PiContactlessPaymentBold } from "react-icons/pi"
 
 function HomeBenefit() {
   return (
-    <div className="mx-auto max-w-screen-xl py-5 px-5">
-      <div className="text-center flex gap-2 flex-col">
-        <h1 className="font-[400] text-3xl">Your Benefits with Turtle Boxes</h1>
+    <div className="mx-auto max-w-screen-xl py-8 md:py-12 px-5">
+      <div className="text-center flex gap-5 flex-col">
+        <h1 className="font-[400] font-bold text-[#FF6C22] text-3xl">Your Benefits with Turtle Boxes</h1>
         <p className="text-lg">
           Take your brand to next level with the world’s finest custom packaging
           solutions
         </p>
       </div>
-      <div className="grid md:grid-cols-3">
-        <div className="mt-8 space-y-10">
+      <div className="grid  md:grid-cols-3">
+        <div className="mt-10 space-y-10">
           <div className="flex items-start gap-1">
             <div className="mr-[1px] left-10">
               <TbDiscountCheckFilled className="text-6xl"/>
@@ -65,7 +65,7 @@ function HomeBenefit() {
           <img alt="Benefits" src="/Main-Images/benefit.webp" />
         </div>
 
-        <div className="mt-8 space-y-10" >
+        <div className="mt-10 space-y-10" >
           <div className="flex items-start justify-between">
             <div><h1 className="text-lg font-bold">
               Standard Artwork Check Included

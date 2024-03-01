@@ -2,22 +2,25 @@ import React from "react";
 
 function HomeCustomBox() {
   return (
-    <div className="bg-[#EF7F1B] relative my-[100px]">
-      <div className="mx-auto max-w-screen-lg py-10 px-5 grid md:grid-cols-2">
-        <div></div>
-        <div className="flex gap-2 flex-col  items-start">
-          <p className="text-[#fff] text-lg">
+    <div className="bg-[#FF6C22]  relative md:my-[120px] mt-[180px] mb-[80px]">
+     <div className="md:hidden  absolute top-[-160px] ">
+        <img src="/Main-Images/paper-food-box.webp" width="350" />
+      </div>
+      <div className="mx-auto max-w-screen-lg md:py-10 pt-20 pb-5 px-5 grid md:grid-cols-2">
+        <div className=" flex gap-5 flex-col items-center md:items-start">
+ 
+          <p className="text-[#fff] md:text-start text-center text-lg md:text-2xl">
             Create professional, personalised packaging in minutes with Turtle
             Boxes Design & Print Software
           </p>
-          <button className="bg-white h-8 w-48 rounded-[30px] text-[#EF7F1B]">
+          <button className="bg-white text-lg font-bold w-max px-5 py-2 rounded-[20px] text-[#EF7F1B]">
             DESIGN CUSTOM BOX
           </button>
         </div>
       </div>
-      <div className="absolute hidden md:flex bottom-[-70px] left-[170px]">
-            <img src="/Main-Images/paper-food-box.webp" width="500"/>
-        </div>
+      <div className="absolute hidden md:flex bottom-[-40px] left-[900px]">
+        <img src="/Main-Images/paper-food-box.webp" width="500" />
+      </div>
     </div>
   );
 }
