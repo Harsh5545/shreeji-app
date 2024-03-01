@@ -22,12 +22,12 @@ const CustomCard = (props) => {
           src={mainImage}
         />
       </CardBody>
-      <CardFooter className="text-[11px] justify-between text-[#EF7F1B] w-full items-start my-2">
-        <p>{subCategory}</p>
+      <CardFooter className="text-[11px] gap-2 justify-between text-[#000] flex flex-col w-full items-center my-2">
+        <p className="text-xl">{subCategory}</p>
 
         <Link
           to={`/category/${subCategory}`}
-          className="text-default-500 underline rounded-sm  hover:text-gradient-to-r from-[#f0a868] to-[#cf7d35]"
+          className="text-default-500 text-md rounded-xl bg-[#0F172A] py-2 px-4  hover:text-gradient-to-r "
         >
           {props.title}
         </Link>
