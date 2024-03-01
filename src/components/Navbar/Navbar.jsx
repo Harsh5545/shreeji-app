@@ -41,7 +41,7 @@ export default function NavbarComponent() {
         onOpenChange={onOpenChange}
       />
 
-      <Navbar onMenuOpenChange={setIsMenuOpen} isBordered>
+      <Navbar onMenuOpenChange={setIsMenuOpen} isBordered maxWidth="full" height="5rem">
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -49,7 +49,7 @@ export default function NavbarComponent() {
           />
           <NavbarBrand>
             <Link to="/">
-              <img src={logo} alt="shreeji logo" width="120" />
+              <img src={logo} alt="shreeji logo" width="200" />
             </Link>
           </NavbarBrand>
         </NavbarContent>
@@ -212,7 +212,7 @@ export default function NavbarComponent() {
               })}
             </DropdownMenu>
           </Dropdown>
-          <NavbarItem isActive>
+          <NavbarItem>
             <Link to={`/category/Food Packaging`} aria-current="page">
               FOOD PACKAGING
             </Link>
