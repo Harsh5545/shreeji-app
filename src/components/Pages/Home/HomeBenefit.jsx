@@ -10,7 +10,7 @@ function HomeBenefit() {
   return (
     <div className="mx-auto max-w-screen-xl py-8 md:py-12 px-5">
       <div className="text-center flex gap-5 flex-col">
-        <h1 className="font-[400] font-bold text-[#FF6C22] text-3xl">Your Benefits with Turtle Boxes</h1>
+        <h1 className="font-bold text-[#FF6C22] text-3xl">Your Benefits with Turtle Boxes</h1>
         <p className="text-lg">
           Take your brand to next level with the world’s finest custom packaging
           solutions
