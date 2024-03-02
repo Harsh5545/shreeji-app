@@ -92,7 +92,7 @@ export default function NavbarComponent() {
                                 return (
                                     <DropdownItem
                                         key={item.id}
-                                        onClick={handleNav}
+                                     
                                     >
                                         <Link
                                             to={`/category/${item.subCategory}`}
@@ -130,7 +130,7 @@ export default function NavbarComponent() {
                                     <DropdownItem key={item.id}>
                                         <Link
                                             to={`/category/${item.subCategory}`}
-                                            onClick={setIsMenuOpen}
+                                           
                                         >
                                             {item.subCategory}
                                         </Link>
