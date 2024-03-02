@@ -12,7 +12,7 @@ const Category = () => {
   const [loading, setLoading] = useState(true);
   const [category, setCategory] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [visibleItems, setVisibleItems] = useState(10);
+  const [visibleItems, setVisibleItems] = useState(8);
   const [loadingMore, setLoadingMore] = useState(false);
 
   const { categoryId } = useParams();
@@ -33,7 +33,7 @@ const Category = () => {
   }, [categoryId]);
 
   const LoadingCards = () => {
-    return Array.from({ length: 12 }).map((_, index) => (
+    return Array.from({ length: 8 }).map((_, index) => (
       <div key={index}>
         <NewCardLoading />
       </div>
@@ -50,7 +50,7 @@ const Category = () => {
         window.innerHeight || document.documentElement.clientHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
-      if (scrollY + windowHeight >= documentHeight - 200 && !loadingMore) {
+      if (scrollY + windowHeight >= documentHeight - 500 && !loadingMore) {
         setLoadingMore(true);
         setTimeout(() => {
           setVisibleItems((prevVisibleItems) => prevVisibleItems + 4);
@@ -139,11 +139,11 @@ const Category = () => {
                 image={product.img}
                 categoryId={category?.subCategory}
                 productId={product.Productid}
-                title="Check Now"
+                
               />
             ))
         )}
-        {loadingMore && (
+        {loadingMore && category?.product.length > visibleItems && (
           <div className="flex items-center justify-center my-4">
             <Spinner color="success" size="lg" />
           </div>
