@@ -18,9 +18,7 @@ import { apiCall } from "../../Api/Api.js";
 import toast, { Toaster } from "react-hot-toast";
 export default function CustomModel({ isOpen, onOpen, onOpenChange }) {
   const postData = async () => {
-    const toastId = toast.loading("Sending Message...", {
-      position: "top-right",
-    });
+    const toastId = toast.loading("Sending Message...", { position: "top-right", });
     const apiUrl = "https://api.hdfonline.in/api/v1/sendMail";
 
     const postData = {
