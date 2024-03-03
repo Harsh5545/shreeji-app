@@ -1,7 +1,7 @@
 .animated-carousel-item {
-    animation: slideRightToLeft 1s ease-in backwards;
+    animation: slideRightToLeft 1s ease-out forwards;
     /* opacity: 0; */
-    /* animation-delay: 2s; */
+    /* animation-delay: 1s; */
   }
   
   @keyframes slideRightToLeft {
@@ -11,7 +11,7 @@
     }
     100% {
       transform: translateX(0%);
-      opacity: 0.7;
+      opacity: 0.8;
     }
   }
   

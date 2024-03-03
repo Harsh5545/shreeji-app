@@ -11,7 +11,7 @@ export default function CarouselCrossfade() {
       setAnimate(true);
       const resetTimer = setTimeout(() => {
         setAnimate(false);
-      }, 2000); // Set animation to false after 1 second
+      }, 1000); // Set animation to false after 1 second
       return () => clearTimeout(resetTimer);
     }, 2000); // Trigger animation every 2 seconds
 
