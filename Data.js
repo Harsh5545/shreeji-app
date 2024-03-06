@@ -5,7 +5,7 @@ const staticData = [
     category: "boxes",
     subCategory: "CLOTHIGS & APPARELS",
     heading: "Restyle Your Apparel and Clothing Packaging Boxes",
-    mainImage: "/Product/Home/image_6.jpg",
+    mainImage: "/Product/7046324_1575.jpg",
     HeaderImage: "/Main-Images/desktop-clothing-apparels.jpg",
     discriptionHeading: "Give Your Clothing Brand A Better Box to Wear",
     discription:

@@ -22,7 +22,7 @@ const CustomCard = (props) => {
                     src={mainImage}
                 />
             </CardBody>
-            <CardFooter className="text-[11px] gap-2 justify-between text-[#000] flex flex-col w-full items-center my-2">
+            <CardFooter className="text-[10px] gap-2 justify-between text-[#000] flex flex-col w-full items-center my-1">
                 <p className="text-xl">{subCategory}</p>
             </CardFooter>
             <CardFooter >
@@ -31,7 +31,7 @@ const CustomCard = (props) => {
                     href={`/category/${subCategory}`}
                     as={Link}
                     color="primary"
-                    variant="shadow"
+                    
                 >
                     {props.title}
                 </Button>
