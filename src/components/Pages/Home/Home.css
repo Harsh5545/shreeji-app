@@ -1,7 +1,7 @@
 .animated-carousel-item {
-    animation: slideRightToLeft 1s ease-out forwards;
+    animation: slideRightToLeft .8s ease-out forwards;
     /* opacity: 0; */
-    /* animation-delay: 1s; */
+    animation-delay: .5s;
   }
   
   @keyframes slideRightToLeft {

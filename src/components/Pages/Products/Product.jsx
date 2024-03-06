@@ -60,17 +60,13 @@ const Product = () => {
             </div>
 
             <div className="md:w-[75%] mx-auto  my-10">
-                <h1 className="p-1 my-5 font-bold text-3xl">
+                <h1 className="p-5  font-bold text-3xl">
                     {foundProduct.heading}
                 </h1>
                 <div className="grid md:grid-cols-2 grid-cols-1">
-                    <div className=" flex justify-center flex-col  gap-3">
-                        <img
-                            src={foundProduct.img}
-                            alt="shreeji Graphics Product"
-                            width={500}
-                            className="object-cover transition-3000"
-                        />
+                    <div className="items-start h-[30rem] flex p-8 justify-start relative flex-col gap-3">
+                    <img src={foundProduct.img} alt="shreeji Graphics Product" width='400' className="object-cover transition-3000"/>
+
                         {foundProduct.subimg != undefined ? (
                             <img
                                 src={foundProduct.subimg}
@@ -89,7 +85,9 @@ const Product = () => {
                                         subimg: img.subImg,
                                     }))
                                 }
-                                width={100}
+                                width='100'
+                                height='100'
+                                className="absolute object-contain bottom-0"
                             />
                         ) : (
                             <></>

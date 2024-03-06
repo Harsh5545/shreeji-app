@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navbar.css"
 import {
     Navbar,
     NavbarBrand,
@@ -15,7 +16,7 @@ import {
 } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 import staticData from "../../../Data";
 // import { MdCall } from "react-icons/md";
 import CustomModel from "../Modal/Model";
@@ -173,75 +174,45 @@ export default function NavbarComponent() {
                         </Button>
                     </NavbarItem>
                 </NavbarContent>
-                <NavbarMenu>
-                    <Dropdown>
-                        <NavbarItem>
-                            <DropdownTrigger>
-                                <Button
-                                    disableRipple
-                                    className="p-0 bg-transparent data-[hover=true]:bg-transparent"
-                                    endContent={<FaChevronDown />}
-                                    radius="sm"
-                                    variant="light"
+                                {/* {staticData.slice(12).map((item) => {
+                                    return (
+                                        <DropdownItem key={item.id}>
+                                            <Link
+                                                to={`/category/${item.subCategory}`}
+                                            >
+                                                {item.subCategory}
+                                            </Link>
+                                        </DropdownItem>
+                                    );
+                                })} */}
+                <NavbarMenu className="space-y-2">
+                <NavbarItem>
+                <button className="button flex items-center gap-1">
+                    BOXES
+                    <p className="rotate-0 ">
+                        <FaChevronRight />
+                    </p>
+                </button>
+                    </NavbarItem>
+                    <NavbarItem>
+                    <button className="button flex items-center gap-1">
+                        BOXES
+                        <p className="rotate-0 ">
+                            <FaChevronRight />
+                        </p>
+                    </button>
+                    {staticData.slice(0, 12).map((item) => {
+                        return (
+                            <DropdownItem key={item.id}>
+                                <Link
+                                    to={`/category/${item.subCategory}`}
                                 >
-                                    BOXES
-                                </Button>
-                            </DropdownTrigger>
-                        </NavbarItem>
-                        <DropdownMenu
-                            aria-label=""
-                            className=""
-                            itemClasses={{
-                                base: "gap-4",
-                            }}
-                        >
-                            {staticData.slice(0, 12).map((item) => {
-                                return (
-                                    <DropdownItem key={item.id}>
-                                        <Link
-                                            to={`/category/${item.subCategory}`}
-                                        >
-                                            {item.subCategory}
-                                        </Link>
-                                    </DropdownItem>
+                                    {item.subCategory}
+                                </Link>
+                                </DropdownItem>
                                 );
                             })}
-                        </DropdownMenu>
-                    </Dropdown>
-                    <Dropdown className="ml-0">
-                        <NavbarItem>
-                            <DropdownTrigger>
-                                <Button
-                                    disableRipple
-                                    className="p-0 bg-transparent data-[hover=true]:bg-transparent"
-                                    endContent={<FaChevronDown />}
-                                    radius="sm"
-                                    variant="light"
-                                >
-                                    BAGS
-                                </Button>
-                            </DropdownTrigger>
-                        </NavbarItem>
-                        <DropdownMenu
-                            aria-label=""
-                            className=""
-                            itemClasses={{
-                                base: "gap-4",
-                            }}
-                        >
-                            {staticData.slice(12).map((item) => {
-                                return (
-                                    <DropdownItem key={item.id}>
-                                        <Link
-                                            to={`/category/${item.subCategory}`}
-                                        >
-                                            {item.subCategory}
-                                        </Link>
-                                    </DropdownItem>
-                                );
-                            })}
-                        </DropdownMenu>
-                    </Dropdown>
+                    </NavbarItem>
                     <NavbarItem>
                         <Link
                             to={`/category/Food Packaging`}
