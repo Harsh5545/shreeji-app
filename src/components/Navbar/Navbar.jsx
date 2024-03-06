@@ -1,5 +1,5 @@
-import React from "react";
-import "./Navbar.css"
+import React, { useState } from "react";
+import "./Navbar.css";
 import {
     Navbar,
     NavbarBrand,
@@ -14,7 +14,7 @@ import {
     DropdownMenu,
     DropdownItem,
 } from "@nextui-org/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 import staticData from "../../../Data";
@@ -24,7 +24,7 @@ import { useDisclosure } from "@nextui-org/react";
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
+    const [isMapDataVisible, setIsMapDataVisible] = useState(false);
     const menuItems = [
         "BOXES",
         "BAGS",
@@ -36,7 +36,10 @@ export default function NavbarComponent() {
     function handleNav() {
         setIsMenuOpen(false);
     }
-
+    const toggleMapDataVisibility = () => {
+        setIsMapDataVisible(!isMapDataVisible);
+    };
+    const navigate = useNavigate()
     return (
         <>
             <CustomModel
@@ -91,10 +94,7 @@ export default function NavbarComponent() {
                         >
                             {staticData.slice(0, 12).map((item) => {
                                 return (
-                                    <DropdownItem
-                                        key={item.id}
-                                     
-                                    >
+                                    <DropdownItem key={item.id}>
                                         <Link
                                             to={`/category/${item.subCategory}`}
                                         >
@@ -131,7 +131,6 @@ export default function NavbarComponent() {
                                     <DropdownItem key={item.id}>
                                         <Link
                                             to={`/category/${item.subCategory}`}
-                                           
                                         >
                                             {item.subCategory}
                                         </Link>
@@ -174,44 +173,56 @@ export default function NavbarComponent() {
                         </Button>
                     </NavbarItem>
                 </NavbarContent>
-                                {/* {staticData.slice(12).map((item) => {
-                                    return (
-                                        <DropdownItem key={item.id}>
-                                            <Link
-                                                to={`/category/${item.subCategory}`}
-                                            >
-                                                {item.subCategory}
-                                            </Link>
-                                        </DropdownItem>
-                                    );
-                                })} */}
                 <NavbarMenu className="space-y-2">
-                <NavbarItem>
-                <button className="button flex items-center gap-1">
-                    BOXES
-                    <p className="rotate-0 ">
-                        <FaChevronRight />
-                    </p>
-                </button>
+                    <NavbarItem>
+                        <button className="button flex flex-col items-start gap-1" tabIndex="0">
+                            <div className="flex justify-start gap-1 items-center">
+                                BOXES
+                                <p className="rotate-0">
+                                    <FaChevronRight />
+                                </p>
+                            </div>
+                            <div className="mapData gap-3 hidden pt-3">
+                                {staticData.slice(0, 12).map((item) => {
+                                    return (
+                                        <p
+                                        onClick={(e) => {
+                                            e.stopPropagation()
+                                            navigate(`/category/${item.subCategory}`)
+                                            setIsMenuOpen(false);
+                                        }}
+                                    >
+                                        {item.subCategory}
+                                    </p>
+                                    );
+                                })}
+                            </div>
+                        </button>
                     </NavbarItem>
                     <NavbarItem>
-                    <button className="button flex items-center gap-1">
-                        BOXES
-                        <p className="rotate-0 ">
-                            <FaChevronRight />
-                        </p>
-                    </button>
-                    {staticData.slice(0, 12).map((item) => {
-                        return (
-                            <DropdownItem key={item.id}>
-                                <Link
-                                    to={`/category/${item.subCategory}`}
-                                >
-                                    {item.subCategory}
-                                </Link>
-                                </DropdownItem>
-                                );
-                            })}
+                    <button className="button flex flex-col items-start gap-1" tabIndex="0">
+                            <div className="flex justify-start gap-1 items-center">
+                                BAGS
+                                <p className="rotate-0">
+                                    <FaChevronRight />
+                                </p>
+                            </div>
+                            <div className="mapData gap-3 hidden pt-3">
+                                {staticData.slice(12).map((item) => {
+                                    return (
+                                        <p
+                                        onClick={(e) => {
+                                            e.stopPropagation()
+                                            navigate(`/category/${item.subCategory}`)
+                                            setIsMenuOpen(false);
+                                        }}
+                                    >
+                                        {item.subCategory}
+                                    </p>
+                                    );
+                                })}
+                            </div>
+                            </button>
                     </NavbarItem>
                     <NavbarItem>
                         <Link

@@ -1,4 +1,9 @@
 .button:focus p.rotate-0 {
     transform: rotate(90deg);
 }
-
+.button:focus .mapData {
+    display: flex;
+    flex-direction:column; 
+    align-items: flex-start;
+    justify-content: start;
+}
