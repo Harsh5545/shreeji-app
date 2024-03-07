@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="">
         {isLoading ? (
           <div className="loader-container">
             <Loader />
