@@ -1,3 +1,5 @@
+
+
 const staticData = [
   {
     id: 1,
@@ -13,6 +15,7 @@ const staticData = [
     product: [
       {
         Productid: 1,
+        
         img: "/Product/baby_clothes_folding_box.webp",
         heading: "Baby Clothes Folding Box",
         button: "",

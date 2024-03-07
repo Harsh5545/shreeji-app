@@ -17,6 +17,18 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
+import { GiClothes } from "react-icons/gi";
+import { FaFantasyFlightGames } from "react-icons/fa6"
+import { MdEmojiFoodBeverage } from "react-icons/md";;
+import { AiFillSkin } from "react-icons/ai";
+import { GiChocolateBar } from "react-icons/gi";
+import { MdBakeryDining } from "react-icons/md";
+import { BiSolidCoffeeTogo } from "react-icons/bi";
+import { FaGift } from "react-icons/fa6";
+import { FaBoxOpen } from "react-icons/fa";
+import { IoFastFoodSharp } from "react-icons/io5";
+import { HiMiniShoppingCart } from "react-icons/hi2";
+import { MdFestival } from "react-icons/md";
 import staticData from "../../../Data";
 // import { MdCall } from "react-icons/md";
 import CustomModel from "../Modal/Model";
@@ -33,6 +45,33 @@ export default function NavbarComponent() {
         "CUSTOM LABELS",
         "ABOUT",
     ];
+    const icon=[
+    {id:1,
+    icons:<GiClothes/>},
+    {id:2,
+    icons:<FaFantasyFlightGames/>},
+{id:3,
+    icons:<AiFillSkin/>},
+{id:4,
+    icons:<MdBakeryDining/>},
+{id:5,
+    icons:<MdEmojiFoodBeverage/>},
+{id:6,
+    icons:<GiChocolateBar/>},
+{id:7,
+    icons:<IoFastFoodSharp/>},
+{id:8,
+    icons:<HiMiniShoppingCart/>},
+{id:9,
+    icons:<BiSolidCoffeeTogo/>},
+{id:10,
+    icons:<FaGift/>},
+{id:11,
+    icons:<MdFestival/>},
+{id:12,
+    icons:<FaBoxOpen/>},
+
+]
     function handleNav() {
         setIsMenuOpen(false);
     }
