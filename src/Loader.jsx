@@ -6,8 +6,8 @@ import loading2 from "react-useanimations/lib/loading2";
 
 const Loader = () => {
   return (
-    <div className="mx-auto">
-      <UseAnimations animation={loading2} size={56} />
+    <div className="mx-auto " style={{ background: "transparent" }}>
+      <UseAnimations animation={loading2} size={76} />
     
      
     </div>

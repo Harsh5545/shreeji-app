@@ -10,12 +10,11 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate an asynchronous operation (e.g., API call, data fetching)
-    // You should replace this with your actual asynchronous operation
+  
     const fakeAsyncOperation = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000); // Adjust the time as needed
+      }, 3000); 
     };
 
     fakeAsyncOperation();
