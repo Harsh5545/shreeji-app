@@ -15,7 +15,7 @@ function App() {
     const fakeAsyncOperation = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 2000); // Adjust the time as needed
+      }, 3000); // Adjust the time as needed
     };
 
     fakeAsyncOperation();
