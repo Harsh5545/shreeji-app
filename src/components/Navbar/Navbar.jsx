@@ -34,7 +34,13 @@ import { FaBoxOpen } from "react-icons/fa";
 import { IoFastFoodSharp } from "react-icons/io5";
 import { HiMiniShoppingCart } from "react-icons/hi2";
 import { MdFestival } from "react-icons/md";
-
+import { BiSolidShoppingBags } from "react-icons/bi";
+import { GiBookCover } from "react-icons/gi";
+import { GiPirateCoat } from "react-icons/gi";
+import { GiLabCoat } from "react-icons/gi";
+import { GiTheaterCurtains } from "react-icons/gi";
+import { GrRestroomWomen } from "react-icons/gr";
+import { FaBox } from "react-icons/fa6";
 
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -69,6 +75,15 @@ export default function NavbarComponent() {
         { id: 10, icons: <FaGift /> },
         { id: 11, icons: <MdFestival /> },
         { id: 12, icons: <FaBoxOpen /> },
+        { id: 13, icons: <BiSolidShoppingBags /> },
+        { id: 14, icons: <GiBookCover /> },
+        { id: 15, icons: <GiLabCoat /> },
+        { id: 16, icons: <GiPirateCoat /> },
+        { id: 17, icons: <GiTheaterCurtains /> },
+        { id: 18, icons: <GrRestroomWomen /> },
+        { id: 19, icons: <FaBox /> },
+        { id: 20, icons: <FaBoxOpen /> },
+        { id: 21, icons: <FaBoxOpen /> },
       ]
 
     return (
@@ -125,6 +140,7 @@ export default function NavbarComponent() {
                         >
                        
                             {staticData.slice(0, 12).map((item,i) => {
+                                console.log(i)
                                 return (
                                     <DropdownItem key={item.id}>
                                         <Link
@@ -160,14 +176,14 @@ export default function NavbarComponent() {
                                 base: "gap-4",
                             }}
                         >
-                            {staticData.slice(12).map((item) => {
+                            {staticData.slice(12).map((item,i) => {
                                 return (
                                     <DropdownItem key={item.id}>
                                         <Link
                                             to={`/category/${item.subCategory}`}
                                             className="flex gap-2 items-center"
                                         >
-                                            {/* {iconList[i]?.icons} */}
+                                            {iconList[i]?.icons}
                                             {item.subCategory}
                                         </Link>
                                     </DropdownItem>
@@ -239,7 +255,7 @@ export default function NavbarComponent() {
                         </button>
                     </NavbarItem>
                     <NavbarItem>
-                    <button className="button flex flex-col items-start gap-1" tabIndex="0">
+                        <button className="button flex flex-col items-start gap-1" tabIndex="0">
                             <div className="flex justify-start gap-1 items-center">
                                 BAGS
                                 <p className="rotate-0">
@@ -247,7 +263,7 @@ export default function NavbarComponent() {
                                 </p>
                             </div>
                             <div className="mapData gap-3 hidden pt-3">
-                                {staticData.slice(12).map((item) => {
+                                {staticData.slice(12).map((item,i) => {
                                     return (
                                         <p
                                         onClick={(e) => {
@@ -258,13 +274,13 @@ export default function NavbarComponent() {
                                         key={item.id}
                                         className="flex gap-2 items-center"
                                     >
-                                        {/* {iconList[i]?.icons} */}
+                                        {iconList[i]?.icons}
                                         {item.subCategory}
                                     </p>
                                     );
                                 })}
                             </div>
-                            </button>
+                        </button>
                     </NavbarItem>
                     <NavbarItem>
                         <Link

@@ -21,7 +21,7 @@ export default function CarouselCrossfade() {
     <>
       <TECarousel interval={3000} crossfade ride="carousel">
         <div className="relative w-full md:h-[75vh]  overflow-hidden after:clear-both after:block after:content-['']">
-        <TECarouselItem itemID={1} className="relative bg-[#E58B93] float-left -mr-[100%] hidden h-[90%] w-full !transform-none transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none">
+        <TECarouselItem itemID={1}  className="relative bg-[#E58B93] float-left -mr-[100%] hidden h-[90%] w-full !transform-none transition-opacity duration-300 ease-in-out motion-reduce:transition-none">
             <div className="flex pb-5 md:flex-row flex-col-reverse">
               <div className={`flex flex-col flex-1 gap-5 items-center ${animate ?'animated-carousel-item' :''} justify-center`}>
                 <h1 className="p-1 md:w-[90%] w-[80%] font-semibold text-xl md:text-5xl text-center">

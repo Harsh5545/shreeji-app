@@ -1,44 +1,99 @@
-:root{
-     --orange-gradient: linear-gradient(270deg, #DE4D38 0%, #F7EC38 100%);
+:root {
+    --orange-gradient: linear-gradient(270deg, #DE4D38 0%, #F7EC38 100%);
 }
-    ::-webkit-scrollbar {
-        width: 10px;
-      }
-      
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-      
-      ::-webkit-scrollbar-thumb {
-        background: var(--orange-gradient);
-        border-radius: 6px;
-      }
-      body, html {
-        margin: 0;
-        padding: 0;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-        scroll-behavior: smooth;
-       
-      }    
-.loader-container {
-  position: fixed;
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--orange-gradient);
+    border-radius: 6px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Yoinked from CodePen, but improved the animation
+so that it is smooth among other more minor things */
+
+.codepen-button {
+  display: block;
+  cursor: pointer;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 11px;
+  overflow: hidden;
+  padding: 1px;
+  isolation: isolate;
+}
+
+.codepen-button::before {
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: transparent; /* Set to transparent */
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media (max-width: 768px) {
-    height: 90vh;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+  background-size: 25% 100%;
+  animation: animateBackground 0.75s linear infinite;
+  transform: translateX(-25%);
+  transition: transform 0.25s ease-out;
+}
+
+@keyframes animateBackground {
+  to {
+    transform: translateX(0%);
   }
+}
+
+.codepen-button span {
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  background: #FF6C22;
+  border-radius: 13px;
+  height: 96%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    /* Set to transparent */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        height: 90vh;
+    }
 }
 
 /* Other styles for loader and content */

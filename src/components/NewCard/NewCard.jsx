@@ -10,7 +10,8 @@ import {
 
 export default function NewCard({ name, title, image, categoryId, productId }) {
     return (
-        <Card
+        <Card  as={Link}
+            href={`/products/${categoryId}/${productId}`}
             isFooterBlurred
             radius="lg"
             className="border-none w-[310px] mx-auto  bg-indigo-800/10"
