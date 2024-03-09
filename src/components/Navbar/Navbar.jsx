@@ -45,33 +45,57 @@ export default function NavbarComponent() {
         "CUSTOM LABELS",
         "ABOUT",
     ];
-    const icon=[
-    {id:1,
-    icons:<GiClothes/>},
-    {id:2,
-    icons:<FaFantasyFlightGames/>},
-{id:3,
-    icons:<AiFillSkin/>},
-{id:4,
-    icons:<MdBakeryDining/>},
-{id:5,
-    icons:<MdEmojiFoodBeverage/>},
-{id:6,
-    icons:<GiChocolateBar/>},
-{id:7,
-    icons:<IoFastFoodSharp/>},
-{id:8,
-    icons:<HiMiniShoppingCart/>},
-{id:9,
-    icons:<BiSolidCoffeeTogo/>},
-{id:10,
-    icons:<FaGift/>},
-{id:11,
-    icons:<MdFestival/>},
-{id:12,
-    icons:<FaBoxOpen/>},
+    const icon = [
+        {
+            id: 1,
+            icons: <GiClothes />
+        },
+        {
+            id: 2,
+            icons: <FaFantasyFlightGames />
+        },
+        {
+            id: 3,
+            icons: <AiFillSkin />
+        },
+        {
+            id: 4,
+            icons: <MdBakeryDining />
+        },
+        {
+            id: 5,
+            icons: <MdEmojiFoodBeverage />
+        },
+        {
+            id: 6,
+            icons: <GiChocolateBar />
+        },
+        {
+            id: 7,
+            icons: <IoFastFoodSharp />
+        },
+        {
+            id: 8,
+            icons: <HiMiniShoppingCart />
+        },
+        {
+            id: 9,
+            icons: <BiSolidCoffeeTogo />
+        },
+        {
+            id: 10,
+            icons: <FaGift />
+        },
+        {
+            id: 11,
+            icons: <MdFestival />
+        },
+        {
+            id: 12,
+            icons: <FaBoxOpen />
+        },
 
-]
+    ]
     function handleNav() {
         setIsMenuOpen(false);
     }
@@ -225,21 +249,21 @@ export default function NavbarComponent() {
                                 {staticData.slice(0, 12).map((item) => {
                                     return (
                                         <p
-                                        onClick={(e) => {
-                                            e.stopPropagation()
-                                            navigate(`/category/${item.subCategory}`)
-                                            setIsMenuOpen(false);
-                                        }}
-                                    >
-                                        {item.subCategory}
-                                    </p>
+                                            onClick={(e) => {
+                                                e.stopPropagation()
+                                                navigate(`/category/${item.subCategory}`)
+                                                setIsMenuOpen(false);
+                                            }}
+                                        >
+                                            {item.subCategory}
+                                        </p>
                                     );
                                 })}
                             </div>
                         </button>
                     </NavbarItem>
                     <NavbarItem>
-                    <button className="button flex flex-col items-start gap-1" tabIndex="0">
+                        <button className="button flex flex-col items-start gap-1" tabIndex="0">
                             <div className="flex justify-start gap-1 items-center">
                                 BAGS
                                 <p className="rotate-0">
@@ -250,18 +274,18 @@ export default function NavbarComponent() {
                                 {staticData.slice(12).map((item) => {
                                     return (
                                         <p
-                                        onClick={(e) => {
-                                            e.stopPropagation()
-                                            navigate(`/category/${item.subCategory}`)
-                                            setIsMenuOpen(false);
-                                        }}
-                                    >
-                                        {item.subCategory}
-                                    </p>
+                                            onClick={(e) => {
+                                                e.stopPropagation()
+                                                navigate(`/category/${item.subCategory}`)
+                                                setIsMenuOpen(false);
+                                            }}
+                                        >
+                                            {item.subCategory}
+                                        </p>
                                     );
                                 })}
                             </div>
-                            </button>
+                        </button>
                     </NavbarItem>
                     <NavbarItem>
                         <Link
