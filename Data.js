@@ -1262,7 +1262,7 @@ const staticData = [
     id: 13,
     name: "Item 13",
     category: "bags",
-    subCategory: "SHOPPING BAGS",
+    subCategory: "Shopping Bags",
     HeaderImage: "/Main-Images/latest2023_1_.jpg",
     heading:
       "Explore our range of Shopping Bags & get a voucher worth Rs 500 for your next purchase.",
@@ -1482,8 +1482,8 @@ const staticData = [
     ],
   },
   {
-    id: 20,
-    name: "Item 20",
+    id: 21,
+    name: "Item 21",
     category: "Custom Labels",
     subCategory: "Custom Labels",
     HeaderImage: "/Main-Images/sticker-category-desk.jpg",

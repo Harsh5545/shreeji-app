@@ -17,6 +17,11 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
+import staticData from "../../../Data";
+// import { MdCall } from "react-icons/md";
+import CustomModel from "../Modal/Model";
+import { useDisclosure } from "@nextui-org/react";
+
 import { GiClothes } from "react-icons/gi";
 import { FaFantasyFlightGames } from "react-icons/fa6"
 import { MdEmojiFoodBeverage } from "react-icons/md";;
@@ -29,10 +34,8 @@ import { FaBoxOpen } from "react-icons/fa";
 import { IoFastFoodSharp } from "react-icons/io5";
 import { HiMiniShoppingCart } from "react-icons/hi2";
 import { MdFestival } from "react-icons/md";
-import staticData from "../../../Data";
-// import { MdCall } from "react-icons/md";
-import CustomModel from "../Modal/Model";
-import { useDisclosure } from "@nextui-org/react";
+
+
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -45,57 +48,7 @@ export default function NavbarComponent() {
         "CUSTOM LABELS",
         "ABOUT",
     ];
-    const icon = [
-        {
-            id: 1,
-            icons: <GiClothes />
-        },
-        {
-            id: 2,
-            icons: <FaFantasyFlightGames />
-        },
-        {
-            id: 3,
-            icons: <AiFillSkin />
-        },
-        {
-            id: 4,
-            icons: <MdBakeryDining />
-        },
-        {
-            id: 5,
-            icons: <MdEmojiFoodBeverage />
-        },
-        {
-            id: 6,
-            icons: <GiChocolateBar />
-        },
-        {
-            id: 7,
-            icons: <IoFastFoodSharp />
-        },
-        {
-            id: 8,
-            icons: <HiMiniShoppingCart />
-        },
-        {
-            id: 9,
-            icons: <BiSolidCoffeeTogo />
-        },
-        {
-            id: 10,
-            icons: <FaGift />
-        },
-        {
-            id: 11,
-            icons: <MdFestival />
-        },
-        {
-            id: 12,
-            icons: <FaBoxOpen />
-        },
-
-    ]
+    
     function handleNav() {
         setIsMenuOpen(false);
     }
@@ -103,6 +56,21 @@ export default function NavbarComponent() {
         setIsMapDataVisible(!isMapDataVisible);
     };
     const navigate = useNavigate()
+    const iconList = [
+        { id: 1, icons: <GiClothes /> },
+        { id: 2, icons: <FaFantasyFlightGames /> },
+        { id: 3, icons: <AiFillSkin /> },
+        { id: 4, icons: <MdBakeryDining /> },
+        { id: 5, icons: <MdEmojiFoodBeverage /> },
+        { id: 6, icons: <GiChocolateBar /> },
+        { id: 7, icons: <IoFastFoodSharp /> },
+        { id: 8, icons: <HiMiniShoppingCart /> },
+        { id: 9, icons: <BiSolidCoffeeTogo /> },
+        { id: 10, icons: <FaGift /> },
+        { id: 11, icons: <MdFestival /> },
+        { id: 12, icons: <FaBoxOpen /> },
+      ]
+
     return (
         <>
             <CustomModel
@@ -155,12 +123,15 @@ export default function NavbarComponent() {
                                 base: "gap-4",
                             }}
                         >
-                            {staticData.slice(0, 12).map((item) => {
+                       
+                            {staticData.slice(0, 12).map((item,i) => {
                                 return (
                                     <DropdownItem key={item.id}>
                                         <Link
                                             to={`/category/${item.subCategory}`}
+                                            className="flex gap-2 items-center"
                                         >
+                                            {iconList[i].icons}
                                             {item.subCategory}
                                         </Link>
                                     </DropdownItem>
@@ -194,7 +165,9 @@ export default function NavbarComponent() {
                                     <DropdownItem key={item.id}>
                                         <Link
                                             to={`/category/${item.subCategory}`}
+                                            className="flex gap-2 items-center"
                                         >
+                                            {/* {iconList[i]?.icons} */}
                                             {item.subCategory}
                                         </Link>
                                     </DropdownItem>
@@ -216,7 +189,7 @@ export default function NavbarComponent() {
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link to={`/category/Custom Labels`} color="foreground">
+                        <Link to={`/category/Custom Labels`} color="foreground" >
                             CUSTOM LABELS
                         </Link>
                     </NavbarItem>
@@ -246,17 +219,20 @@ export default function NavbarComponent() {
                                 </p>
                             </div>
                             <div className="mapData gap-3 hidden pt-3">
-                                {staticData.slice(0, 12).map((item) => {
+                                {staticData.slice(0, 12).map((item,i) => {
                                     return (
                                         <p
-                                            onClick={(e) => {
-                                                e.stopPropagation()
-                                                navigate(`/category/${item.subCategory}`)
-                                                setIsMenuOpen(false);
-                                            }}
-                                        >
-                                            {item.subCategory}
-                                        </p>
+                                        onClick={(e) => {
+                                            e.stopPropagation()
+                                            navigate(`/category/${item.subCategory}`)
+                                            setIsMenuOpen(false);
+                                        }}
+                                        key={item.id}
+                                        className="flex gap-2 items-center"
+                                    >
+                                        {iconList[i].icons}
+                                        {item.subCategory}
+                                    </p>
                                     );
                                 })}
                             </div>
@@ -274,14 +250,17 @@ export default function NavbarComponent() {
                                 {staticData.slice(12).map((item) => {
                                     return (
                                         <p
-                                            onClick={(e) => {
-                                                e.stopPropagation()
-                                                navigate(`/category/${item.subCategory}`)
-                                                setIsMenuOpen(false);
-                                            }}
-                                        >
-                                            {item.subCategory}
-                                        </p>
+                                        onClick={(e) => {
+                                            e.stopPropagation()
+                                            navigate(`/category/${item.subCategory}`)
+                                            setIsMenuOpen(false);
+                                        }}
+                                        key={item.id}
+                                        className="flex gap-2 items-center"
+                                    >
+                                        {/* {iconList[i]?.icons} */}
+                                        {item.subCategory}
+                                    </p>
                                     );
                                 })}
                             </div>
@@ -291,22 +270,23 @@ export default function NavbarComponent() {
                         <Link
                             to={`/category/Food Packaging`}
                             aria-current="page"
+                            onClick={()=>setIsMenuOpen(false)}
                         >
                             FOOD PACKAGING
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link color="foreground" to={`/category/Rigid Boxes`}>
+                        <Link color="foreground" to={`/category/Rigid Boxes`} onClick={()=>setIsMenuOpen(false)}>
                             RIGID BOXES
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link color="foreground" to={`/category/Custom Labels`}>
+                        <Link color="foreground" to={`/category/Custom Labels`} onClick={()=>setIsMenuOpen(false)}>
                             CUSTOM LABELS
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link to="/aboutus" color="foreground" href="#">
+                        <Link to="/aboutus" color="foreground" onClick={()=>setIsMenuOpen(false)}>
                             ABOUT
                         </Link>
                     </NavbarItem>
