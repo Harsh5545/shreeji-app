@@ -17,6 +17,7 @@ function Home() {
     const pageTitle = "Welcome To Shreeji - Graphics";
     const pageDescription = "Discover a world of elegance and thoughtful gifting with our curated collection of exquisite gift boxes. Perfect for birthdays, weddings, and special moments. Explore now!";
     const pageImageURL = Logo;
+
     useEffect(() => {
 
         firework()

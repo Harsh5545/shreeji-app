@@ -7,7 +7,7 @@ const CustomCard = (props) => {
         props.item;
 
     return (
-        <Card shadow="lg" isPressable className="bg-[#F3F8FF] w-full">
+        <Card as={Link} shadow="lg" isPressable className="bg-[#F3F8FF] w-full" href={`/category/${subCategory}`}>
             <CardBody className="overflow-visible p-1">
                 <Image
                     isBlurred
@@ -25,8 +25,8 @@ const CustomCard = (props) => {
             <CardFooter className="text-[10px] gap-2 justify-between text-[#000] flex flex-col w-full items-center my-1">
                 <p className="text-xl">{subCategory}</p>
             </CardFooter>
-            <CardFooter >
-                <Button 
+        
+                {/* <Button 
                     className="text-center mx-auto text-[#114232] bg-[#80BCBD]"
                     href={`/category/${subCategory}`}
                     as={Link}
@@ -34,8 +34,8 @@ const CustomCard = (props) => {
                     
                 >
                     {props.title}
-                </Button>
-            </CardFooter>
+                </Button> */}
+           
         </Card>
     );
 };

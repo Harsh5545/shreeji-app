@@ -8,13 +8,13 @@ import { Image } from "@nextui-org/react";
 import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 import SEO from "../../../SEO/SEO";
-import CelebrateButton from "../../CelebrateButton/CelebrateButton";
 import { handleConfetti } from "../../../lib/index";
+
 const Category = () => {
     const [loading, setLoading] = useState(true);
     const [category, setCategory] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [visibleItems, setVisibleItems] = useState(8);
+    const [visibleItems, setVisibleItems] = useState(10);
     const [loadingMore, setLoadingMore] = useState(false);
     const buttonRef = useRef();
     const { categoryId } = useParams();
@@ -39,12 +39,14 @@ const Category = () => {
     }, [categoryId]);
 
     const LoadingCards = () => {
-        return Array.from({ length: 8 }).map((_, index) => (
-            <div key={index}>
+        return Array.from({ length: 10 }).map((_, index) => (
+            <div key={index} className="flex-auto max-w-xs mx-2 my-2">
                 <NewCardLoading />
             </div>
         ));
     };
+
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -59,7 +61,7 @@ const Category = () => {
             if (scrollY + windowHeight >= documentHeight - 500 && !loadingMore) {
                 setLoadingMore(true);
                 setTimeout(() => {
-                    setVisibleItems((prevVisibleItems) => prevVisibleItems + 4);
+                    setVisibleItems((prevVisibleItems) => prevVisibleItems + 5);
                     setLoadingMore(false);
                 }, 1000);
             }
@@ -132,30 +134,38 @@ const Category = () => {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-auto max-w-screen-xl my-20">
-                {loading ? (
-                    <LoadingCards />
-                ) : (
-                    category?.product
-                        .slice(0, visibleItems)
-                        .map((product, index) => (
-                            <NewCard
-                                key={index}
-                                name={product.heading}
-                                image={product.img}
-                                categoryId={category?.subCategory}
-                                productId={product.Productid}
 
-                            />
-                        ))
-                )}
-                {loadingMore && category?.product.length > visibleItems && (
-                    <div className="flex items-center justify-center my-4">
-                        <Spinner color="success" size="lg" />
-                    </div>
-                )}
+
+            <div className="flex flex-wrap justify-center my-20">
+                {
+                    loading ? (
+
+                        <LoadingCards />
+
+                    )
+                        :
+                        (
+                            category?.product
+                                .slice(0, visibleItems)
+                                .map((product, index) => (
+                                    <div key={index} className="flex-auto max-w-xs mx-2 my-2">
+                                        <NewCard
+                                            name={product.heading}
+                                            image={product.img}
+                                            categoryId={category?.subCategory}
+                                            productId={product.Productid}
+                                        />
+                                    </div>
+                                ))
+                        )
+                }
             </div>
-            <CelebrateButton buttonRef={buttonRef} />
+
+            {loadingMore && category?.product.length > visibleItems && (
+                <div className="flex items-center justify-center my-4">
+                    <Spinner color="success" size="lg" />
+                </div>
+            )}
         </>
     );
 };
