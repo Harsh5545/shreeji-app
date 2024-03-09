@@ -1482,8 +1482,8 @@ const staticData = [
     ],
   },
   {
-    id: 20,
-    name: "Item 20",
+    id: 21,
+    name: "Item 21",
     category: "Custom Labels",
     subCategory: "Custom Labels",
     HeaderImage: "/Main-Images/sticker-category-desk.jpg",
