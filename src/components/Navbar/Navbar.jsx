@@ -165,7 +165,9 @@ export default function NavbarComponent() {
                                     <DropdownItem key={item.id}>
                                         <Link
                                             to={`/category/${item.subCategory}`}
+                                            className="flex gap-2 items-center"
                                         >
+                                            {/* {iconList[i]?.icons} */}
                                             {item.subCategory}
                                         </Link>
                                     </DropdownItem>
@@ -254,7 +256,9 @@ export default function NavbarComponent() {
                                             setIsMenuOpen(false);
                                         }}
                                         key={item.id}
+                                        className="flex gap-2 items-center"
                                     >
+                                        {/* {iconList[i]?.icons} */}
                                         {item.subCategory}
                                     </p>
                                     );
