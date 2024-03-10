@@ -7,7 +7,7 @@ const CustomCard = (props) => {
         props.item;
 
     return (
-        <Card as={Link} shadow="lg" isPressable className="bg-[#F3F8FF] w-full" to={`/category/${subCategory}`}>
+        <Card as={Link} shadow="lg" isPressable className="bg-[#F3F8FF] w-full" to={`/category/${subCategory}`} onClick={()=>window.scrollTo(0, 0)}>
             <CardBody className="overflow-visible p-1">
                 <Image
                     isBlurred

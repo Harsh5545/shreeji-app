@@ -45,22 +45,7 @@ import { FaBox } from "react-icons/fa6";
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
-    const [isMapDataVisible, setIsMapDataVisible] = useState(false);
-    const menuItems = [
-        "BOXES",
-        "BAGS",
-        "FOOD PACKAGING",
-        "RIGID BOXES",
-        "CUSTOM LABELS",
-        "ABOUT",
-    ];
     
-    function handleNav() {
-        setIsMenuOpen(false);
-    }
-    const toggleMapDataVisibility = () => {
-        setIsMapDataVisible(!isMapDataVisible);
-    };
     const navigate = useNavigate()
     const iconList = [
         { id: 1, icons: <GiClothes /> },
@@ -107,7 +92,7 @@ export default function NavbarComponent() {
                         className="sm:hidden"
                     />
                     <NavbarBrand>
-                        <Link to="/">
+                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}>
                             <img src={logo} alt="shreeji logo" width="200" />
                         </Link>
                     </NavbarBrand>
@@ -143,6 +128,7 @@ export default function NavbarComponent() {
                                 return (
                                     <DropdownItem key={item.id}>
                                         <Link
+                                            onClick={()=>window.scrollTo(0, 0)}
                                             to={`/category/${item.subCategory}`}
                                             className="flex gap-2 items-center"
                                         >
@@ -179,6 +165,7 @@ export default function NavbarComponent() {
                                 return (
                                     <DropdownItem key={item.id}>
                                         <Link
+                                            onClick={()=>window.scrollTo(0, 0)}
                                             to={`/category/${item.subCategory}`}
                                             className="flex gap-2 items-center"
                                         >
@@ -192,6 +179,7 @@ export default function NavbarComponent() {
                     </Dropdown>
                     <NavbarItem>
                         <Link
+                            onClick={()=>window.scrollTo(0, 0)}
                             to={`/category/Food Packaging`}
                             aria-current="page"
                         >
@@ -199,17 +187,17 @@ export default function NavbarComponent() {
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link to={`/category/Rigid Boxes`} color="foreground">
+                        <Link to={`/category/Rigid Boxes`} onClick={()=>window.scrollTo(0, 0)} color="foreground">
                             RIGID BOXES
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link to={`/category/Custom Labels`} color="foreground" >
+                        <Link to={`/category/Custom Labels`} onClick={()=>window.scrollTo(0, 0)} color="foreground" >
                             CUSTOM LABELS
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link to={`/aboutus`} color="foreground">
+                        <Link to={`/aboutus`} onClick={()=>window.scrollTo(0, 0)} color="foreground">
                             ABOUT
                         </Link>
                     </NavbarItem>
@@ -218,7 +206,11 @@ export default function NavbarComponent() {
                     <NavbarItem className="flex">
                         <Button
                             className="bg-[#FF6C22] text-[#fff]"
-                            onClick={onOpen}
+                            onClick={() => {
+                                onOpen
+                                window.scrollTo(0, 0)
+                            }}
+                            
                         >
                             CONTACT
                         </Button>
@@ -240,6 +232,7 @@ export default function NavbarComponent() {
                                         onClick={(e) => {
                                             e.stopPropagation()
                                             navigate(`/category/${item.subCategory}`)
+                                            window.scrollTo(0, 0);
                                             setIsMenuOpen(false);
                                         }}
                                         key={item.id}
@@ -268,6 +261,7 @@ export default function NavbarComponent() {
                                         onClick={(e) => {
                                             e.stopPropagation()
                                             navigate(`/category/${item.subCategory}`)
+                                            window.scrollTo(0, 0);
                                             setIsMenuOpen(false);
                                         }}
                                         key={item.id}
@@ -285,23 +279,28 @@ export default function NavbarComponent() {
                         <Link
                             to={`/category/Food Packaging`}
                             aria-current="page"
-                            onClick={()=>setIsMenuOpen(false)}
+                            onClick={()=>{setIsMenuOpen(false)
+                                window.scrollTo(0, 0)}
+                            }
                         >
                             FOOD PACKAGING
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link color="foreground" to={`/category/Rigid Boxes`} onClick={()=>setIsMenuOpen(false)}>
+                        <Link color="foreground" to={`/category/Rigid Boxes`} onClick={()=>{setIsMenuOpen(false)
+                            window.scrollTo(0, 0)}}>
                             RIGID BOXES
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link color="foreground" to={`/category/Custom Labels`} onClick={()=>setIsMenuOpen(false)}>
+                        <Link color="foreground" to={`/category/Custom Labels`} onClick={()=>{setIsMenuOpen(false)
+                            window.scrollTo(0, 0)}}>
                             CUSTOM LABELS
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link to="/aboutus" color="foreground" onClick={()=>setIsMenuOpen(false)}>
+                        <Link to="/aboutus" color="foreground" onClick={()=>{setIsMenuOpen(false)
+                            window.scrollTo(0, 0)}}>
                             ABOUT
                         </Link>
                     </NavbarItem>

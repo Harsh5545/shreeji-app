@@ -17,6 +17,7 @@ export default function NewCard({ name, title, image, categoryId, productId }) {
             isPressable
             isHoverable
             isBlurred
+            onClick={()=>window.scrollTo(0, 0)}
         >
             <Image
                 isZoomed
@@ -28,7 +29,7 @@ export default function NewCard({ name, title, image, categoryId, productId }) {
                 width={310}
             />
             <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 my-2 flex-col">
-                <Button as={Link} to={`/products/${categoryId}/${productId}`} variant="light">
+                <Button as={Link} to={`/products/${categoryId}/${productId}`} variant="light" onClick={()=>window.scrollTo(0, 0)}>
                     {name}
                 </Button>
             </CardFooter>
