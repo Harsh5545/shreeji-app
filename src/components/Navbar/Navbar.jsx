@@ -140,7 +140,6 @@ export default function NavbarComponent() {
                         >
                        
                             {staticData.slice(0, 12).map((item,i) => {
-                                console.log(i)
                                 return (
                                     <DropdownItem key={item.id}>
                                         <Link

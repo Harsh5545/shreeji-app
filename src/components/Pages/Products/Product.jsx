@@ -64,8 +64,8 @@ const Product = () => {
                     {foundProduct.heading}
                 </h1>
                 <div className="grid md:grid-cols-2 grid-cols-1">
-                    <div className="items-start h-[30rem] flex p-8 justify-start relative flex-col gap-3">
-                    <img src={foundProduct.img} alt="shreeji Graphics Product" width='360' className="object-cover"/>
+                    <div className="items-start  flex p-8 justify-start relative flex-col gap-3">
+                    <img src={foundProduct.img} alt="shreeji Graphics Product" width='360' className="h-[18rem] object-contain"/>
 
                         {foundProduct.subimg != undefined ? (
                             <img

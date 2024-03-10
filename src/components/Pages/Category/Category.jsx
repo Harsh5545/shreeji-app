@@ -18,7 +18,6 @@ const Category = () => {
     const [loadingMore, setLoadingMore] = useState(false);
     const buttonRef = useRef();
     const { categoryId } = useParams();
-    console.log(categoryId);
 
     useEffect(() => {
         const fetchData = async () => {
