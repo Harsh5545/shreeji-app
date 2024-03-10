@@ -1,13 +1,13 @@
 import React from "react";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
-import { Link, Button } from "@nextui-org/react";
-
+import {  Button } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 const CustomCard = (props) => {
     const { name, title, mainImage, category, subCategory, productId } =
         props.item;
 
     return (
-        <Card as={Link} shadow="lg" isPressable className="bg-[#F3F8FF] w-full" href={`/category/${subCategory}`}>
+        <Card as={Link} shadow="lg" isPressable className="bg-[#F3F8FF] w-full" to={`/category/${subCategory}`}>
             <CardBody className="overflow-visible p-1">
                 <Image
                     isBlurred

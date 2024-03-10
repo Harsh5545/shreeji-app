@@ -35,7 +35,7 @@ const createRocketTrail = () => {
 
 
 export const firework = () => {
-  const duration = 15 * 1000,
+  const duration = 4 * 1000,
     animationEnd = Date.now() + duration,
     defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 100 };
 
