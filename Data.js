@@ -355,7 +355,7 @@ const staticData = [
     discriptionHeading:
       "Explore Custom Bakery, Cookies and Biscuit Boxes Packaging",
     discription:
-      "Show off your baked goods with custom cake boxes and bakery packaging. Use our online packaging design tool and explore enormous possibilities to make boxes for cupcakes, biscuit boxes, cookies boxes and other bakery goods. Turtle Boxes is the best cake box manufacturer in India. We deliver printed packaging PAN India, without the barrier of Minimum Order Quantity anytime, anywhere.",
+      "Show off your baked goods with custom cake boxes and bakery packaging. Use our online packaging design tool and explore enormous possibilities to make boxes for cupcakes, biscuit boxes, cookies boxes and other bakery goods. Shreeji Graphics Boxes is the best cake box manufacturer in India. We deliver printed packaging PAN India, without the barrier of Minimum Order Quantity anytime, anywhere.",
     product: [
       {
         Productid: 1,
@@ -870,7 +870,7 @@ const staticData = [
     discriptionHeading:
       "Treat your brand to a custom tea box packaging with our online packaging tools.",
     discription:
-      "Grace your tea packaging with elements of your brand by crafting a custom tea packaging box. Turtle Boxes is the ultimate carton box manufacturer to help you create your own coffee packaging with various tea packaging materials to choose from.",
+      "Grace your tea packaging with elements of your brand by crafting a custom tea packaging box. Shreeji Graphics Boxes is the ultimate carton box manufacturer to help you create your own coffee packaging with various tea packaging materials to choose from.",
     product: [
       {
         Productid: 1,
@@ -1189,7 +1189,7 @@ const staticData = [
     mainImage: "/Product/Home/9781.jpg",
     discriptionHeading: "Sample Boxes Set as per Your Industry",
     discription:
-      "Be your own quality control with your desired materials, print technique and finishes. Turtle Boxes offers Packaging Sample Set, as per your specific industry. Every Packaging Sample Set contains all material and finishing samples to give you a good overview of our packaging's stability and printing quality.",
+      "Be your own quality control with your desired materials, print technique and finishes. Shreeji Graphics Boxes offers Packaging Sample Set, as per your specific industry. Every Packaging Sample Set contains all material and finishing samples to give you a good overview of our packaging's stability and printing quality.",
     product: [
       {
         Productid: 1,
@@ -1260,7 +1260,7 @@ const staticData = [
     mainImage: "src/assets/desktop-shopping-bags.webp",
     discriptionHeading: "Shopping Bags Collection for Every Occasion",
     discription:
-      "Discover a variety of shopping bags tailored to your needs. Turtle Bags presents a unique Shopping Bags Collection, designed to meet the demands of different occasions. Our bags are not only stylish but also durable, ensuring a perfect blend of fashion and functionality.",
+      "Discover a variety of shopping bags tailored to your needs. Shreeji Graphics Bags presents a unique Shopping Bags Collection, designed to meet the demands of different occasions. Our bags are not only stylish but also durable, ensuring a perfect blend of fashion and functionality.",
     product: [
       {
         Productid: 1,
@@ -1315,6 +1315,36 @@ const staticData = [
   },
   {
     id: 14,
+    name: "Item 18",
+    category: "bags",
+    subCategory: "Coffe & Tea Bags",
+    heading:
+      "Discover our practical Coffe & Tea Bags",
+    mainImage: "src/assets/desktop-tiffin-boxes.webp",
+    discriptionHeading: "Functional Coffe & Tea Bag for On-the-Go Drinks",
+    discription:
+      "Explore our curated collection of Coffe & Tea Bags, designed for convenient and hygienic storage of your meals on the go. Shreeji Graphics Bags presents a unique range crafted with care to ensure that your food remains fresh and tasty throughout the day.",
+    product: [
+ {
+        Productid: 1,
+        img: "/Product/Coffee&Tea/image_14.jpg",
+        heading: "Premium Coffee Gift Bag Packaging ",
+        button: "",
+        headerimg: "/Product/Coffee&Tea/image_15.jpg",
+        subimg: "/Product/kkkkkkkk.svg",
+      },
+{
+        Productid: 2,
+        img: "/Product/Coffee&Tea/image_16.jpg",
+        heading: "Personalised Coffee Packaging",
+        button: "",
+        headerimg: "/Product/Coffee&Tea/image_17.jpg",
+        subimg: "/Product/Coffeeee.svg",
+      },
+],
+  },
+  {
+    id: 15,
     name: "Item 14",
     category: "bags",
     subCategory: "Lehenga Cover",
@@ -1323,13 +1353,13 @@ const staticData = [
     mainImage: "src/assets/desktop-lehenga-covers.webp",
     discriptionHeading: "Elegant Lehenga Covers for Your Special Attire",
     discription:
-      "Discover a variety of Lehenga Covers designed to protect and preserve your valuable lehengas. Turtle Covers presents a unique collection, crafted with care to ensure that your special attire remains in perfect condition for years to come.",
+      "Discover a variety of Lehenga Covers designed to protect and preserve your valuable lehengas. Shreeji Graphics Covers presents a unique collection, crafted with care to ensure that your special attire remains in perfect condition for years to come.",
     product: [
       // Add more Lehenga Cover products as needed
     ],
   },
   {
-    id: 15,
+    id: 16,
     name: "Item 15",
     category: "bags",
     subCategory: "Sherwani Cover",
@@ -1338,13 +1368,13 @@ const staticData = [
     mainImage: "src/assets/desktop-sherwani-covers.webp",
     discriptionHeading: "Stylish Sherwani Covers for Your Special Outfits",
     discription:
-      "Discover a variety of Sherwani Covers designed to protect and preserve your valuable sherwanis. Turtle Covers presents a unique collection, crafted with care to ensure that your special attire remains in perfect condition for years to come.",
+      "Discover a variety of Sherwani Covers designed to protect and preserve your valuable sherwanis. Shreeji Graphics Covers presents a unique collection, crafted with care to ensure that your special attire remains in perfect condition for years to come.",
     product: [
       // Add more Sherwani Cover products as needed
     ],
   },
   {
-    id: 16,
+    id: 17,
     name: "Item 16",
     category: "bags",
     subCategory: "Curtains Bag",
@@ -1353,13 +1383,13 @@ const staticData = [
     mainImage: "src/assets/desktop-curtains-bags.webp",
     discriptionHeading: "Chic Curtains Bags for Easy Storage",
     discription:
-      "Explore our curated collection of Curtains Bags, specially designed for convenient storage and protection of your curtains. Turtle Bags presents a unique range crafted with care to ensure that your curtains remain in perfect condition for years to come.",
+      "Explore our curated collection of Curtains Bags, specially designed for convenient storage and protection of your curtains. Shreeji Graphics Bags presents a unique range crafted with care to ensure that your curtains remain in perfect condition for years to come.",
     product: [
       // Add more Curtains Bag products as needed
     ],
   },
   {
-    id: 17,
+    id: 18,
     name: "Item 17",
     category: "bags",
     subCategory: "Saree Cover",
@@ -1368,23 +1398,10 @@ const staticData = [
     mainImage: "src/assets/desktop-saree-covers.webp",
     discriptionHeading: "Stylish Saree Covers for Safekeeping",
     discription:
-      "Discover our curated collection of Saree Covers, meticulously crafted for the convenient storage and protection of your sarees. Turtle Bags presents a unique range designed with care to ensure that your sarees remain in perfect condition for years to come.",
+      "Discover our curated collection of Saree Covers, meticulously crafted for the convenient storage and protection of your sarees. Shreeji Graphics Bags presents a unique range designed with care to ensure that your sarees remain in perfect condition for years to come.",
     product: [
       // Add more Saree Cover products as needed
     ],
-  },
-  {
-    id: 18,
-    name: "Item 18",
-    category: "bags",
-    subCategory: "Tiffin Box",
-    heading:
-      "Discover our practical Tiffin Boxes & enjoy free shipping on orders over Rs 1000.",
-    mainImage: "src/assets/desktop-tiffin-boxes.webp",
-    discriptionHeading: "Functional Tiffin Boxes for On-the-Go Meals",
-    discription:
-      "Explore our curated collection of Tiffin Boxes, designed for convenient and hygienic storage of your meals on the go. Turtle Bags presents a unique range crafted with care to ensure that your food remains fresh and tasty throughout the day.",
-    product: [],
   },
   {
     id: 19,
@@ -1392,7 +1409,7 @@ const staticData = [
     category: "Food Packaging",
     subCategory: "Food Packaging",
     heading:
-      "Grow your cloud kitchen and restaurant food business with packaging and box solutions from Turtle Boxes",
+      "Grow your cloud kitchen and restaurant food business with packaging and box solutions from Shreeji Graphics Boxes",
     mainImage: "src/assets/desktop-shopping-bags.webp",
     discriptionHeading:
       "Unwrap the Culinary Delight! Explore Foodie Theme Printed & Unprinted Boxes.",
