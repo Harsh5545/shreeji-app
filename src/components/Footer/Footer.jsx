@@ -84,9 +84,9 @@ export default function FooterComponent() {
                 <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                     {/* <!-- TW Elements section --> */}
                     <div className="">
-                        <h6 className="mb-4 flex justify-center underline-offset-8 underline decoration-[#EF7F1B] gap-2 text-2xl  font-semibold uppercase md:justify-start">
+                        <h2 className="mb-4 flex justify-center underline-offset-8 underline decoration-[#EF7F1B] gap-2 text-2xl  font-semibold uppercase md:justify-start">
                             BOXES & LABELS
-                        </h6>
+                        </h2>
                         {boxesData.map((item) => (
                             <p key={item} className="my-4">
                                 {item}
@@ -95,9 +95,9 @@ export default function FooterComponent() {
                     </div>
                     {/* <!-- Products section --> */}
                     <div className="">
-                        <h6 className="mb-4 underline-offset-8 underline decoration-[#EF7F1B] flex justify-center text-2xl font-semibold uppercase md:justify-start">
+                        <h2 className="mb-4 underline-offset-8 underline decoration-[#EF7F1B] flex justify-center text-2xl font-semibold uppercase md:justify-start">
                             COMPANY
-                        </h6>
+                        </h2>
                         {companyData.map((item) => (
                             <p key={item} className="my-4">
                                 {item}
@@ -106,9 +106,9 @@ export default function FooterComponent() {
                     </div>
                     {/* <!-- Useful links section --> */}
                     <div className="">
-                        <h6 className="mb-4 underline-offset-8 underline decoration-[#EF7F1B] text-2xl font-semibold uppercase md:justify-start">
+                        <h2 className="mb-4 underline-offset-8 underline decoration-[#EF7F1B] text-2xl font-semibold uppercase md:justify-start">
                             HELP
-                        </h6>
+                        </h2>
                         {helpData.map((item) => (
                             <p key={item} className="my-4">
                                 {item}
@@ -117,9 +117,9 @@ export default function FooterComponent() {
                     </div>
                     {/* <!-- Contact section --> */}
                     <div>
-                        <h6 className="mb-4  underline-offset-8 underline decoration-[#EF7F1B] flex justify-center text-2xl font-semibold uppercase md:justify-start">
+                        <h2 className="mb-4  underline-offset-8 underline decoration-[#EF7F1B] flex justify-center text-2xl font-semibold uppercase md:justify-start">
                             SERVICE & CONTACT
-                        </h6>
+                        </h2>
                         <p className="mb-4 flex items-center justify-center md:justify-start">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

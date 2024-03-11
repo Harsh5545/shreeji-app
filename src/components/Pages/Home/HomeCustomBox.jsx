@@ -9,10 +9,10 @@ function HomeCustomBox() {
       <div className="mx-auto max-w-screen-lg md:py-10 pt-20 pb-5 px-5 grid md:grid-cols-2">
         <div className=" flex gap-5 flex-col items-center md:items-start">
  
-          <p className="text-[#fff] md:text-start text-center text-lg md:text-2xl">
+          <h1 className="text-[#fff] md:text-start text-center text-lg md:text-2xl">
             Create professional, personalised packaging in minutes with Turtle
             Boxes Design & Print Software
-          </p>
+          </h1>
           <button className="bg-white text-lg font-bold w-max px-5 py-2 rounded-[20px] text-[#EF7F1B]">
             DESIGN CUSTOM BOX
           </button>

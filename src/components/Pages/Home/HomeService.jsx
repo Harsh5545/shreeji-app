@@ -15,9 +15,9 @@ function HomeService() {
             <div className="mx-auto max-w-screen-xl gap-1 py-7 px-5 grid md:grid-cols-2">
                 <div className="flex flex-col gap-10 py-12">
                     <div className="flex flex-col  gap-8">
-                        <h2 className="text-2xl md:text-3xl text-[#FF6C22]">
+                        <h1 className="text-2xl md:text-3xl text-[#FF6C22]">
                             SHREEJI GRAPHICS SERVICES
-                        </h2>
+                        </h1>
                         <p className="text-lg md:text-2xl">
                             Start Your Packaging Journey with Shreeji Graphics
                         </p>

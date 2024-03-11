@@ -45,9 +45,9 @@ export default function CarouselCrossfade() {
             <div className={` flex pb-5 md:flex-row flex-col-reverse`}>
               <div className={`flex flex-col flex-1 gap-5 items-center ${animate ?'animated-carousel-item' :''} justify-center`}>
                 {" "}
-                <h1 className="p-1 md:w-[90%] w-[80%] font-semibold text-xl md:text-5xl text-center">
+                <p className="p-1 md:w-[90%] w-[80%] font-semibold text-xl md:text-5xl text-center">
                   Switch Your Packaging From Okay to Awesome
-                </h1>
+                </p>
                 <Button className="w-[30%]"> Order Now!</Button>
               </div>
               <div className={`flex flex-col flex-1 gap-5 items-center ${animate ?'animated-carousel-item' :''} justify-center`}>
@@ -66,9 +66,9 @@ export default function CarouselCrossfade() {
           >
             <div className={`flex pb-5 md:flex-row  flex-col-reverse`}>
               <div className={`flex flex-col flex-1 gap-5 items-center ${animate ?'animated-carousel-item' :''} justify-center`}>
-                <h1 className="p-1 md:w-[80%] w-[80%] font-semibold text-xl md:text-5xl text-center">
+                <p className="p-1 md:w-[80%] w-[80%] font-semibold text-xl md:text-5xl text-center">
                   Wrap Your Memories with Joy!
-                </h1>
+                </p>
                 <Button className="w-[30%]"> Order Now!</Button>
               </div>
               <div className={`flex flex-col flex-1 gap-5 items-center ${animate ?'animated-carousel-item' :''} justify-center`}>

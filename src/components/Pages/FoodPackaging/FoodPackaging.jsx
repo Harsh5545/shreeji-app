@@ -13,10 +13,10 @@ function FoodPackaging() {
         }}
       >
         <div className="flex justify-start items-center h-[60vh] w-[45%]">
-          <h2 className="p-5 font-medium md:text-4xl text-2xl">
+          <h1 className="p-5 font-medium md:text-4xl text-2xl">
             Grow your cloud kitchen and restaurant food business with packaging
             and box solutions from Turtle Boxes
-          </h2>
+          </h1>
         </div>
       </div>
       <div className="w-full">

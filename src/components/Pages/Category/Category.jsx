@@ -117,9 +117,9 @@ const Category = () => {
                     }}
                 >
                     <div className="flex items-center justify-start h-[60vh] md:w-[45%] text-center">
-                        <h2 className="font-medium md:text-4xl text-5xl p-5">
+                        <h1 className="font-medium md:text-4xl text-5xl p-5">
                             {category?.heading}
-                        </h2>
+                        </h1>
                     </div>
                 </div>
                 <div className="w-full">

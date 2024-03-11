@@ -23,9 +23,9 @@ function HomeBenefit() {
               <TbDiscountCheckFilled className="text-6xl"/>
             </div>
             <div>
-              <h1 className="text-lg font-bold">
+              <h2 className="text-lg font-bold">
                 100% Satisfaction and Quality
-              </h1>
+              </h2>
               <p className="text-sm">
                 We strive to deliver sheer quality with our services and
                 products for the best customer experience.
@@ -39,7 +39,7 @@ function HomeBenefit() {
           <SiStarship className="text-5xl"/>
             </div>
             <div>
-              <h1 className="text-lg font-bold ">Printing Brilliance</h1>
+              <h2 className="text-lg font-bold ">Printing Brilliance</h2>
               <p className="text-sm">
                 DIY packaging solutions with endless keyline variations so you
                 get the packaging you desire.
@@ -53,7 +53,7 @@ function HomeBenefit() {
             </div>
             <div>
               {" "}
-              <h1 className="text-lg font-bold ">No Hidden Costs</h1>
+              <h2 className="text-lg font-bold ">No Hidden Costs</h2>
               <p className="text-sm">
                 An all-inclusive price quotation for the product cost, GST &
                 shipping for crystal clear transactions.
@@ -67,9 +67,9 @@ function HomeBenefit() {
 
         <div className="mt-10 space-y-10" >
           <div className="flex items-start justify-between">
-            <div><h1 className="text-lg font-bold">
+            <div><h2 className="text-lg font-bold">
               Standard Artwork Check Included
-            </h1>
+            </h2>
             <p className="text-sm">
               Standard artwork check for incorrect data, color format & more to
               deliver error-free printing.
@@ -81,7 +81,7 @@ function HomeBenefit() {
 
           <div className="flex items-start justify-between">
             <div>
-                <h1 className="text-lg font-bold">Payment on Account</h1>
+                <h2 className="text-lg font-bold">Payment on Account</h2>
             <p className="text-sm">
               Get access to hassle-free payment methods via Debit / Credit Card
               and Internet Banking.
@@ -92,7 +92,7 @@ function HomeBenefit() {
           </div>
 
           <div className="flex items-start justify-between">
-            <div><h1 className="text-lg font-bold">Color Management</h1>
+            <div><h2 className="text-lg font-bold">Color Management</h2>
             <p className="text-sm">
               Ensuring strict color consistency across all packaging materials
               and logo designs for smooth offset printing.
