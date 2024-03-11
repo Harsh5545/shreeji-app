@@ -85,6 +85,7 @@ export default function NavbarComponent() {
                 isBordered
                 maxWidth="full"
                 height="5rem"
+                className=""
             >
                 <NavbarContent>
                     <NavbarMenuToggle
@@ -205,7 +206,7 @@ export default function NavbarComponent() {
                 <NavbarContent justify="end">
                     <NavbarItem className="flex">
                         <Button
-                            className="bg-[#FF6C22] text-[#fff]"
+                            className="bg-[#F5821F] text-[#fff]"
                             onClick={() => {
                                 onOpen
                                 window.scrollTo(0, 0)
@@ -282,6 +283,7 @@ export default function NavbarComponent() {
                             onClick={()=>{setIsMenuOpen(false)
                                 window.scrollTo(0, 0)}
                             }
+                            className="bg-[#F5821F]"
                         >
                             FOOD PACKAGING
                         </Link>

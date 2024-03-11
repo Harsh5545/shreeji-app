@@ -20,10 +20,7 @@ const staticData = [
         heading: "Baby Clothes Folding Box",
         button: "",
         headerimg: "/Product/baby_download.svg",
-        subimg: [
-          "/Product/baby_clothes_folding_box.webp",
-          "/Product/baby_download.svg",
-        ],
+        subimg:""
       },
       {
         Productid: 2,
@@ -31,10 +28,7 @@ const staticData = [
         heading: "Baby Clothes Hollow Rim Box with Slipcase White Floor",
         button: "",
         headerimg: "/Product/baby.jpg",
-        subimg: [
-          "/Product/baby_clothes_hollow_rim_box_with_slipcase_white_floor.jpg",
-          "/Product/baby_Clothing_.svg",
-        ],
+        subimg: "/Product/abhi.svg"
       },
       {
         Productid: 3,
@@ -42,10 +36,7 @@ const staticData = [
         heading: "Bed Sheets Slipcase Both Sides Open",
         button: "",
         headerimg: "/Product/bed-sheet-head.svg",
-        subimg: [
-          "/Product/bed_sheets_slipcase_both_sides_open.jpg",
-          "/Product/bed-sheet-sub.jpg",
-        ],
+        subimg: "/Product/bed-sheet-sub.jpg"
       },
       {
         Productid: 4,
@@ -156,7 +147,7 @@ const staticData = [
     subCategory: "CONSUMER GOODS",
     HeaderImage: "/Main-Images/desktop-consumer-goods.jpg",
     heading: "Refine Your Consumer Goods with a Better Box",
-    mainImage: "/Product/Home/image_7.jpg",
+    mainImage: "/Product/costumgood.jpg",
     discriptionHeading: "From Goods to Goodies with Online Custom Packaging",
     discription:
       "Unbox your creativity and design boxes for packaging online with our innovative layouts. Build custom gift boxes with online tools by industries leading carton box manufacturers.",
@@ -257,7 +248,7 @@ const staticData = [
     category: "boxes",
     subCategory: "PERSONAL CARE & COSMETIC",
     heading: "Beautify Your Brand with Custom Cosmetic Box Designs",
-    mainImage: "/Product/Home/image_8.jpg",
+    mainImage: "/Product/personalCareShreeji.jpg",
     HeaderImage: "/Main-Images/desktop_personal_care.jpg",
     discriptionHeading: "Dress your Cosmetics in a Desirable Custom Box",
     discription:
@@ -360,7 +351,7 @@ const staticData = [
     subCategory: "BAKERY AND COOKIES",
     HeaderImage: "/Main-Images/desktop-bakery-cookie.jpg",
     heading: "Custom Design Cake Boxes For a Flavourful Experience",
-    mainImage: "/Product/Home/image_9.jpg",
+    mainImage: "/Product/Home/backery.jpg",
     discriptionHeading:
       "Explore Custom Bakery, Cookies and Biscuit Boxes Packaging",
     discription:
@@ -471,14 +462,14 @@ const staticData = [
     subCategory: "BEVERAGES",
     heading: "Box in the Goodness",
     HeaderImage: "/Main-Images/desktop-beverages (1).jpg",
-    mainImage: "/Product/Home/image_10.jpg",
+    mainImage: "/Product/Home/iamge_1.jpg",
     discriptionHeading: "Suave Packagings for Savoury Delights",
     discription:
       "Discover trending layouts and build a custom food and beverage packaging for those savoury delights. Craft your own custom box for packaging to boost your branding.",
     product: [
       {
         Productid: 1,
-        img: "/Product/Coffee&Tea/image_1.jpg",
+        img: "/Product/beverage_paper_tray_packaging.jpg",
         heading: "Beverage Paper Tray Packaging",
         button: "",
         headerimg: "/Product/beverage-paper-tray-packaging-head.svg",
@@ -557,7 +548,7 @@ const staticData = [
     category: "boxes",
     subCategory: "CHOCOLATES AND CONFECTIONERY",
     heading: "Unbox Your Packaging’s Potential",
-    mainImage: "/Product/Home/image_11.jpg",
+    mainImage: "/Product/Home/chocolateshreeji.jpg",
     HeaderImage: "/Main-Images/desktop-chocolates-confectionery.jpg",
     discriptionHeading:
       "Reimagine your Custom Chocolate Packaging Boxes with our Creative Templates",
@@ -701,7 +692,7 @@ const staticData = [
       },
       {
         Productid: 2,
-        img: "/Product/Food/image_4jpg",
+        img: "/Product/Food/image_4.jpg",
         heading: "Cereal Packaging Box",
         button: "",
         headerimg: "/Product/Food/image_5.jpg",
@@ -804,7 +795,7 @@ const staticData = [
     subCategory: "ECOMMERCE",
     HeaderImage: "/Main-Images/desktop_food.jpg",
     heading: "Elevate with Custom E-Commerce Packaging & Boxes",
-    mainImage: "/Product/Home/image_13.jpg",
+    mainImage: "/Product/Home/4483.jpg",
     discriptionHeading:
       "Take charge of all your packaging needs with our comprehensive packaging tools.",
     discription:
@@ -977,7 +968,7 @@ const staticData = [
     category: "boxes",
     subCategory: "GIFTING",
     heading: "Add More Joy to Gifting with Custom Gift Boxes",
-    mainImage: "/Product/Home/image_15.jpg",
+    mainImage: "/Product/4263.jpg",
     HeaderImage: "/Main-Images/desktop-gifting.jpg",
     discriptionHeading:
       "Grace your gifts with the personal touch of custom gift boxes.",
@@ -1195,7 +1186,7 @@ const staticData = [
     HeaderImage: "/Main-Images/desktop-sample-box.jpg",
     heading:
       "Order a sample set & grab a voucher worth Rs 500 for your next buy.",
-    mainImage: "/Product/Home/image_17.jpg",
+    mainImage: "/Product/Home/9781.jpg",
     discriptionHeading: "Sample Boxes Set as per Your Industry",
     discription:
       "Be your own quality control with your desired materials, print technique and finishes. Turtle Boxes offers Packaging Sample Set, as per your specific industry. Every Packaging Sample Set contains all material and finishing samples to give you a good overview of our packaging's stability and printing quality.",
