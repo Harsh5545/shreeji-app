@@ -26,7 +26,7 @@ function HomeService() {
                     <div className="flex flex-col md:flex-row gap-5 w-[90%] justify-between">
                         <div className="flex gap-3">
                             <img
-                                alt=""
+                                alt="ShreejiGraphics Home Main Page"
                                 src="/Main-Images/chat.png"
                                 width="30"
                                 className="object-contain"
@@ -44,7 +44,7 @@ function HomeService() {
                         </div>
                         <div className="flex gap-3">
                             <img
-                                alt=""
+                                alt="shreejiGraphics home Image"
                                 src="/Main-Images/document.png"
                                 width="30"
                                 className="object-contain rotate-180"
@@ -58,7 +58,7 @@ function HomeService() {
                 </div>
 
                 <div>
-                    <img src="/Main-Images/service-bag.webp" width="2000" className="" alt="" />
+                    <img src="/Main-Images/service-bag.webp" width="2000" className="" alt="shreejiGraphics" />
                 </div>
             </div>
         </div>

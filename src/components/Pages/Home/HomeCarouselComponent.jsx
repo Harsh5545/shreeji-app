@@ -65,7 +65,7 @@ export default function CarouselCrossfade() {
                                 <img
                                     src="/Main-Images/shreejiWebPage.png"
                                     alt="shreejiGraphics Main image"
-                                    className="md:p-10 "
+                                    className="md:p-10"
                                     width={500}
                                 />
                             </div>
@@ -76,7 +76,7 @@ export default function CarouselCrossfade() {
                         className="relative bg-[#9ED9DC] h-[75vh] float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                     >
                         <div
-                            className={`flex pb-5 h-[75vh] md:flex-row flex-col`}
+                            className={`flex pb-5 h-[75vh] md:flex-row flex-col-reverse`}
                         >
                             <div
                                 className={`flex flex-col justify-center flex-1 gap-5 items-center `}
