@@ -7,7 +7,7 @@ export default function CarouselCrossfade() {
     return (
         <>
             <TECarousel
-                showControls
+                
                 showIndicators
                 crossfade
                 ride="carousel"
@@ -19,13 +19,13 @@ export default function CarouselCrossfade() {
                 <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
                     <TECarouselItem
                         itemID={1}
-                        className="relative h-[70vh] bg-[#E58B93] float-left -mr-[100%] hidden w-full !transform-none transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        className="relative h-[75vh] bg-[#E58B93] float-left -mr-[100%] hidden w-full !transform-none transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                     >
                         <div className="flex pb-5 md:flex-row flex-col-reverse">
                             <div
                                 className={`flex flex-col justify-center flex-1 gap-5 items-center `}
                             >
-                                <h1 className="p-1 md:w-[90%] w-[80%] md:font-semibold font-medium text-xl md:text-5xl text-center">
+                                <h1 className="p-1 md:w-[90%] w-[90%] md:font-semibold font-medium text-xl md:text-5xl text-center">
                                     Premier & Customised Packaging & Boxes for
                                     the New Age Startups.
                                 </h1>
@@ -48,13 +48,13 @@ export default function CarouselCrossfade() {
                         className="relative h-full bg-lime-300  float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                     >
                         <div
-                            className={` flex pb-5 h-[70vh] md:flex-row flex-col-reverse`}
+                            className={` flex pb-5 h-[75vh] md:flex-row flex-col-reverse`}
                         >
                             <div
                                 className={`flex flex-col justify-center flex-1 gap-5 items-center `}
                             >
-                                {" "}
-                                <p className="p-1 md:w-[90%] w-[80%] font-semibold text-xl md:text-5xl text-center">
+                             
+                                <p className="p-1 md:w-[90%] w-[80%] md:font-semibold font-medium text-xl md:text-5xl text-center">
                                     Switch Your Packaging From Okay to Awesome
                                 </p>
                                 <Button className="w-[30%]"> Order Now!</Button>
@@ -73,21 +73,21 @@ export default function CarouselCrossfade() {
                     </TECarouselItem>
                     <TECarouselItem
                         itemID={3}
-                        className="relative bg-[#9ED9DC] h-[70vh] float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        className="relative bg-[#9ED9DC] h-[75vh] float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                     >
                         <div
-                            className={`flex pb-5 md:flex-row  flex-col-reverse`}
+                            className={`flex pb-5 h-[75vh] md:flex-row flex-col`}
                         >
                             <div
                                 className={`flex flex-col justify-center flex-1 gap-5 items-center `}
                             >
-                                <p className="p-1 md:w-[80%] w-[80%] font-semibold text-xl md:text-5xl text-center">
+                                <p className="p-1 md:w-[80%] w-[80%] md:font-semibold font-medium text-xl md:text-5xl text-center">
                                     Wrap Your Memories with Joy!
                                 </p>
                                 <Button className="w-[30%]"> Order Now!</Button>
                             </div>
                             <div
-                                className={`flex flex-col   justify-center flex-1 gap-5 items-center `}
+                                className={`flex flex-col justify-center flex-1 gap-5 items-center `}
                             >
                                 <img
                                     src="/Main-Images/image_2__1_-removebg-preview.png"
