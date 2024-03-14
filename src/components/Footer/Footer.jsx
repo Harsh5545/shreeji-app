@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { boxesData, companyData, helpData } from "../../../Data";
 import React from "react";
 
 export default function FooterComponent() {
+    const navigate = useNavigate()
     return (
         <footer className=" text-center  bg-neutral-600 text-neutral-200 lg:text-left">
             <div className="max-w-screen-xl mx-auto">
@@ -88,7 +90,10 @@ export default function FooterComponent() {
                             BOXES & LABELS
                         </h2>
                         {boxesData.map((item) => (
-                            <p key={item} className="my-4">
+                            <p key={item} onClick={() => {
+                                navigate(`/category/${item}`)
+                                window.scrollTo(0, 0)
+                            }} className="my-4 hover:underline cursor-pointer">
                                 {item}
                             </p>
                         ))}
@@ -99,8 +104,11 @@ export default function FooterComponent() {
                             COMPANY
                         </h2>
                         {companyData.map((item) => (
-                            <p key={item} className="my-4">
-                                {item}
+                            <p key={item} onClick={() => {
+                                navigate(`${item.link}`)
+                                window.scrollTo(0, 0)
+                            }} className="my-4 hover:underline cursor-pointer">
+                                {item.slug}
                             </p>
                         ))}
                     </div>
@@ -110,8 +118,11 @@ export default function FooterComponent() {
                             HELP
                         </h2>
                         {helpData.map((item) => (
-                            <p key={item} className="my-4">
-                                {item}
+                            <p key={item} onClick={() => {
+                                navigate(`${item.link}`)
+                                window.scrollTo(0, 0)
+                            }} className="my-4 hover:underline cursor-pointer">
+                                {item.slug}
                             </p>
                         ))}
                     </div>
@@ -142,7 +153,7 @@ export default function FooterComponent() {
                                 <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                                 <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                             </svg>
-                            info@example.com
+                            shreejigraphics@gmail.com
                         </p>
                         <p className="mb-4 flex items-center justify-center md:justify-start">
                             <svg
@@ -157,7 +168,7 @@ export default function FooterComponent() {
                                     clipRule="evenodd"
                                 />
                             </svg>
-                            + 01 234 567 88
+                            + 91 9824229989
                         </p>
                         {/* <p className="flex items-center justify-center md:justify-start">
               <svg

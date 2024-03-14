@@ -20,7 +20,7 @@ const AppRouter = () => {
       <Route path="/aboutus" Component={AboutUs}/>
         <Route path="/blogs" Component={Blogs}/>
 <Route path="/btc" Component={Btc}/>
-<Route path="/privacyPolicy" Component={PrivacyPolicy}/>
+<Route path="/privacypolicy" Component={PrivacyPolicy}/>
 <Route path="/rrp" Component={Rrp}/>
 <Route path="/servicebenifits" Component={ServiceBenifits}/>
     </Routes>

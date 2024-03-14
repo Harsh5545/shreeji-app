@@ -1541,33 +1541,31 @@ const staticData = [
 export default staticData;
 
 export const boxesData = [
-  "Bakery & Cakes",
-  "Beverages",
-  "Clothing & Apparels",
-  "Consumer Goods",
-  "Coffee & Tea",
-  "E-commerce",
-  "Chocolates & Confectionery",
-  "Food & Restaurants",
-  "Gifting",
-  "Personal Care & Cosmetics",
-  "Design Custom Box",
-  "Rigid Boxes",
-  "Sample Box Set",
+  
+  "BAKERY AND COOKIES",
+  "BEVERAGES",
+  "CLOTHIGS & APPARELS",
+  "CONSUMER GOODS",
+  "COFFEE AND TEA",
+  "ECOMMERCE",
+  "CHOCOLATES AND CONFECTIONERY",
+  "FOOD & RESTAURANTS",
+  "GIFTING",
+  "PERSONAL CARE & COSMETIC",
+  "RRigid Boxes",
+  "SAMPLE BOX SET",
 ];
 export const companyData = [
-  "About Us",
-  "Services and Benefits",
-  "Artworks Instructions",
-  "Blogs",
-  "Bulk Enquiry",
+  {slug:"About Us",link:"/aboutus"},
+  {slug:"Services and Benefits",link:"/servicebenifits"},
+  {slug:"Blogs",link:"/blogs"},
+  {slug:"Bulk Enquiry",link:"/contact"},
 ];
 export const helpData = [
-  "Contact Us",
-  "FAQ",
-  "Billing Terms & Conditions",
-  "Privacy Policy",
-  "Return & Refund Policy",
-  "International Return and Refund Policy",
-  "Cookie Policy",
+  {slug:"Contact Us",link:"/contact"},
+  {slug:"Billing Terms & Conditions",link:"/btc"},
+  {slug:"Privacy Policy",link:"/privacypolicy"},
+  {slug:"Return & Refund Policy",link:"/rrp"},
+  ,
+ 
 ];
