@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
-import {  Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 const CustomCard = (props) => {
     const { name, title, mainImage, category, subCategory, productId } =

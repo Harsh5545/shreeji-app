@@ -1541,7 +1541,6 @@ const staticData = [
 export default staticData;
 
 export const boxesData = [
-  
   "BAKERY AND COOKIES",
   "BEVERAGES",
   "CLOTHIGS & APPARELS",
@@ -1552,7 +1551,7 @@ export const boxesData = [
   "FOOD & RESTAURANTS",
   "GIFTING",
   "PERSONAL CARE & COSMETIC",
-  "RRigid Boxes",
+  "Rigid Boxes",
   "SAMPLE BOX SET",
 ];
 export const companyData = [
@@ -1565,7 +1564,5 @@ export const helpData = [
   {slug:"Contact Us",link:"/contact"},
   {slug:"Billing Terms & Conditions",link:"/btc"},
   {slug:"Privacy Policy",link:"/privacypolicy"},
-  {slug:"Return & Refund Policy",link:"/rrp"},
-  ,
- 
+  {slug:"Return & Refund Policy",link:"/rrp"}
 ];

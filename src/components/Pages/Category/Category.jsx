@@ -36,6 +36,7 @@ const Category = () => {
             handleConfetti();
         }
     }, [categoryId]);
+    
 
     const LoadingCards = () => {
         return Array.from({ length: 10 }).map((_, index) => (
@@ -47,24 +48,24 @@ const Category = () => {
 
 
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY =
-                window.scrollY ||
-                window.pageYOffset ||
-                document.documentElement.scrollTop;
-            const windowHeight =
-                window.innerHeight || document.documentElement.clientHeight;
-            const documentHeight = document.documentElement.scrollHeight;
+    const handleScroll = () => {
+        const scrollY =
+            window.scrollY ||
+            window.pageYOffset ||
+            document.documentElement.scrollTop;
+        const windowHeight =
+            window.innerHeight || document.documentElement.clientHeight;
+        const documentHeight = document.documentElement.scrollHeight;
 
-            if (scrollY + windowHeight >= documentHeight - 500 && !loadingMore) {
-                setLoadingMore(true);
-                setTimeout(() => {
-                    setVisibleItems((prevVisibleItems) => prevVisibleItems + 5);
-                    setLoadingMore(false);
-                }, 1000);
-            }
-        };
+        if (scrollY + windowHeight >= documentHeight - 500 && !loadingMore) {
+            setLoadingMore(true);
+            setTimeout(() => {
+                setVisibleItems((prevVisibleItems) => prevVisibleItems + 5);
+                setLoadingMore(false);
+            }, 1000);
+        }
+    };
+    useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
@@ -94,7 +95,7 @@ const Category = () => {
             <div className="my-2 ml-2">
                 <Breadcrumbs>
                     <BreadcrumbItem>
-                        <Link to={"/"} replace>
+                        <Link to={"/"}>
                             Home
                         </Link>
                     </BreadcrumbItem>
@@ -113,11 +114,11 @@ const Category = () => {
                         backgroundImage: `url(${backgroundImageUrl})`,
                         backgroundSize: "cover",
                         minHeight: "60vh",
-                        // backgroundImage: "no-repeat",
+                        backgroundImage: "no-repeat",
                     }}
                 >
                     <div className="flex items-center justify-start h-[60vh] md:w-[45%] text-center">
-                        <h1 className="font-medium md:text-4xl text-5xl p-5">
+                        <h1 className="font-medium md:text-4xl text-xl p-5">
                             {category?.heading}
                         </h1>
                     </div>

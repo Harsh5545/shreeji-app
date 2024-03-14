@@ -9,14 +9,12 @@ import Loader from "./Loader";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
+  const fakeAsyncOperation = () => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); 
+  };
   useEffect(() => {
-  
-    const fakeAsyncOperation = () => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1000); 
-    };
-
     fakeAsyncOperation();
   }, []);
 
