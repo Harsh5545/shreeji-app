@@ -45,7 +45,7 @@ import { FaBox } from "react-icons/fa6";
 export default function NavbarComponent() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
-    
+
     const navigate = useNavigate()
     const iconList = [
         { id: 1, icons: <GiClothes /> },
@@ -69,8 +69,8 @@ export default function NavbarComponent() {
         { id: 19, icons: <FaBox /> },
         { id: 20, icons: <FaBoxOpen /> },
         { id: 21, icons: <FaBoxOpen /> },
-      ]
-
+    ]
+    
     return (
         <>
             <CustomModel
@@ -93,7 +93,7 @@ export default function NavbarComponent() {
                         className="sm:hidden"
                     />
                     <NavbarBrand>
-                        <Link to="/" onClick={()=>window.scrollTo(0, 0)}>
+                        <Link to="/" onClick={() => window.scrollTo(0, 0)}>
                             <img src={logo} alt="shreeji logo" width="200" />
                         </Link>
                     </NavbarBrand>
@@ -124,12 +124,12 @@ export default function NavbarComponent() {
                                 base: "gap-4",
                             }}
                         >
-                       
-                            {staticData.slice(0, 12).map((item,i) => {
+
+                            {staticData.slice(0, 12).map((item, i) => {
                                 return (
                                     <DropdownItem key={item.id}>
                                         <Link
-                                            onClick={()=>window.scrollTo(0, 0)}
+                                            onClick={() => window.scrollTo(0, 0)}
                                             to={`/category/${item.subCategory}`}
                                             className="flex gap-2 items-center"
                                         >
@@ -162,11 +162,11 @@ export default function NavbarComponent() {
                                 base: "gap-4",
                             }}
                         >
-                            {staticData.slice(12).map((item,i) => {
+                            {staticData.slice(12).map((item, i) => {
                                 return (
                                     <DropdownItem key={item.id}>
                                         <Link
-                                            onClick={()=>window.scrollTo(0, 0)}
+                                            onClick={() => window.scrollTo(0, 0)}
                                             to={`/category/${item.subCategory}`}
                                             className="flex gap-2 items-center"
                                         >
@@ -180,7 +180,7 @@ export default function NavbarComponent() {
                     </Dropdown>
                     <NavbarItem>
                         <Link
-                            onClick={()=>window.scrollTo(0, 0)}
+                            onClick={() => window.scrollTo(0, 0)}
                             to={`/category/Food Packaging`}
                             aria-current="page"
                         >
@@ -188,17 +188,17 @@ export default function NavbarComponent() {
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link to={`/category/Rigid Boxes`} onClick={()=>window.scrollTo(0, 0)} color="foreground">
+                        <Link to={`/category/Rigid Boxes`} onClick={() => window.scrollTo(0, 0)} color="foreground">
                             RIGID BOXES
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link to={`/category/Custom Labels`} onClick={()=>window.scrollTo(0, 0)} color="foreground" >
+                        <Link to={`/category/Custom Labels`} onClick={() => window.scrollTo(0, 0)} color="foreground" >
                             CUSTOM LABELS
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link to={`/aboutus`} onClick={()=>window.scrollTo(0, 0)} color="foreground">
+                        <Link to={`/aboutus`} onClick={() => window.scrollTo(0, 0)} color="foreground">
                             ABOUT
                         </Link>
                     </NavbarItem>
@@ -208,10 +208,11 @@ export default function NavbarComponent() {
                         <Button
                             className="bg-[#F5821F] text-[#fff]"
                             onClick={() => {
-                                onOpen
-                                window.scrollTo(0, 0)
+                                onOpen;
+                                window.scrollTo(0, 0);
+                                navigate("/contact")
                             }}
-                            
+
                         >
                             CONTACT
                         </Button>
@@ -227,21 +228,21 @@ export default function NavbarComponent() {
                                 </p>
                             </div>
                             <div className="mapData gap-3 hidden pt-3">
-                                {staticData.slice(0, 12).map((item,i) => {
+                                {staticData.slice(0, 12).map((item, i) => {
                                     return (
                                         <p
-                                        onClick={(e) => {
-                                            e.stopPropagation()
-                                            navigate(`/category/${item.subCategory}`)
-                                            window.scrollTo(0, 0);
-                                            setIsMenuOpen(false);
-                                        }}
-                                        key={item.id}
-                                        className="flex gap-2 items-center"
-                                    >
-                                        {iconList[i].icons}
-                                        {item.subCategory}
-                                    </p>
+                                            onClick={(e) => {
+                                                e.stopPropagation()
+                                                navigate(`/category/${item.subCategory}`)
+                                                window.scrollTo(0, 0);
+                                                setIsMenuOpen(false);
+                                            }}
+                                            key={item.id}
+                                            className="flex gap-2 items-center"
+                                        >
+                                            {iconList[i].icons}
+                                            {item.subCategory}
+                                        </p>
                                     );
                                 })}
                             </div>
@@ -256,21 +257,21 @@ export default function NavbarComponent() {
                                 </p>
                             </div>
                             <div className="mapData gap-3 hidden pt-3">
-                                {staticData.slice(12).map((item,i) => {
+                                {staticData.slice(12).map((item, i) => {
                                     return (
                                         <p
-                                        onClick={(e) => {
-                                            e.stopPropagation()
-                                            navigate(`/category/${item.subCategory}`)
-                                            window.scrollTo(0, 0);
-                                            setIsMenuOpen(false);
-                                        }}
-                                        key={item.id}
-                                        className="flex gap-2 items-center"
-                                    >
-                                        {iconList[i]?.icons}
-                                        {item.subCategory}
-                                    </p>
+                                            onClick={(e) => {
+                                                e.stopPropagation()
+                                                navigate(`/category/${item.subCategory}`)
+                                                window.scrollTo(0, 0);
+                                                setIsMenuOpen(false);
+                                            }}
+                                            key={item.id}
+                                            className="flex gap-2 items-center"
+                                        >
+                                            {iconList[i]?.icons}
+                                            {item.subCategory}
+                                        </p>
                                     );
                                 })}
                             </div>
@@ -280,8 +281,10 @@ export default function NavbarComponent() {
                         <Link
                             to={`/category/Food Packaging`}
                             aria-current="page"
-                            onClick={()=>{setIsMenuOpen(false)
-                                window.scrollTo(0, 0)}
+                            onClick={() => {
+                                setIsMenuOpen(false)
+                                window.scrollTo(0, 0)
+                            }
                             }
                             className="bg-[#F5821F]"
                         >
@@ -289,20 +292,26 @@ export default function NavbarComponent() {
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link color="foreground" to={`/category/Rigid Boxes`} onClick={()=>{setIsMenuOpen(false)
-                            window.scrollTo(0, 0)}}>
+                        <Link color="foreground" to={`/category/Rigid Boxes`} onClick={() => {
+                            setIsMenuOpen(false)
+                            window.scrollTo(0, 0)
+                        }}>
                             RIGID BOXES
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link color="foreground" to={`/category/Custom Labels`} onClick={()=>{setIsMenuOpen(false)
-                            window.scrollTo(0, 0)}}>
+                        <Link color="foreground" to={`/category/Custom Labels`} onClick={() => {
+                            setIsMenuOpen(false)
+                            window.scrollTo(0, 0)
+                        }}>
                             CUSTOM LABELS
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link to="/aboutus" color="foreground" onClick={()=>{setIsMenuOpen(false)
-                            window.scrollTo(0, 0)}}>
+                        <Link to="/aboutus" color="foreground" onClick={() => {
+                            setIsMenuOpen(false)
+                            window.scrollTo(0, 0)
+                        }}>
                             ABOUT
                         </Link>
                     </NavbarItem>

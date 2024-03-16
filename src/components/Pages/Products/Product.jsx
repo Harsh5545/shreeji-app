@@ -6,16 +6,25 @@ import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 const Product = () => {
 
     const { categoryId, productId } = useParams();
-    
-   
+
+
     const [foundProduct, setFoundProduct] = useState([]);
+    console.log(foundProduct);
     const [img, setImg] = useState({});
+    const [length, setLength] = useState("");
+    const [width, setWidth] = useState("");
+    const [height, setHeight] = useState("");
+    const [boxtype, setBoxType] = useState("");
+    const [material, setMaterial] = useState("");
+    const [refine, setRefine] = useState("");
+    const [finish, setFinish] = useState("");
+    const [production, setProduction] = useState("");
 
     useEffect(() => {
         const foundCategory = staticData.find(
             (category) => category.subCategory === categoryId
         );
-    
+
         const foundProduct = foundCategory?.product.find(
             (product) => product.Productid === parseInt(productId)
         );
@@ -32,6 +41,32 @@ const Product = () => {
             )
             .join(" ");
     };
+
+    const handleShare = async () => {
+        const message = `Hello Shreeji Graphics, 
+        I have a requirement for the following product: ${foundProduct.heading}
+        - Length: ${length}
+        - Width: ${width}
+        - Height: ${height}
+        - Box Type: ${boxtype}
+        - Material: ${material}
+        - Refinement: ${refine}
+        - Finish: ${finish}
+        - Production: ${production}
+
+        Thank you!`;
+
+        const encodeMessage = (msg) => {
+            return encodeURIComponent(msg)
+                .replace(/[!'()*]/g, (c) => {
+                    return '%' + c.charCodeAt(0).toString(16);
+                });
+        };
+        const encodedMessage = encodeMessage(message);
+        const phoneNumber = '917721841331';
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+    }
 
     return (
         <>
@@ -64,31 +99,33 @@ const Product = () => {
                     {foundProduct.heading}
                 </h1>
                 <div className="grid md:grid-cols-2 grid-cols-1">
-                    <div className="items-start h-[30rem] flex p-8 justify-start relative flex-col gap-3">
-                    <img src={foundProduct.img} alt="shreeji Graphics Product" width='360' className="h-[17rem] md:h-[18rem] object-contain"/>
+                    <div className="items-start h-[30rem] flex p-8 justify-start relative flex-col gap-3 mx-auto">
+                        <img src={foundProduct.img} alt="shreeji Graphics Product" width='360' className="h-[17rem] md:h-[18rem] object-contain " />
 
                         {foundProduct.subimg != undefined ? (
-                            <img
-                                src={foundProduct.subimg}
-                                alt="shreeji Graphic images surat"
-                                onMouseEnter={() =>
-                                    setFoundProduct((prevState) => ({
-                                        ...prevState,
-                                        img: prevState.subimg,
-                                        subimg: foundProduct.img,
-                                    }))
-                                }
-                                onMouseLeave={() =>
-                                    setFoundProduct((prevState) => ({
-                                        ...prevState,
-                                        img: img.actualImg,
-                                        subimg: img.subImg,
-                                    }))
-                                }
-                                width='100'
-                                height='100'
-                                className="absolute object-contain bottom-0 border-2"
-                            />
+                            <div className="w-[90%] flex overflow-hidden mx-auto items-start">
+                                <img
+                                    src={foundProduct.subimg}
+                                    alt="shreeji Graphic images surat"
+                                    onMouseEnter={() =>
+                                        setFoundProduct((prevState) => ({
+                                            ...prevState,
+                                            img: prevState.subimg,
+                                            subimg: foundProduct.img,
+                                        }))
+                                    }
+                                    onMouseLeave={() =>
+                                        setFoundProduct((prevState) => ({
+                                            ...prevState,
+                                            img: img.actualImg,
+                                            subimg: img.subImg,
+                                        }))
+                                    }
+                                    width='60'
+                                    height='60'
+                                    className="object-contain bottom-0 border-2 mx-auto shadow-md m-2 "
+                                />
+                            </div>
                         ) : (
                             <></>
                         )}
@@ -102,6 +139,8 @@ const Product = () => {
                                 className="p-1 border flex-1 md:md:text-lg text-md text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none"
                                 type="text"
                                 placeholder="Enter length"
+                                value={length}
+                                onChange={(e) => setLength(e.target.value)}
                             />
                         </div>
                         <div className="flex justify-between">
@@ -112,6 +151,8 @@ const Product = () => {
                                 className="p-1 border flex-1 md:text-lg text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none"
                                 type="text"
                                 placeholder="Enter Width"
+                                value={width}
+                                onChange={(e) => setWidth(e.target.value)}
                             />
                         </div>
                         <div className="flex justify-between">
@@ -122,13 +163,15 @@ const Product = () => {
                                 className="p-1 border flex-1 md:text-lg text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none"
                                 type="text"
                                 placeholder="Enter Height"
+                                value={height}
+                                onChange={(e) => setHeight(e.target.value)}
                             />
                         </div>
                         <div className="flex justify-between">
                             <p className=" font-normal flex-1 md:text-lg text-md">
                                 Box Types
                             </p>
-                            <select className="p-1 flex-1 border md:md:text-lg text-md text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none">
+                            <select value={boxtype} onChange={(e) => setBoxType(e.target.value)} className="p-1 flex-1 border md:md:text-lg text-md text-md border-gray-300 rounded-sm hover:shadow-md border-spacing-1 outline-none">
                                 <option>Standard Packaging</option>
                                 <option>Plain Box/Non Printed</option>
                                 <option>Food Safe Packaging</option>
@@ -139,7 +182,7 @@ const Product = () => {
                             <p className="flex-1 font-normal md:text-lg text-md">
                                 Material
                             </p>
-                            <select className="p-1 flex-1 border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+                            <select value={material} onChange={(e) => setMaterial(e.target.value)} className="p-1 flex-1 border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
                                 <option>SBM/FBB 300 GSM</option>
                                 <option>SBM/FBB 350 GSM</option>
                             </select>
@@ -148,7 +191,7 @@ const Product = () => {
                             <p className=" font-normal flex-1 md:text-lg text-md">
                                 Refinement
                             </p>
-                            <select className="p-1 flex-1 border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+                            <select value={refine} onChange={(e) => setRefine(e.target.value)} className="p-1 flex-1 border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
                                 <option>None</option>
                                 <option>Spot UV</option>
                                 <option>Foil Stamping</option>
@@ -158,7 +201,7 @@ const Product = () => {
                             <p className="flex-1 font-normal md:text-lg text-md">
                                 Finishes
                             </p>
-                            <select className=" p-1 flex-1 border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+                            <select value={finish} onChange={(e) => setFinish(e.target.value)} className=" p-1 flex-1 border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
                                 <option>None</option>
                                 <option>Gloss Lamination</option>
                                 <option>Matt Lamination</option>
@@ -170,16 +213,16 @@ const Product = () => {
                             <p className="flex-1 font-normal md:text-lg text-md">
                                 Production
                             </p>
-                            <select className="flex-1 p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
+                            <select value={production} onChange={(e) => setProduction(e.target.value)} className="flex-1 p-1  border md:text-lg text-md outline-none  border-gray-300 rounded-sm hover:shadow-md border-spacing-1 ">
                                 <option>Standard (8/10 Days)</option>
                                 <option>standard (3/4 Days)</option>
                             </select>
                         </div>
-                        <Button> Get Quote</Button>
+                        <Button onClick={(e) => handleShare()}> Get Quote </Button>
                     </div>
                 </div>
                 <div className="grid md:my-20 my-10 md:grid-cols-2 grid-cols-1">
-                    <div className="flex  justify-between gap-3">
+                    <div className="flex  justify-between gap-3 mx-auto">
                         <img
                             src={foundProduct.headerimg}
                             alt="shreeji Graphic images surat"

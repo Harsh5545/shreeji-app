@@ -2,8 +2,10 @@ import React from "react";
 import { TECarousel, TECarouselItem } from "tw-elements-react";
 import { Button } from "../../ui/button";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 export default function CarouselCrossfade() {
+    const navigate = useNavigate();
     return (
         <>
             <TECarousel
@@ -29,7 +31,7 @@ export default function CarouselCrossfade() {
                                     Premier & Customised Packaging & Boxes for
                                     the New Age Startups.
                                 </h1>
-                                <Button className="w-[30%]"> Order Now!</Button>
+                                <Button className="w-[30%]" onClick={() => navigate('/contact')}> Order Now!</Button>
                             </div>
                             <div
                                 className={`flex flex-col flex-1 gap-5 items-center `}
@@ -57,7 +59,7 @@ export default function CarouselCrossfade() {
                                 <p className="p-1 md:w-[90%] w-[80%] md:font-semibold font-medium text-xl md:text-5xl text-center">
                                     Switch Your Packaging From Okay to Awesome
                                 </p>
-                                <Button className="w-[30%]"> Order Now!</Button>
+                                <Button className="w-[30%]" onClick={() => navigate('/contact')}> Order Now!</Button>
                             </div>
                             <div
                                 className={`flex flex-col justify-center flex-1 gap-5 items-center `}
@@ -84,7 +86,7 @@ export default function CarouselCrossfade() {
                                 <p className="p-1 md:w-[80%] w-[80%] md:font-semibold font-medium text-xl md:text-5xl text-center">
                                     Wrap Your Memories with Joy!
                                 </p>
-                                <Button className="w-[30%]"> Order Now!</Button>
+                                <Button className="w-[30%]" onClick={() => navigate('/contact')}> Order Now!</Button>
                             </div>
                             <div
                                 className={`flex flex-col justify-center flex-1 gap-5 items-center `}
