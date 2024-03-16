@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function HomeCustomBox() {
+    const navigate = useNavigate();
   return (
     <div className="bg-[#FF6C22]  relative md:my-[120px] mt-[180px] mb-[80px]">
      <div className="md:hidden  absolute top-[-160px] ">
@@ -13,7 +15,7 @@ function HomeCustomBox() {
             Create professional, personalised packaging in minutes with Turtle
             Boxes Design & Print Software
           </h1>
-          <button className="bg-white text-lg font-bold w-max px-5 py-2 rounded-[20px] text-[#EF7F1B]">
+          <button className="bg-white text-lg font-bold w-max px-5 py-2 rounded-[20px] text-[#EF7F1B]" onClick={() => navigate('/contact')}>
             DESIGN CUSTOM BOX
           </button>
         </div>

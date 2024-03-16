@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import image from "/Product/chocolate/image_1.jpg";
+import toast from "react-hot-toast";
+import { apiCall } from "../../../Api/Api";
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -41,13 +43,56 @@ function Contact() {
         return Object.keys(errors).length === 0;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+
         if (validateForm()) {
-            // Process form submission here
-            console.log("Form submitted:", formData);
-        }
+
+            const toastId = toast.loading("Sending Message...", { position: "top-right", });
+            const apiUrl = "https://api.hdfonline.in/api/v1/sendMail";
+
+            const postData = {
+                mail_info: "value1",
+                user: "chatapp585@gmail.com",
+                password: "zsgklfeiarxcoyac",
+                from: "Bhavishm009@gmail.com",
+                to: "Bhavishm009@gmail.com",
+                subject: "Hello ",
+                description: "Something New",
+                html: "<div>Hello</div>",
+            };
+
+            const headers = {
+                "Content-Type": "application/json",
+            };
+
+            try {
+                const responseData = await apiCall({
+                    url: apiUrl,
+                    method: "POST",
+                    data: postData,
+                    headers: headers,
+                });
+                if (responseData.status) {
+                    toast.success("We Will Get Back To You Soon..", {
+                        id: toastId,
+                        position: "top-right",
+                    });
+                }
+            } catch (error) {
+                console.error("Error in posting data:", error);
+                toast.error("Oop's Something Went Wrong..", {
+                    id: toastId,
+                    position: "top-right",
+                });
+
+            }
+        };
+
+
     };
+
+
 
     return (
         <div className="bg-[#C3B2FF]">
@@ -65,8 +110,8 @@ function Contact() {
             <div>
                 <section className="text-gray-700 py-24  body-font relative">
                     <div className="container flex justify-center items-center flex-col md:flex-row mx-auto">
-                    <div className="">
-                        <img src="/contactPage.jpg" width={750}/>
+                        <div className="">
+                            <img src="/contactPage.jpg" width={750} />
                         </div>
                         <div className="lg:w-1/2 md:w-2/3 mx-auto">
                             <form onSubmit={handleSubmit}>
@@ -85,9 +130,8 @@ function Contact() {
                                                 name="name"
                                                 value={formData.name}
                                                 onChange={handleChange}
-                                                className={`w-full bg-gray-100 rounded border ${
-                                                    errors.name ? "border-red-500" : "border-gray-300"
-                                                } focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
+                                                className={`w-full bg-gray-100 rounded border ${errors.name ? "border-red-500" : "border-gray-300"
+                                                    } focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
                                             />
                                             {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
                                         </div>
@@ -106,9 +150,8 @@ function Contact() {
                                                 name="email"
                                                 value={formData.email}
                                                 onChange={handleChange}
-                                                className={`w-full bg-gray-100 rounded border ${
-                                                    errors.email ? "border-red-500" : "border-gray-300"
-                                                } focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
+                                                className={`w-full bg-gray-100 rounded border ${errors.email ? "border-red-500" : "border-gray-300"
+                                                    } focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
                                             />
                                             {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                                         </div>
@@ -127,9 +170,8 @@ function Contact() {
                                                 name="number"
                                                 value={formData.number}
                                                 onChange={handleChange}
-                                                className={`w-full bg-gray-100 rounded border ${
-                                                    errors.number ? "border-red-500" : "border-gray-300"
-                                                } focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
+                                                className={`w-full bg-gray-100 rounded border ${errors.number ? "border-red-500" : "border-gray-300"
+                                                    } focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
                                             />
                                             {errors.number && <p className="text-red-500 text-xs mt-1">{errors.number}</p>}
                                         </div>
@@ -147,15 +189,14 @@ function Contact() {
                                                 name="message"
                                                 value={formData.message}
                                                 onChange={handleChange}
-                                                className={`w-full bg-gray-100 rounded border ${
-                                                    errors.message ? "border-red-500" : "border-gray-300"
-                                                } focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out`}
+                                                className={`w-full bg-gray-100 rounded border ${errors.message ? "border-red-500" : "border-gray-300"
+                                                    } focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out`}
                                             ></textarea>
                                             {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
                                         </div>
                                     </div>
                                     <div className="p-2 w-full">
-                                        <button type="submit" className="flex mx-auto text-white bg-[#E8597E] border-0 py-2 px-8 focus:outline-none hover:bg-[#F2C031] rounded text-lg">
+                                        <button onClick={handleSubmit} type="submit" className="flex mx-auto text-white bg-[#E8597E] border-0 py-2 px-8 focus:outline-none hover:bg-[#F2C031] rounded text-lg">
                                             Submit
                                         </button>
                                     </div>
