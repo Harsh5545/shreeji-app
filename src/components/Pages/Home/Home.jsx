@@ -69,7 +69,9 @@ function Home() {
             <HomeCustomBox />
             <HomeProcess />
             <HomeBenefit />
-            <HomeAbout />
+      
+ <HomeAbout />
+
         </>
     );
 }

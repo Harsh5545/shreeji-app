@@ -2,7 +2,7 @@ import React from "react";
 
 function HomeAbout() {
   return (
-    <div className="bg-[#F2F0F1]">
+    <div className="md:block  hidden bg-[#F2F0F1]">
       <div className="mx-auto max-w-screen-xl py-12 flex flex-col gap-4 px-5">
         <h1 className="md:text-3xl text-xl font-medium   text-center md:w-[70%] w-[99%] mx-auto">
           <span className="font-bold">Shreeji Graphics</span> - Your Ultimate Custom Cardboard Boxes and Corrugated
