@@ -39,7 +39,7 @@ export default function CarouselCrossfade() {
                                 <img
                                     src="/Main-Images/mainImage.png"
                                     alt="shreejiGraphics Main image"
-                                    className="md:p-10 "
+                                    className="md:p-10 p-4 "
                                     width={500}
                                 />
                             </div>
