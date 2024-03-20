@@ -95,7 +95,7 @@ function Contact() {
 
 
     return (
-        <div className="bg-[#C3B2FF]">
+        <div >
             <div
                 style={{
                     backgroundImage: `url(${image})`,
@@ -103,15 +103,15 @@ function Contact() {
                     minHeight: "60vh",
                 }}
             >
-                <div className="p-1 min-h-[60vh] font-semibold text-2xl md:text-6xl flex justify-center items-center">
+                <div className="p-1 min-h-[60vh]  font-semibold text-5xl md:text-6xl flex justify-center items-center">
                     Contact Us
                 </div>
             </div>
             <div>
-                <section className="text-gray-700 py-24  body-font relative">
-                    <div className="container flex justify-center items-center flex-col md:flex-row mx-auto">
+                <section className="text-gray-700 py-20  body-font relative">
+                    <div className="container flex shadow-grey shadow-xl p-5 md:p-8 justify-center items-center flex-col md:flex-row mx-auto">
                         <div className="">
-                            <img src="/contactPage.jpg" width={750} />
+                            <img src="/pngShreejiGraphics.png"  height={700} width={750} />
                         </div>
                         <div className="lg:w-1/2 md:w-2/3 mx-auto">
                             <form onSubmit={handleSubmit}>

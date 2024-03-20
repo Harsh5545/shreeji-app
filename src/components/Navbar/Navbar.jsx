@@ -286,7 +286,7 @@ export default function NavbarComponent() {
                                 window.scrollTo(0, 0)
                             }
                             }
-                            className="bg-[#F5821F]"
+                        
                         >
                             FOOD PACKAGING
                         </Link>
