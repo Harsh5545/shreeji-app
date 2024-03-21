@@ -54,11 +54,11 @@ function Contact() {
             const postData = {
                 mail_info: "value1",
                 user: "chatapp585@gmail.com",
-                password: "zsgklfeiarxcoyac",
-                from: "Bhavishm009@gmail.com",
-                to: "Bhavishm009@gmail.com",
-                subject: "Hello ",
-                description: "Something New",
+                password: "mvdzyawjmysmtbtc",
+                from: "harikrushnamultimedia@gmail.com",
+                to: formData.email,
+                subject: "Thank You For Connecting Shreeji Graphics",
+                description: "Thank you for contacting us. We have received your message and will get back to you shortly",
                 html: "<div>Hello</div>",
             };
 
