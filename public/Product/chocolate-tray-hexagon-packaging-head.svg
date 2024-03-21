@@ -12,7 +12,7 @@ xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
 	
 	
 	
-<g class='page' id='page-1' transform='translate(316.063475,651.7256350605)'>
+<g className='page' id='page-1' transform='translate(316.063475,651.7256350605)'>
 	
 	<g style='fill:none; stroke:rgb(213,255,123);stroke-width:14.17325px;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer' id='bleeds_stroke'
 inkscape:label='bleed'>
@@ -20,7 +20,7 @@ inkscape:label='bleed'>
 </g >
 	
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-1"
+className="page-1"
 id='cuts'  inkscape:label='cut'>
 		<path id='cut-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M-113.386,0 L-113.386,-1.417325 L-225.354675,-1.417325 L-273.543725,-29.2392730175 L-273.543725,-228.7138769825 L-225.354675,-256.535825 L-113.386,-256.535825 L-113.386,-257.95315 L-93.6967195255,-312.048986977 L-56.693,-356.148317343 L-55.4655682035,-356.856979843 L-111.4499057035,-453.824687043 L-111.4499057035,-509.4686114245 L61.300156645,-609.2058850605 L109.489206645,-581.383937043 L165.473544145,-484.416229843 L166.7009759415,-485.124892343 L223.3939759415,-495.121398954 L280.0869759415,-485.124892343 L281.314407738,-484.416229843 L337.298745238,-581.383937043 L385.487795238,-609.2058850605 L558.2378575865,-509.4686114245 L558.2378575865,-453.824687043 L502.2535200865,-356.856979843 L503.480951883,-356.148317343 L540.4846714085,-312.048986977 L560.173951883,-257.95315 L560.173951883,-256.535825 L672.142626883,-256.535825 L720.331676883,-228.7138769825 L720.331676883,-29.2392730175 L672.142626883,-1.417325 L560.173951883,-1.417325 L560.173951883,0 L540.484699755,54.095836977 L503.480951883,98.195167343 L502.2535200865,98.903829843 L558.2378575865,195.871537043 L558.2378575865,251.5154614245 L385.487795238,351.2527350605 L337.298745238,323.430787043 L281.314407738,226.463079843 L280.0869759415,227.171742343 L223.3939759415,237.168248954 L166.7009759415,227.171742343 L165.473544145,226.463079843 L109.489206645,323.430787043 L61.300156645,351.2527350605 L-111.4499057035,251.5154614245 L-111.4499057035,195.871537043 L-55.4655682035,98.903829843 L-56.693,98.195167343 L-93.6967195255,54.095836977 L-113.386,0 ' /><path id='cut-2' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M0,-257.95315 L-61.371986676,-293.386275 ' /><path id='cut-3' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M223.3939759415,-386.929725 L223.3939759415,-457.795975 ' /><path id='cut-4' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M446.787951883,-257.95315 L508.159938559,-293.386275 ' /><path id='cut-5' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M446.787951883,0 L508.159938559,35.433125 ' /><path id='cut-6' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M223.3939759415,128.976575 L223.3939759415,199.842825 ' /><path id='cut-7' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M0,0 L-61.371986676,35.433125 ' />
 </g >
@@ -34,17 +34,17 @@ inkscape:groupmode='layer' id='no_print_area'
 		<path id='no_print_area-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='' />
 </g >
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-1"
+className="page-1"
 id='perforation'  inkscape:label='perforation'>
 		<path id='perf-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M-225.354675,-1.417325 L-225.354675,-256.535825 ' /><path id='perf-2' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M-111.4499057035,-453.824687043 L109.489206645,-581.383937043 ' /><path id='perf-3' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M337.298745238,-581.383937043 L558.2378575865,-453.824687043 ' /><path id='perf-4' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M672.142626883,-256.535825 L672.142626883,-1.417325 ' /><path id='perf-5' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M558.2378575865,195.871537043 L337.298745238,323.430787043 ' /><path id='perf-6' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M109.489206645,323.430787043 L-111.4499057035,195.871537043 ' /><path id='perf-7' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M-61.371986676,-293.386275 L-93.6967195255,-312.048986977 ' /><path id='perf-8' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M223.3939759415,-457.795975 L223.3939759415,-495.121398954 ' /><path id='perf-9' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M508.159938559,-293.386275 L540.4846714085,-312.048986977 ' /><path id='perf-10' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M508.159938559,35.433125 L540.484699755,54.095836977 ' /><path id='perf-11' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M223.3939759415,199.842825 L223.3939759415,237.168248954 ' /><path id='perf-12' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M-61.371986676,35.433125 L-93.6967195255,54.095836977 ' />
 </g >
 	<g style="fill:none; stroke:rgb(0,154,193);stroke-width:1.2;stroke-miterlimit:5.6693;stroke-dasharray:5.6693" inkscape:groupmode="layer"
-class="page-1"
+className="page-1"
 id="safe_areas" inkscape:label="safe_area">
 		
 </g>
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-1"
+className="page-1"
 id='cuts'  inkscape:label='cut'>
     
 </g >
@@ -52,7 +52,7 @@ id='cuts'  inkscape:label='cut'>
 	
 	
 </g >
-<g class='page' id='page-2' transform='translate(1234.820651883,644.7142416715)'>
+<g className='page' id='page-2' transform='translate(1234.820651883,644.7142416715)'>
 	
 	<g style='fill:none; stroke:rgb(213,255,123);stroke-width:14.17325px;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer' id='bleeds_stroke'
 inkscape:label='bleed'>
@@ -60,7 +60,7 @@ inkscape:label='bleed'>
 </g >
 	
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-2"
+className="page-2"
 id='cuts'  inkscape:label='cut'>
 		<path id='cut-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M-113.386,0 L-113.386,-246.61455 L-93.6967195255,-300.710386977 L-56.693,-344.809717343 L156.8814648765,-468.116992343 L213.5744648765,-478.113498954 L270.2674648765,-468.116992343 L483.841929753,-344.809717343 L520.8456492785,-300.710386977 L540.534929753,-246.61455 L540.534929753,0 L520.8456492785,54.095836977 L483.841929753,98.195167343 L270.2674648765,221.502442343 L213.5744648765,231.498948954 L156.8814648765,221.502442343 L-56.693,98.195167343 L-93.6967195255,54.095836977 L-113.386,0 ' /><path id='cut-2' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M0,-246.61455 L-35.433125,-267.071878892 ' /><path id='cut-3' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M213.5744648765,-369.921825 L213.5744648765,-410.836482784 ' /><path id='cut-4' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M427.148929753,-246.61455 L462.582054753,-267.071878892 ' /><path id='cut-5' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M427.148929753,0 L462.582054753,20.457328892 ' /><path id='cut-6' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M213.5744648765,123.307275 L213.5744648765,164.221932784 ' /><path id='cut-7' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M0,0 L-35.433125,20.457328892 ' />
 </g >
@@ -74,17 +74,17 @@ inkscape:groupmode='layer' id='no_print_area'
 		<path id='no_print_area-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='' />
 </g >
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-2"
+className="page-2"
 id='perforation'  inkscape:label='perforation'>
 		<path id='perf-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M-35.433125,-267.071878892 L-93.6967195255,-300.710386977 ' /><path id='perf-2' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M213.5744648765,-410.836482784 L213.5744648765,-478.113498954 ' /><path id='perf-3' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M462.582054753,-267.071878892 L520.8456492785,-300.710386977 ' /><path id='perf-4' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M462.582054753,20.457328892 L520.8456492785,54.095836977 ' /><path id='perf-5' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M213.5744648765,164.221932784 L213.5744648765,231.498948954 ' /><path id='perf-6' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="8.50395 8.50395" d='M-35.433125,20.457328892 L-93.6967195255,54.095836977 ' />
 </g >
 	<g style="fill:none; stroke:rgb(0,154,193);stroke-width:1.2;stroke-miterlimit:5.6693;stroke-dasharray:5.6693" inkscape:groupmode="layer"
-class="page-2"
+className="page-2"
 id="safe_areas" inkscape:label="safe_area">
 		
 </g>
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-2"
+className="page-2"
 id='cuts'  inkscape:label='cut'>
     
 </g >

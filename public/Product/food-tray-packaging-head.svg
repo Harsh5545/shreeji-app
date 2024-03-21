@@ -12,7 +12,7 @@ xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
 	
 	
 	
-<g class='page' id='page-1' transform='translate(296.220925,181.4176)'>
+<g className='page' id='page-1' transform='translate(296.220925,181.4176)'>
 	
 	<g style='fill:none; stroke:rgb(213,255,123);stroke-width:14.17325px;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer' id='bleeds_stroke'
 inkscape:label='bleed'>
@@ -20,7 +20,7 @@ inkscape:label='bleed'>
 </g >
 	
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-1"
+className="page-1"
 id='cuts'  inkscape:label='cut'>
 		<path id='cut-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M0,0 L1.417325,-1.417325 L1.417325,-110.55135 L43.937075,-153.0711 L562.678025,-153.0711 L605.197775,-110.55135 L605.197775,-1.417325 L606.6151,0 L609.44975,2.83465 L721.418425,2.83465 L721.418425,59.52765 L721.418425,111.968675 L721.418425,111.968675 L724.253075,114.803325 L831.969775,114.803325 L874.489525,157.323075 L874.489525,500.315725 L831.969775,542.835475 L724.253075,542.835475 L721.418425,545.670125 L721.418425,545.670125 L721.418425,602.363125 L721.418425,654.80415 L609.44975,654.80415 L606.6151,657.6388 L605.197775,659.056125 L605.197775,768.19015 L562.678025,810.7099 L43.937075,810.7099 L1.417325,768.19015 L1.417325,659.056125 L0,657.6388 L-2.83465,654.80415 L-114.803325,654.80415 L-114.803325,598.11115 L-114.803325,545.670125 L-114.803325,545.670125 L-117.637975,542.835475 L-225.354675,542.835475 L-267.874425,500.315725 L-267.874425,157.323075 L-225.354675,114.803325 L-117.637975,114.803325 L-114.803325,111.968675 L-114.803325,111.968675 L-114.803325,55.275675 L-114.803325,2.83465 L-2.83465,2.83465 L0,0 ' /><path id='cut-2' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M606.6151,113.386 L608.032425,111.968675 L721.418425,111.968675 ' /><path id='cut-3' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M606.6151,544.2528 L608.032425,545.670125 L721.418425,545.670125 ' /><path id='cut-4' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M0,544.2528 L-1.417325,545.670125 L-114.803325,545.670125 ' /><path id='cut-5' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M0,113.386 L-1.417325,111.968675 L-114.803325,111.968675 ' />
 </g >
@@ -34,17 +34,17 @@ inkscape:groupmode='layer' id='no_print_area'
 		<path id='no_print_area-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='' />
 </g >
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-1"
+className="page-1"
 id='perforation'  inkscape:label='perforation'>
 		<path id='perf-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="11.3386 11.3386" d='M1.417325,-110.55135 L605.197775,-110.55135 ' /><path id='perf-2' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="11.3386 11.3386" d='M831.969775,114.803325 L831.969775,542.835475 ' /><path id='perf-3' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="11.3386 11.3386" d='M1.417325,768.19015 L605.197775,768.19015 ' /><path id='perf-4' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0' stroke-dasharray="11.3386 11.3386" d='M-225.354675,114.803325 L-225.354675,542.835475 ' />
 </g >
 	<g style="fill:none; stroke:rgb(0,154,193);stroke-width:1.2;stroke-miterlimit:5.6693;stroke-dasharray:5.6693" inkscape:groupmode="layer"
-class="page-1"
+className="page-1"
 id="safe_areas" inkscape:label="safe_area">
 		
 </g>
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-1"
+className="page-1"
 id='cuts'  inkscape:label='cut'>
     
 </g >

@@ -12,7 +12,7 @@ xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
 	
 	
 	
-<g class='page' id='page-1' transform='translate(76.53555,212.59875)'>
+<g className='page' id='page-1' transform='translate(76.53555,212.59875)'>
 	
 	<g style='fill:none; stroke:rgb(213,255,123);stroke-width:14.17325px;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer' id='bleeds_stroke'
 inkscape:label='bleed'>
@@ -20,7 +20,7 @@ inkscape:label='bleed'>
 </g >
 	
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-1"
+className="page-1"
 id='cuts'  inkscape:label='cut'>
 		<path id='cut-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M0,0 L-1.417325,-1.417325 L-34.0158,-10.152072203 L-34.0158,-159.926927797 L-1.417325,-168.661675 L0,-170.079 L171.496325,-170.079 L229.60665,-170.079 L401.102975,-170.079 L456.37865,-170.079 L456.37865,0 L401.102975,0 L229.60665,0 L171.496325,0 L0,0 ' />
 </g >
@@ -34,17 +34,17 @@ inkscape:groupmode='layer' id='no_print_area'
 		<path id='no-print-area-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='M-8.50395,-12.120113005 L-25.51185,-16.67737981 L-25.51185,-153.40162019 L-8.50395,-157.958886995 L-8.50395,-12.120113005 ' />
 </g >
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-1"
+className="page-1"
 id='perforation'  inkscape:label='perforation'>
 		<path id='perforation-1' ignoreSnap='1' selectable='0' isPackaging='1' setHelper='1' excludeFromExport='1' evented='0' displayBoxBorder='0'  d='' />
 </g >
 	<g style="fill:none; stroke:rgb(0,154,193);stroke-width:1.2;stroke-miterlimit:5.6693;stroke-dasharray:5.6693" inkscape:groupmode="layer"
-class="page-1"
+className="page-1"
 id="safe_areas" inkscape:label="safe_area">
 		
 </g>
 	<g style='fill:none; stroke:rgb(34,64,151);stroke-width:1.2;stroke-miterlimit:0;stroke-dasharray:0' inkscape:groupmode='layer'
-class="page-1"
+className="page-1"
 id='cuts'  inkscape:label='cut'>
     
 </g >

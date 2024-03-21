@@ -5,24 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You for Contacting Shreeji Graphics</title>
+  <link rel="icon" type="image/x-icon" href="path_to_your_favicon.ico">
     <style>
         @media (max-width: 600px) {
             .container {
                 max-width: 100%;
                 padding: 10px;
             }
+            .content {
+                padding: 10px;
+            }
+            .message {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container" style="background-color: #f9f9f9; padding: 20px;">
-        <div style="max-width: 600px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);">
-            <h2 class="text-center text-2xl mb-4" style="color: #333;">Thank You for Contacting Shreeji Graphics</h2>
-            <p class="text-base">Dear {name},</p>
-            <p class="text-base">Thank you for contacting us. We have received your message and will get back to you shortly.</p>
-            <p class="text-base">Best Regards,<br>Shree ji Graphics</p>
+    <div className="container" style="background-color: #f9f9f9; padding: 20px;">
+        <div className="content" style="max-width: 600px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);">
+            <h2 className="text-center text-2xl mb-4" style="color: #333;">Thank You for Contacting Shreeji Graphics</h2>
+            <p className="text-base mb-4">Dear {name},</p>
+            <p className="message">Thank you for reaching out to us. We appreciate your interest in our services.</p>
+            <p className="message">Our team will review your message and get back to you as soon as possible.</p>
+            <p className="message">Best Regards,<br><span className="py-2 font-semibold">Shreeji Graphics</span></p>
+            <div>
+<img width="100" src="https://shreejigraphic.com/wp-content/uploads/2023/04/cropped-shreeji-graphic-png-logo.png" alt="shreeji">
+ </div>
         </div>
+
+    </div>
     </div>
 </body>
 
