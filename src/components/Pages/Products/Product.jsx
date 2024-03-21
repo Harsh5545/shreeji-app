@@ -63,7 +63,7 @@ const Product = () => {
                 });
         };
         const encodedMessage = encodeMessage(message);
-        const phoneNumber = '917721841331';
+        const phoneNumber = '919824229989';
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
         window.open(whatsappUrl, '_blank');
     }
