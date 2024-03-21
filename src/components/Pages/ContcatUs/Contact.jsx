@@ -49,20 +49,20 @@ function Contact() {
         if (validateForm()) {
 
             const toastId = toast.loading("Sending Message...", { position: "top-right", });
-            const apiUrl = "https://api.hdfonline.in/api/v1/sendMail";
+            const apiUrl = "https://api.hdfonline.in/api/v1/sendMailSheerji";
 
-            const postData = {
-                mail_info: "value1",
-                user: "harikrushnamultimedia@gmail.com",
-                password: "mvdzyawjmysmtbtc",
-                from: "harikrushnamultimedia@gmail.com",
-                to: formData.email,
+            // const postData = {
+            //     mail_info: "value1",
+            //     user: "harikrushnamultimedia@gmail.com",
+            //     password: "mvdzyawjmysmtbtc",
+            //     from: "harikrushnamultimedia@gmail.com",
+            //     to: formData.email,
 
-                subject: "Thank You For Connecting Shreeji Graphics",
-                description: "Thank you for contacting us. We have received your message and will get back to you shortly",
-                html: "<div>Thank you for contacting us. We have received your message and will get back to you shortly</div>",
-            };
-
+            //     subject: "Thank You For Connecting Shreeji Graphics",
+            //     description: "Thank you for contacting us. We have received your message and will get back to you shortly",
+            //     html: "<div>Thank you for contacting us. We have received your message and will get back to you shortly</div>",
+            // };
+           const postData= formData;
             const headers = {
                 "Content-Type": "application/json",
             };
